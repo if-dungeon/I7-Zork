@@ -1,2 +1,2 @@
 # Zork
-An Inform Version of the Pre-Infocom Classic
+The Pre-Infocom Classic
