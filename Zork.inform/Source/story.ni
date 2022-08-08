@@ -243,3 +243,86 @@ There is a room called Riddle Room. "This is a room which is bare on all sides. 
 
 There is a room called Pearl Room. "This is a former broom closet. The exits are to the east and west."
 
+There is a room called Entrance to Hades. "LLD-ROOM..."
+
+There is a room called Land of the Living Dead. "LLD2-ROOM..."
+
+There is a room called Grail Room. "You are standing in a small circular room with a pedestal. A set of stairs leads up, and passages leave to the east and west."
+
+There is a room called Temple. "This is the west end of a large temple. On the south wall is an ancient inscription, probably a prayer in a long-forgotten language. The north wall is solid granite. The entrance at the west end of the room is through huge marble pillars."
+
+There is a room called Altar. "This is the east end of a large temple. In front of you is what appears to be an altar."
+
+
+Chapter - Flood Control Dam #3
+
+There is a room called Dam. "DAM-ROOM..."
+
+There is a room called Dam Lobby. "This room appears to have been the waiting room for groups touring
+the dam. There are exits here to the north and east marked [']Private['], though the doors are open, and an exit to the south."
+
+There is a room called Maintenance Room. "This is what appears to have been the maintenance room for Flood
+Control Dam #3, judging by the assortment of tool chests around the room. Apparently, this room has been ransacked recently, for most of the valuable equipment is gone. On the wall in front of you is a group of buttons, which are labelled in EBCDIC. However, they are of different colors: Blue, Yellow, Brown, and Red. The doors to this room are in the west and south ends."
+
+
+Chapter - River Area
+
+There is a room called Dam Base."You are at the base of Flood Control Dam #3, which looms above you and to the north. The river Frigid is flowing by here. Across the river are the White Cliffs which seem to form a giant wall stretching from north to south along the east shore of the river as it winds its way downstream."
+
+A frigid-river room is a kind of room. The printed name is always "Frigid River".
+
+There is a frigid-river room called Frigid River 1. "You are on the River Frigid in the vicinity of the Dam. The river flows quietly here. There is a landing on the west shore."
+
+There is a frigid-river room called Frigid River 2. "The River turns a corner here making it impossible to see the Dam. The White Cliffs loom on the east bank and large rocks prevent landing on the west."
+
+There is a frigid-river room called Frigid River 3. "The river descends here into a valley. There is a narrow beach on the east below the cliffs and there is some shore on the west which may be suitable. In the distance a faint rumbling can be heard."
+
+There is a room called White Cliffs Beach 1. The printed name is "White Cliffs Beach". "You are on a narrow strip of beach which runs along the base of the White Cliffs. The only path here is a narrow one, heading south
+along the Cliffs."
+
+There is a room called White Cliffs Beach 2. The printed name is "White Cliffs Beach". "You are on a rocky, narrow strip of beach beside the Cliffs. A narrow path leads north along the shore."
+
+There is a frigid-river room called Frigid River 4. "The river is running faster here and the sound ahead appears to be that of rushing water. On the west shore is a sandy beach. A small area of beach can also be seen below the Cliffs."
+
+There is a frigid-river room called Frigid River 5. "The sound of rushing water is nearly unbearable here. On the west shore is a large landing area."
+
+There is a room called Moby Lossage. "OVER-FALLS..."
+
+There is a room called Shore. "You are on the shore of the River.  The river here seems somewhat treacherous. A path travels from north to south here, the south end quickly turning around a sharp corner."
+
+There is a room called Sandy Beach. "You are on a large sandy beach at the shore of the river, which is flowing quickly by. A path runs beside the river to the south here."
+
+There is a room called Rocky Shore. "You are on the west shore of the river. An entrance to a cave is to the northwest. The shore is very rocky here."
+
+There is a room called Small Cave. "This is a small cave whose exits are on the south and northwest."
+
+There is a room called Aragain Falls. "FALLS-ROOM..."
+
+There is a room called Rainbow Room. "You are on top of a rainbow (I bet you never thought you would walk on a rainbow), with a magnificent view of the Falls. The rainbow travels east-west here. There is an NBC Commissary here."
+
+There is a room called End of Rainbow. "You are on a small, rocky beach on the continuation of the Frigid River past the Falls. The beach is narrow due to the presence of the White Cliffs. The river canyon opens here and sunlight shines in from above. A rainbow crosses over the falls to the west and a narrow path continues to the southeast."
+
+There is a room called Canyon Bottom. "You are beneath the walls of the river canyon which may be climbable here. There is a small stream here, which is the lesser part of the runoff of Aragain Falls. To the north is a narrow path."
+
+There is a room called Rocky Ledge. "You are on a ledge about halfway up the wall of the river canyon. You can see from here that the main flow from Aragain Falls twists along a passage which it is impossible to enter. Below you is the canyon bottom. Above you is more cliff, which still appears climbable."
+
+There is a room called Canyon View. "You are at the top of the Great Canyon on its south wall. From here there is a marvelous view of the Canyon and parts of the Frigid River upstream. Across the canyon, the walls of the White Cliffs still appear to loom far above. Following the Canyon upstream (north and northwest), Aragain Falls may be seen, complete with rainbow. Fortunately, my vision is better than average and I can discern the top of the Flood Control Dam #3 far to the distant north. To the west and south can be seen an immense forest, stretching for miles around. It is possible to climb down into the canyon from here."
+
+
+Chapter - Volcano Area
+
+There is a room called Volcano Bottom. "You are at the bottom of a large dormant volcano. High above you light may be seen entering from the cone of the volcano. The only exit here is to the north."
+
+There is a room called Volcano Core. "You are about one hundred feet above the bottom of the volcano. The top of the volcano is clearly visible here."
+
+
+Chapter - Alice in Wonderland
+
+Chapter - Ban of Zork
+
+Chapter - Chinese Puzzle Room
+
+Chapter - Palantir Rooms
+
+Chapter - End Game
+
