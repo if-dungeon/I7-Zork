@@ -402,6 +402,17 @@ There is a room called Tiny Room. "PRM-ROOM..."
 
 There is a room called Slide Room. "SLIDE-ROOM..."
 
+There is a room called Slide 1. The printed name is "Slide". "This is an uncomfortable spot within the coal chute. The rope to which you are clinging can be seen rising into the darkness above. There is more rope dangling below you."
+
+There is a room called Slide 2. The printed name is "Slide". "This is another spot within the coal chute. Above you the rope climbs into darkness and the end of the rope is dangling five feet beneath you."
+
+There is a room called Slide 3. The printed name is "Slide". "You have reached the end of your rope. Below you is darkness as the chute makes a sharp turn. On the east here is a small ledge which you might be able to stand on."
+
+There is a room called Slide Ledge. "This is a narrow ledge abutting the coal chute, in which a rope can be seen passing downward. Behind you, to the south, is a small room."
+
+There is a room called Sooty Room. "This is a small room with rough walls, and a ceiling which is steeply sloping from north to south. There is coal dust covering almost everything, and little bits of coal are scattered around the only exit (which is a narrow passage to the north). In one corner of the room is
+an old coal stove which lights the room with a cheery red glow. There is a very narrow crack in the north wall."
+
 
 Chapter - End Game
 
