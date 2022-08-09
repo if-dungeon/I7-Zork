@@ -181,7 +181,7 @@ There is a room called Timber Room. "This is a long and narrow passage, which is
 
 There is a room called Lower Shaft. "This is a small square room which is at the bottom of a long shaft. To the east is a passageway and to the northeast a very narrow passage. In the shaft can be seen a heavy iron chain."
 
-There is a room called Machine Room. "MACHINE-ROOM..."
+There is a room called Machine Room 1. The printed name is "Machine Room". "MACHINE-ROOM..."
 
 There is a room called Bat Room. "BATS-ROOM..."
 
@@ -337,11 +337,71 @@ There is a room called Lava Room. "This is a small room, whose walls are formed 
 
 Chapter - Alice in Wonderland
 
+There is a room called Low Room. "MAGNET-ROOM..."
+
+There is a room called Machine Room 2. The printed name is "Machine Room". "CMACH-ROOM..."
+
+There is a room called Dingy Closet. "This is a dingy closet adjacent to the machine room.  On one wall is a small sticker which says
+		Protected by
+		  FROBOZZ
+	     Magic Alarm Company
+	      (Hello, footpad!)
+"
+
+There is a room called Cage. "You are trapped inside a steel cage."
+
+There is a room called Top of Well. "You are at the top of the well.  Well done.  There are etchings on the side of the well. There is a small crack across the floor at the entrance to a room on the east, but it can be crossed easily."
+
+There is a room called Circular Room. "This is a damp circular room, whose walls are made of brick and mortar. The roof of this room is not visible, but there appear to be some etchings on the walls. There is a passageway to the west."
+
+There is a room called Tea Room. "This is a small square room, in the center of which is a large oblong table, no doubt set for afternoon tea. It is clear from the objects on the table that the users were indeed mad. In the eastern corner of the room is a small hole (no more than four inches high). There are passageways leading away to the west and the northwest."
+
+There is a room called Posts Room. "This is an enormous room, in the center of which are four wooden posts delineating a rectangular area, above which is what appears to be a wooden roof. In fact, all objects in this room appear to be abnormally large. To the east is a passageway. There is a large chasm on the west and the northwest."
+
+There is a room called Pool Room. "This is a large room, one half of which is depressed. There is a large leak in the ceiling through which brown colored goop is falling. The only exit to this room is to the west."
+
+
 Chapter - Bank of Zork
+
+There is a room called Bank Entrance. "This is the large entrance hall of the Bank of Zork, the largest banking institution of the Great Underground Empire. A partial account of its history is in 'The Lives of the Twelve Flatheads' with the chapter on J. Pierpont Flathead. A more detailed history (albeit less objective) may be found in Flathead's outrageous autobiography 'I'm Rich and You Aren't - So There!'. Most of the furniture has been ravaged by passing scavengers.  All that remains are two signs at the Northwest and Northeast corners ofthe room, which say
+  
+	  <--  WEST VIEWING ROOM        EAST VIEWING ROOM  -->  
+"
+
+There is a room called West Teller's Room. "TELLER-ROOM..."
+
+There is a room called East Teller's Room. "TELLER-ROOM..."
+
+There is a room called Viewing Room 1. The printed name is "Viewing Room". "VIEW-ROOM..."
+
+There is a room called Viewing Room 2. The printed name is "Viewing Room". "VIEW-ROOM..."
+
+There is a room called Small Room. "This is a small, bare room with no distinguishing features. There are no exits from this room."
+
+There is a room called Vault. "This is the Vault of the Bank of Zork, in which there are no doors."
+
+There is a room called Safety Depository. "This is a large rectangular room. The east and west walls here were used for storing safety deposit boxes.  As might be expected, all have been carefully removed by evil persons. To the east, west, and south of the room are large doorways. The northern [']wall['] of the room is a shimmering curtain of light. In the center of the room is a large stone cube, about 10 feet on a side. Engraved on the side of the cube is some lettering."
+
+There is a room called Chairman's Office. "This room was the office of the Chairman of the Bank of Zork. Like the other rooms here, it has been extensively vandalized. The lone exit is to the north."
+
 
 Chapter - Chinese Puzzle Room
 
+There is a room called Small Square Room. "This is a small square room, in the middle of which is a recently created hole through which you can barely discern the floor some ten feet below. It doesn't seem likely you could climb back up. There are exits to the west and south."
+
+There is a room called Side Room. "CPOUT-ROOM..."
+
+There is a room called Room in a Puzzle. "CP-ROOM..."
+
+
 Chapter - Palantir Rooms
+
+There is a room called Dreary Room. "PALANTIR-ROOM..."
+
+There is a room called Tiny Room. "PRM-ROOM..."
+
+There is a room called Slide Room. "SLIDE-ROOM..."
+
 
 Chapter - End Game
 
