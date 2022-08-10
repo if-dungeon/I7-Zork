@@ -17,6 +17,8 @@ There is a room called Kitchen. "KITCHEN..."
 
 There is a room called Attic. "This is the attic. The only exit is stairs that lead down."
 
+There is a room called Living Room. "LIVING-ROOM..."
+
 
 Chapter - Forest
 
