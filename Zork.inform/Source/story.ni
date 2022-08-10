@@ -376,7 +376,7 @@ There is a room called Viewing Room 1. The printed name is "Viewing Room". "VIEW
 
 There is a room called Viewing Room 2. The printed name is "Viewing Room". "VIEW-ROOM..."
 
-There is a room called Small Room. "This is a small, bare room with no distinguishing features. There are no exits from this room."
+There is a room called Small Room 1. The printed name is "Small Room". "This is a small, bare room with no distinguishing features. There are no exits from this room."
 
 There is a room called Vault. "This is the Vault of the Bank of Zork, in which there are no doors."
 
@@ -416,3 +416,81 @@ an old coal stove which lights the room with a cheery red glow. There is a very 
 
 Chapter - End Game
 
+There is a room called Hallway D. The printed name is "Hallway". "MRDF..."
+
+There is a room called Hallway G. The printed name is "Hallway". "GUARDIANS..."
+
+There is a room called Hallway C. The printed name is "Hallway". "MRCF..."
+
+There is a room called Hallway B. The printed name is "Hallway". "MRBF..."
+
+There is a room called Hallway A. The printed name is "Hallway". "MRAF..."
+
+There is a room called Narrow Room 1. The printed name is "Narrow Room". "GUARDIANS..."
+
+There is a room called Narrow Room 2. The printed name is "Narrow Room". "GUARDIANS..."
+
+There is a room called Narrow Room 3. The printed name is "Narrow Room". "GUARDIANS..."
+
+There is a room called Narrow Room 4. The printed name is "Narrow Room". "GUARDIANS..."
+
+There is a room called Narrow Room 5. The printed name is "Narrow Room". "MRCEW..."
+
+There is a room called Narrow Room 6. The printed name is "Narrow Room". "MRCEW..."
+
+There is a room called Narrow Room 7. The printed name is "Narrow Room". "MRBEW..."
+
+There is a room called Narrow Room 8. The printed name is "Narrow Room". "MRBEW..."
+
+There is a room called Narrow Room 9. The printed name is "Narrow Room". "MRAEW..."
+
+There is a room called Narrow Room 10. The printed name is "Narrow Room". "MRAEW..."
+
+There is a room called Inside Mirror. "MAGIC-MIRROR..."
+
+There is a room called Stone Room. "You are standing near one end of a long, dimly lit hall. At the south stone stairs ascend. To the north the corridor is illuminated by torches set high in the walls, out of reach. On one wall is a red button."
+
+There is a room called Small Room 2. The printed name is "Small Room". "MREYE-ROOM..."
+
+There is a room called Tomb of the Unknown Implementer. "TOMB-FUNCTION..."
+
+There is a room called Crypt. "CRYPT-FUNCTION..."
+
+There is a room called Top of Stairs. "You are standing at the top of a flight of stairs that lead down to a passage below. Dim light, as from torches, can be seen in the passage. Behind you the stairs lead into untouched rock."
+
+There is a room called East Corridor. "This is a corridor with polished marble walls. The corridor widens into larger areas as it turns west at its northern and southern ends."
+
+There is a room called West Corridor. "This is a corridor with polished marble walls. The corridor widens into larger areas as it turns east at its northern and southern ends."
+
+There is a room called South Corridor. "SCORR-ROOM..."
+
+There is a room called Narrow Corridor. "BDOOR-FUNCTION..."
+
+There is a room called Dungeon Entrance. "FDOOR-FUNCTION"
+
+There is a room called North Corridor. "NCORR-ROOM..."
+
+There is a room called Parapet. "PARAPET..."
+
+There is a room called Prison Cell 1. The printed name is "Prison Cell". "CELL-ROOM..."
+
+There is a room called Prison Cell 2. The printed name is "Prison Cell". "PCELL-ROOM..."
+
+There is a room called Prison Cell 3. The printed name is "Prison Cell". "NCELL-ROOM..."
+
+There is a room called Treasury of Zork. "     This is a room of large size, richly appointed and decorated
+in a style that bespeaks exquisite taste.  To judge from its
+contents, it is the ultimate storehouse of the treasures of Zork.
+	 There are chests here containing precious jewels, mountains of
+zorkmids, rare paintings, ancient statuary, and beguiling curios.
+	 In one corner of the room is a bookcase boasting such volumes as
+'The History of the Great Underground Empire,' 'The Lives of the
+Twelve Flatheads,' 'The Wisdom of the Implementors,' and other
+informative and inspiring works.
+	 On one wall is a completely annotated map of the Great Underground
+Empire, showing points of interest, various troves of treasure, and
+indicating the locations of several superior scenic views.
+	 On a desk at the far end of the room may be found stock
+certificates representing a controlling interest in FrobozzCo
+International, the multinational conglomerate and parent company of
+the Frobozz Magic Boat Co., etc."
