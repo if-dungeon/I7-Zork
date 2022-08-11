@@ -5,38 +5,145 @@
 
 Chapter - House and Vicinity
 
+Section - West of House
+
 There is a room called West of House. "This is an open field west of a white house, with a boarded front door."
+
+A room called North of House is the room north from West of House.
+A room called South of House is the room south from West of House.
+A room called Forest 1 is the room west from West of House.
+
+East from West of House is a locked scenery door.
+Check going nowhere from West of House when going east: say "The door is locked, and there is evidently no key." instead.
+
+
+Section - North of House
 
 There is a room called North of House. "You are facing the north side of a white house. There is no door here, and all the windows are barred."
 
+A room called West of House is the room west from North of House.
+A room called Behind House is the room east from North of House.
+A room called Forest 3 is the room north from North of House.
+Check going nowhere from North of House when going south: say "The windows are all barred." instead.
+
+
+Section - South of House
+
 There is a room called South of House. "You are facing the south side of a white house. There is no door here, and all the windows are barred."
+
+A room called West of House is the room west from South of House.
+A room called Behind House is the room east from South of House.
+A room called Forest 2 is the room south from South of House.
+Check going nowhere from South of House when going north: say "The windows are all barred." instead.
+
+
+Section - Behind House
 
 There is a room called Behind House. "EAST-HOUSE..."
 
+A room called North of House is the room north from Behind House.
+A room called South of House is the room south from Behind House.
+A room called Clearing is the room east from Behind House.
+
+
+Section - Kitchen
+
 There is a room called Kitchen. "KITCHEN..."
+
+A room called Living Room is the room west from Kitchen.
+A room called Attic is the room up from Kitchen.
+Check going nowhere from Kitchen when going down: say "Only Santa Claus climbs down chimneys." instead.
+
+
+Section - Attic
 
 There is a room called Attic. "This is the attic. The only exit is stairs that lead down."
 
+A room called Kitchen is the room down from Attic.
+
+
+Section - Living Room
+
 There is a room called Living Room. "LIVING-ROOM..."
+
+A room called Kitchen is the room east from Living Room.
+
+The wooden door is west from Living Room. It is a locked, scenery door. It is not openable.
 
 
 Chapter - Forest
 
 A forest room is a kind of room. The printed name is always "Forest". The description is usually "This is a forest, with trees in all directions around you."
 
+
+Section - Forest 1
+
 There is a forest room called Forest 1.
+
+A room called Forest 1 is the room north from Forest 1.
+A room called Forest 3 is the room east from Forest 1.
+A room called Forest 2 is the room south from Forest 1.
+A room called Forest 1 is the room west from Forest 1.
+
+
+Section - Forest 2
 
 There is a forest room called Forest 2. "This is a dimly lit forest, with large trees all around. To the east, there appears to be sunlight."
 
+A room called South of House is the room north from Forest 2.
+A room called Clearing is the room east from Forest 2.
+A room called Forest 4 is the room south from Forest 2.
+A room called Forest 1 is the room west from Forest 2.
+
+
+Section - Forest 3
+
 There is a forest room called Forest 3. "This is a dimly lit forest, with large trees all around. One particularly large tree with some low branches stands here."
+
+A room called Up a Tree is the room up from Forest 3.
+A room called Forest 2 is the room north from Forest 3.
+A room called Clearing is the room east from Forest 3.
+A room called Clearing is the room south from Forest 3.
+A room called North of House is the room west from Forest 3.
+
+
+Section - Up a Tree
 
 There is a room called Up a Tree. "TREE-ROOM..."
 
+A room called Forest 3 is the room down from Up a Tree.
+
+
+Section - Forest 4
+
 There is a forest room called Forest 4. "This is a large forest, with trees obstructing all views except to the east, where a small clearing may be seen through the trees."
+
+A room called Canyon View is the room east from Forest 4.
+A room called Forest 5 is the room north from Forest 4.
+A room called Forest 4 is the room south from Forest 4.
+A room called Forest 2 is the room west from Forest 4.
+
+
+Section - Forest 5
 
 There is a forest room called Forest 5.
 
+A room called Forest 5 is the room north from Forest 5.
+A room called Canyon View is the room southeast from Forest 5.
+A room called Forest 4 is the room south from Forest 5.
+A room called Forest 2 is the room west from Forest 5.
+
+
+Section - Clearing
+
 There is a room called Clearing. "CLEARING..."
+
+A room called Behind House is the room southwest from Clearing.
+A room called Forest 5 is the room southeast from Clearing.
+A room called Clearing is the room north from Clearing.
+A room called Clearing is the room east from Clearing.
+A room called Forest 3 is the room west from Clearing.
+A room called Forest 2 is the room south from Clearing.
 
 
 Chapter - Cellar and Vicinity
