@@ -1,8 +1,5 @@
 "Zork" by Alex Proudfoot
 
-[ There are 196 rooms in this game. ]
-
-
 Chapter - House and Vicinity
 
 Section - West of House
@@ -148,13 +145,37 @@ A room called Forest 2 is the room south from Clearing.
 
 Chapter - Cellar and Vicinity
 
+Section - Cellar
+
 There is a room called Cellar. "CELLAR..."
+
+A room called The Troll Room is the room east from Cellar.
+A room called West of Chasm is the room south from Cellar.
+Check going nowhere from Cellar when going west: say "You try to ascend the ramp, but it is impossible, and you slide back down." instead.
+
+
+Section - The Troll Room
 
 There is a room called The Troll Room. "This is a small room with passages off in all directions. Bloodstains and deep scratches (perhaps made by an axe) mar the walls."
 
+A room called Cellar is the room west from The Troll Room.
+
+
+Section - Studio
+
 There is a room called Studio. "This is what appears to have been an artist's studio. The walls and floors are splattered with paints of 69 different colors. Strangely enough, nothing of value is hanging here.  At the north and northwest of the room are open doors (also covered with paint). An extremely dark and narrow chimney leads up from a fireplace; although you might be able to get up it, it seems unlikely you could get back down."
 
+A room called North-South Crawlway is the room north from Studio.
+A room called Gallery is the room northwest from Studio.
+
+
+Section - Gallery
+
 There is a room called Gallery. "This is an art gallery. Most of the paintings which were here have been stolen by vandals with exceptional taste.  The vandals left through either the north, south, or west exits."
+
+A room called West of Chasm is the room north from Gallery.
+A room called Studio is the room south from Gallery.
+A room called Bank Entrance is the room west from Gallery.
 
 
 Chapter - Maze
@@ -163,79 +184,264 @@ A maze room is a kind of room. The printed name is always "Maze". The descriptio
 
 A dead-end room is a kind of room. The printed name is always "Dead End". The description is usually "You have come to a dead end in the maze."
 
+
+Section - Maze 1
+
 There is a maze room called Maze 1.
+
+A room called The Troll Room is the room west from Maze 1.
+A room called Maze 1 is the room north from Maze 1.
+A room called Maze 2 is the room south from Maze 1.
+A room called Maze 4 is the room east from Maze 1.
+
+
+Section - Maze 2
 
 There is a maze room called Maze 2.
 
+A room called Maze 1 is the room south from Maze 2.
+A room called Maze 4 is the room north from Maze 2.
+A room called Maze 3 is the room east from Maze 2.
+
+
+Section - Maze 3
+
 There is a maze room called Maze 3.
+
+A room called Maze 2 is the room west from Maze 3.
+A room called Maze 4 is the room north from Maze 3.
+A room called Maze 5 is the room up from Maze 3.
+
+
+Section - Maze 4
 
 There is a maze room called Maze 4.
 
+A room called Maze 3 is the room west from Maze 4.
+A room called Maze 1 is the room north from Maze 4.
+A room called Dead End 1 is the room east from Maze 4.
+
+
+Section - Dead End 1
+
 There is a dead-end room called Dead End 1.
+
+A room called Maze 4 is the room south from Dead End 1.
+
+
+Section - Maze 5
 
 There is a maze room called Maze 5.
 
+A room called Dead End 2 is the room east from Maze 5.
+A room called Maze 3 is the room north from Maze 5.
+A room called Maze 6 is the room southwest from Maze 5.
+
+
+Section - Dead End 2
+
 There is a dead-end room called Dead End 2.
+
+A room called Maze 5 is the room west from Dead End 2.
+
+
+Section - Maze 6
 
 There is a maze room called Maze 6.
 
+A room called Maze 5 is the room down from Maze 6.
+A room called Maze 7 is the room east from Maze 6.
+A room called Maze 6 is the room west from Maze 6.
+A room called Maze 9 is the room up from Maze 6.
+
+
+Section - Maze 7
+
 There is a maze room called Maze 7.
+
+A room called Maze 14 is the room up from Maze 7.
+A room called Maze 6 is the room west from Maze 7.
+A room called Dead End 1 is the room northeast from Maze 7.
+A room called Maze 8 is the room east from Maze 7.
+A room called Maze 15 is the room south from Maze 7.
+
+
+Section - Maze 8
 
 There is a maze room called Maze 8.
 
+A room called Maze 7 is the room northeast from Maze 8.
+A room called Maze 8 is the room west from Maze 8.
+A room called Dead End 3 is the room southeast from Maze 8.
+
+
+Section - Dead End 3
+
 There is a dead-end room called Dead End 3. "Dead End!"
+
+A room called Maze 8 is the room north from Dead End 3.
+
+
+Section - Maze 9
 
 There is a maze room called Maze 9.
 
+A room called Maze 6 is the room north from Maze 9.
+A room called Maze 11 is the room east from Maze 9.
+A room called Maze 10 is the room down from Maze 9.
+A room called Maze 13 is the room south from Maze 9.
+A room called Maze 12 is the room west from Maze 9.
+A room called Maze 9 is the room northwest from Maze 9.
+
+
+Section - Maze 10
+
 There is a maze room called Maze 10
+
+A room called Maze 9 is the room east from Maze 10.
+A room called Maze 13 is the room west from Maze 10.
+A room called Maze 11 is the room up from Maze 10.
+
+
+Section - Maze 11
 
 There is a maze room called Maze 11.
 
+A room called Grating Room is the room northeast from Maze 11.
+A room called Maze 10 is the room down from Maze 11.
+A room called Maze 13 is the room northwest from Maze 11.
+A room called Maze 12 is the room southwest from Maze 11.
+
+
+Section - Grating Room
+
 There is a room called Grating Room. "MAZE-11..."
+
+A room called Maze 11 is the room southwest from Grating Room.
+
+
+Section - Maze 12
 
 There is a maze room called Maze 12.
 
+A room called Maze 5 is the room west from Maze 12.
+A room called Maze 11 is the room southwest from Maze 12.
+A room called Maze 13 is the room east from Maze 12.
+A room called Maze 9 is the room up from Maze 12.
+A room called Dead End 4 is the room north from Maze 12.
+
+
+Section - Dead End 4
+
 There is a dead-end room called Dead End 4. "Dead End!"
+
+A room called Maze 12 is the room south from Dead End 4.
+
+
+Section - Maze 13
 
 There is a maze room called Maze 13.
 
+A room called Maze 9 is the room east from Maze 13.
+A room called Maze 12 is the room down from Maze 13.
+A room called Maze 10 is the room south from Maze 13.
+A room called Maze 11 is the room west from Maze 13.
+
+
+Section - Maze 14
+
 There is a maze room called Maze 14.
 
+A room called Maze 15 is the room west from Maze 14.
+A room called Maze 14 is the room northwest from Maze 14.
+A room called Maze 7 is the room northeast from Maze 14.
+A room called Maze 7 is the room south from Maze 14.
+
+
+Section - Maze 15
+
 There is a maze room called Maze 15.
+
+A room called Maze 14 is the room west from Maze 15.
+A room called Maze 7 is the room south from Maze 15.
+A room called Cyclops Room is the room northeast from Maze 15.
 
 
 Chapter - Cyclops and Hideaway
 
+Section - Cyclops Room
+
 There is a room called Cyclops Room. "CYCLOPS-ROOM..."
 
+
+Section - Strange Passage
+
 There is a room called Strange Passage. "This is a long passage. To the south is one entrance.  On the east there is an old wooden door, with a large hole in it (about cyclops sized)."
+
+
+Section - Treasure Room
 
 There is a room called Treasure Room. "This is a large room, whose north wall is solid granite. A number of discarded bags, which crumble at your touch, are scattered about on the floor.  There is an exit down and what appears to be a newly created passage to the east."
 
 
 Chapter - Reservoir Area
 
+Section - Deep Ravine
+
 There is a room called Deep Ravine. "This is a deep ravine at a crossing with an east-west crawlway. Some stone steps are at the south of the ravine and a steep staircase descends."
+
+
+Section - Rocky Crawl
 
 There is a room called Rocky Crawl. "This is a crawlway with a three-foot high ceiling. Your footing is very unsure here due to the assortment of rocks underfoot. Passages can be seen in the east, west, and northwest corners of the passage."
 
+
+Section - Reservoir South
+
 There is a room called Reservoir South. "RESERVOIR-SOUTH..."
+
+
+Section - Reservoir
 
 There is a room called Reservoir. "RESERVOIR..."
 
+
+Section - Reservoir North
+
 There is a room called Reservoir North. "RESERVOIR-NORTH..."
+
+
+Section - Stream View
 
 There is a room called Stream View. "You are standing on a path beside a gently flowing stream. The path travels to the north and the east."
 
+
+Section - Stream
+
 There is a room called Stream. "You are on the gently flowing stream. The upstream route is too narrow to navigate and the downstream route is invisible due to twisting walls. There is a narrow beach to land on."
+
+
+Section - Egyptian Room
 
 There is a room called Egyptian Room. "This is a room which looks like an Egyptian tomb. There is an ascending staircase in the room as well as doors, east and south."
 
+
+Section - Glacier Room
+
 There is a room called Glacier Room. "GLACIER-ROOM..."
+
+
+Section - Ruby Room
 
 There is a room called Ruby Room. "This is a small chamber behind the remains of the Great Glacier. To the south and west are small passageways."
 
+
+Section - Atlantis Room
+
 There is a room called Atlantis Room. "This is an ancient room, long under water. There are exits here to the southeast and upward."
+
+
+Section - Deep Canyon
 
 There is a room called Deep Canyon. "You are on the south edge of a deep canyon. Passages lead off to the east, south, and northwest. You can hear the sound of flowing water below."
 
