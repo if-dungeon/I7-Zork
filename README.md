@@ -1,2 +1,2 @@
 # Zork
-The pre-Infocom classic, rewritten in the latest version of Inform 7.
+The pre-Infocom classic, rewritten in Inform 7.
