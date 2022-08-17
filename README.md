@@ -9,8 +9,9 @@ To understand the design of Zork through re-engineering.
 * [MDL](https://en.wikipedia.org/wiki/MDL_(programming_language))
 * [Inform 7](https://en.wikipedia.org/wiki/Inform#Inform_7)
 ### Platforms
-* Windows 10 / [Cygwin (latest)](https://www.cygwin.com/)
+* Windows 10 / Cygwin
 ### Resources
+* [Cygwin (latest)](https://www.cygwin.com/)
 * [64-bit Windows Inform IDE beta (latest)](https://github.com/DavidKinder/Windows-Inform7)
 * [Inform compiler version 10.1.0-beta 'Krypton' (latest)](https://github.com/ganelson/inform)
 * [Mainframe Zork for Confusion](https://github.com/heasm66/mdlzork)
