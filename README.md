@@ -1,7 +1,5 @@
 # Goals
-* rewrite the latest available version of the original Zork in Inform 7
-* assess the suitability of Inform 7 (as implemented in the latest Inform compiler) for rewriting Zork
-* report problems discovered while using the latest Inform compiler
+* rewrite the original Zork in Inform 7 as implemented in the latest Inform compiler
 # Technical Parameters
 ## Languages
 * [MDL](https://en.wikipedia.org/wiki/MDL_(programming_language))
