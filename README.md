@@ -1,4 +1,4 @@
-# Understanding Zork
+# Zork - The Pre-Infocom Classic (Rewritten in Inform 7)
 ## Aim
 To understand the design of Zork through re-engineering.
 ## Objectives
