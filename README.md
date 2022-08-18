@@ -9,7 +9,7 @@ The objectives are as follows.
 ## Technical Context
 Inform 7 v 10.1.0 has recently been made [open-source](https://intfiction.org/t/inform-7-v10-1-0-is-now-open-source/55674).
 This presents an opportunity to use Inform 7 as implemented by the very latest version of the Inform compiler.
-The parameters of this project are as follows.
+The specifics of this project are as follows.
 
 ### Languages
 * [MDL](https://en.wikipedia.org/wiki/MDL_(programming_language))
