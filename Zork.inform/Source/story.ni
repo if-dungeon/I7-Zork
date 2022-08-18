@@ -502,45 +502,78 @@ Section - Loud Room
 
 There is a room called Loud Room. "This is a large room with a ceiling which cannot be detected from the ground. There is a narrow passage from east to west and a stone stairway leading upward. The room is extremely noisy. In fact, it is difficult to hear yourself think."
 
+A room called Ancient Chasm is the room east from Loud Room.
+A room called North-South Passage is the room west from Loud Room.
+A room called Damp Cave is the room up from Loud Room.
+
 
 Section - Mirror Room 1
 
 There is a mirror room called Mirror Room 1. "MIRROR-ROOM..."
+
+A room called Cold Passage is the room west from Mirror Room 1.
+A room called Steep Crawlway is the room north from Mirror Room 1.
+A room called Cave 1 is the room east from Mirror Room 1.
 
 
 Section - Mirror Room 2
 
 There is a mirror room called Mirror Room 2. "MIRROR-ROOM..."
 
+A room called Winding Passage is the room west from Mirror Room 2.
+A room called Narrow Crawlway is the room north from Mirror Room 2.
+A room called Cave 2 is the room east from Mirror Room 2.
+
 
 Section - Cave 1
 
 There is a cave room called Cave 1. "This is a small cave with an entrance to the north and a stairway leading down."
+
+A room called Mirror Room 1 is the room north from Cave 1.
+A room called Atlantis Room is the room down from Cave 1.
 
 
 Section - Cave 2
 
 There is a cave room called Cave 2. "This is a tiny cave with entrances west and north, and a dark, forbidding staircase leading down."
 
+A room called Narrow Crawlway is the room north from Cave 2.
+A room called Mirror Room 2 is the room west from Cave 2.
+A room called Entrance to Hades is the room down from Cave 2.
+
 
 Section - Steep Crawlway
 
 There is a room called Steep Crawlway. "This is a steep and narrow crawlway.  There are two exits nearby to the south and southwest."
+
+A room called Mirror Room 1 is the room south from Steep Crawlway.
+A room called Cold Passage is the room southwest from Steep Crawlway.
 
 
 Section - Narrow Crawlway
 
 There is a room called Narrow Crawlway. "This is a narrow crawlway.  The crawlway leads from north to south. However the south passage divides to the south and southwest."
 
+A room called Cave 2 is the room south from Narrow Crawlway.
+A room called Mirror Room 2 is the room southwest from Narrow Crawlway.
+A room called Grail Room is the room north from Narrow Crawlway.
+
 
 Section - Cold Passage
 
 There is a room called Cold Passage. "This is a cold and damp corridor where a long east-west passageway intersects with a northward path."
 
+A room called Mirror Room 1 is the room east from Cold Passage.
+A room called Slide Room is the room west from Cold Passage.
+A room called Steep Crawlway is the room north from Cold Passage.
+
 
 Section - Winding Passage
 
 There is a room called Winding Passage. "This is a winding passage. It seems that there is only an exit on the east end although the whirring from the round room can be heard faintly to the north."
+
+A room called Mirror Room 2 is the room east from Winding Passage.
+Instead of going nowhere from Winding Passage when going north, say "You hear the whir from the round room but can find no entrance."
 
 
 Chapter - Coal Mine Area
