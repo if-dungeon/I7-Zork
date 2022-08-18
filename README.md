@@ -23,3 +23,8 @@ The specifics of this project are as follows.
 * [64-bit Windows Inform IDE beta (latest)](https://github.com/DavidKinder/Windows-Inform7)
 * [Inform compiler version 10.1.0-beta 'Krypton' (latest)](https://github.com/ganelson/inform)
 * [Mainframe Zork for Confusion](https://github.com/heasm66/mdlzork)
+
+## Release Plan
+The first release will implement the full map and will be navigable without solving puzzles. It will not implement puzzle solution logic, events or NPCs. No commands will be implemented other than those provided by the Inform library.
+
+The content and number of further releases will be decided when necessary.
