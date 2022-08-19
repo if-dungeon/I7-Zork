@@ -690,35 +690,69 @@ Section - Coal Mine 1
 
 There is a coal-mine room called Coal Mine 1.
 
+A room called Coal Mine 4 is the room north from Coal Mine 1.
+A room called Coal Mine 2 is the room southwest from Coal Mine 1.
+A room Called Wooden Tunnel is the room east from Coal Mine 1.
+
 
 Section - Coal Mine 2
 
 There is a coal-mine room called Coal Mine 2.
+
+A room called Coal Mine 1 is the room south from Coal Mine 2.
+A room called Coal Mine 5 is the room west from Coal Mine 2.
+A room called Coal Mine 3 is the room up from Coal Mine 2.
+A room called Coal Mine 4 is the room northeast from Coal Mine 2.
 
 
 Section - Coal Mine 3
 
 There is a coal-mine room called Coal Mine 3.
 
+A room called Coal Mine 2 is the room west from Coal Mine 3.
+A room called Coal Mine 5 is the room northeast from Coal Mine 3.
+A room called Coal Mine 5 is the room east from Coal Mine 3.
+
 
 Section - Coal Mine 4
 
 There is a coal-mine room called Coal Mine 4.
+
+A room called Coal Mine 5 is the room up from Coal Mine 4.
+A room called Coal Mine 6 is the room northeast from Coal Mine 4.
+A room called Coal Mine 1 is the room south from Coal Mine 4.
+A room called Coal Mine 2 is the room west from Coal Mine 4.
 
 
 Section - Coal Mine 5
 
 There is a coal-mine room called Coal Mine 5.
 
+A room called Coal Mine 6 is the room down from Coal Mine 5.
+A room called Coal Mine 7 is the room north from Coal Mine 5.
+A room called Coal Mine 2 is the room west from Coal Mine 5.
+A room called Coal Mine 3 is the room south from Coal Mine 5.
+A room called Coal Mine 3 is the room up from Coal Mine 5.
+A room called Coal Mine 4 is the room east from Coal Mine 5.
+
 
 Section - Coal Mine 6
 
 There is a coal-mine room called Coal Mine 6.
 
+A room called Coal Mine 4 is the room southeast from Coal Mine 6.
+A room called Coal Mine 5 is the room up from Coal Mine 6.
+A room called Coal Mine 7 is the room northwest from Coal Mine 6.
+
 
 Section - Coal Mine 7
 
 There is a coal-mine room called Coal Mine 7.
+
+A room called Coal Mine 1 is the room east from Coal Mine 7.
+A room called Coal Mine 5 is the room west from Coal Mine 7.
+A room called Ladder Top is the room down from Coal Mine 7.
+A room called Coal Mine 6 is the room south from Coal Mine 7.
 
 
 Chapter - Dome/Torch Area
