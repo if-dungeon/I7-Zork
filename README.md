@@ -25,6 +25,7 @@ The specifics of this project are as follows.
 * [Mainframe Zork for Confusion](https://github.com/heasm66/mdlzork)
 
 ## Release Plan
-The first release will implement the full map and will be navigable without solving puzzles. It will not implement puzzle solution logic, events or NPCs. No commands will be implemented other than those provided by the Inform library.
+1. full map, navigable without solving puzzles, no events, no NPCs, Inform library only
+2. add the points system and an Infocom-like presentation
 
 The content and number of further releases will be decided when necessary.
