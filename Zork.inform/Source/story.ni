@@ -582,15 +582,26 @@ Section - Mine Entrance
 
 There is a room called Mine Entrance. "You are standing at the entrance of what might have been a coal mine. To the northeast and the northwest are entrances to the mine, and there is another exit on the south end of the room."
 
+A room called Slide Room is the room south from Mine Entrance.
+A room called Squeaky Room is the room northwest from Mine Entrance.
+A room called Shaft Room is the room northeast from Mine Entrance.
+
 
 Section - Squeaky Room
 
 There is a room called Squeaky Room. "You are a small room. Strange squeaky sounds may be heard coming from the passage at the west end. You may also escape to the south."
 
+A room called Bat Room is the room west from Squeaky Room.
+A room called Mine Entrance is the room south from Squeaky Room.
+
 
 Section - Shaft Room
 
 There is a room called Shaft Room. "This is a large room, in the middle of which is a small shaft descending through the floor into darkness below. To the west and the north are exits from this room. Constructed over the top of the shaft is a metal framework to which a heavy iron chain is attached."
+
+A room called Mine Entrance is the room west from Shaft Room.
+A room called Wooden Tunnel is the room north from Shaft Room.
+Instead of going nowhere from Shaft Room when going down, say "You wouldn't fit and would die if you could."
 
 
 Section - Wooden Tunnel
@@ -598,50 +609,76 @@ Section - Wooden Tunnel
 There is a room called Wooden Tunnel. "This is a narrow tunnel with large wooden beams running across
 the ceiling and around the walls. A path from the south splits into paths running west and northeast."
 
+A room called Shaft Room is the room south from Wooden Tunnel.
+A room called Smelly Room is the room west from Wooden Tunnel.
+A room called Mine 1 is the room northeast from Wooden Tunnel.
+
 
 Section - Smelly Room
 
 There is a room called Smelly Room. "This is a small non-descript room. However, from the direction of a small descending staircase a foul odor can be detected. To the east is a narrow path."
+
+A room called Gas Room is the room down from Smelly Room.
+A room called Wooden Tunnel is the room east from Smelly Room.
 
 
 Section - Gas Room
 
 There is a room called Gas Room. "This is a small room which smells strongly of coal gas."
 
+A room called Smelly Room is the room up from Gas Room.
+
 
 Section - Ladder Top
 
 There is a room called Ladder Top. "This is a very small room. In the corner is a rickety wooden ladder, leading downward. It might be safe to descend. There is also a staircase leading upward."
+
+A room called Ladder Bottom is the room down from Ladder Top.
 
 
 Section - Ladder Bottom
 
 There is a room called Ladder Bottom. "This is a rather wide room. On one side is the bottom of a narrow wooden ladder. To the northeast and the south are passages leaving the room."
 
+A room called Dead End 7 is the room northeast from Ladder Bottom.
+A room called Timber Room is the room south from Ladder Bottom.
+A room called Ladder Top is the room up from Ladder Bottom.
+
 
 Section - Dead End 7
 
 There is a dead-end room called Dead End 7. "Dead End!"
+
+A room called Ladder Bottom is the room south from Dead End 7.
 
 
 Section - Timber Room
 
 There is a room called Timber Room. "This is a long and narrow passage, which is cluttered with broken timbers. A wide passage comes from the north and turns at the southwest corner of the room into a very narrow passageway."
 
+A room called Ladder Bottom is the room north from Timber Room.
+
 
 Section - Lower Shaft
 
 There is a room called Lower Shaft. "This is a small square room which is at the bottom of a long shaft. To the east is a passageway and to the northeast a very narrow passage. In the shaft can be seen a heavy iron chain."
+
+A room called Machine Room is the room east from Lower Shaft.
+Instead of going nowhere from Lower Shaft when going up, say "The chain is not climbable."
 
 
 Section - Machine Room 1
 
 There is a room called Machine Room 1. The printed name is "Machine Room". "MACHINE-ROOM..."
 
+A room called Lower Shaft is the room northwest from Machine Room 1.
+
 
 Section - Bat Room
 
 There is a room called Bat Room. "BATS-ROOM..."
+
+A room called Squeaky Room is the room east from Bat Room.
 
 
 Chapter - Coal Mine
