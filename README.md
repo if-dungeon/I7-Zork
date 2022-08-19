@@ -25,6 +25,7 @@ The specifics of this project are as follows.
 * [Mainframe Zork for Confusion](https://github.com/heasm66/mdlzork)
 
 ## Release Plan
+### Alpha
 1. full map, navigable without solving puzzles, no events, no NPCs, Inform library only
 2. add the points system and an Infocom-like presentation
 
