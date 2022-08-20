@@ -761,28 +761,47 @@ Section - Dome Room
 
 There is a room called Dome Room. "DOME-ROOM..."
 
+A room called Rocky Crawl is the room east from Dome Room.
+
 
 Section - Torch Room
 
 There is a room called Torch Room. "TORCH-ROOM..."
+
+A room called Tiny Room is the room west from Torch Room.
+A room called North-South Crawlway is the room down from Torch Room.
+Instead of going nowhere from Torch Room while going down, say "You cannot reach the rope."
 
 
 Section - North-South Crawlway
 
 There is a room called North-South Crawlway. "This is a north-south crawlway; a passage goes to the east also. There is a hole above, but it provides no opportunities for climbing."
 
+A room called West of Chasm is the room north from North-South Crawlway.
+A room called Studio is the room south from North-South Crawlway.
+A room called The Troll Room is the room east from North-South Crawlway.
+
 
 Section - West of Chasm
 
 There is a room called West of Chasm. "You are on the west edge of a chasm, the bottom of which cannot be seen. The east side is sheer rock, providing no exits. A narrow passage goes west, and the path you are on continues to the north and south."
+
+A room called Cellar is the room west from West of Chasm.
+A room called North-South Crawlway is the room north from West of Chasm.
+A room called Gallery is the room south from West of Chasm.
 
 
 Section - East-West Passage
 
 There is a room called East-West Passage. "This is a narrow east-west passageway. There is a narrow stairway leading down at the north end of the room."
 
+A room called Round Room is the room east from East-West Passage.
+A room called The Troll Room is the room west from East-West Passage.
+A room called Deep Ravine is the room down from East-West Passage.
+A room called Deep Ravine is the room north from East-West Passage.
 
-Section Carousel Room
+
+Section - Carousel Room
 
 There is a room called Round Room. "CAROUSEL-ROOM..."
 
@@ -791,35 +810,59 @@ Section - North-South Passage
 
 There is a room called North-South Passage. "This is a high north-south passage, which forks to the northeast."
 
+A room called Chasm is the room north from North-South Passage.
+A room called Loud Room is the room northeast from North-South Passage.
+A room called Round Room is the room south from North-South Passage.
+
 
 Section - Chasm
 
 There is a room called Chasm. "A chasm runs southwest to northeast. You are on the south edge; the path exits to the south and to the east."
+
+A room called Deep Ravine is the room south from Chasm.
+A room called North-South Passage is the room east from Chasm.
+Instead of going nowhere from Chasm while going down, say "Are you out of your mind?"
 
 
 Section - Damp Cave
 
 There is a room called Damp Cave. "This is a cave. Passages exit to the south and to the east, but the cave narrows to a crack to the west. The earth is particularly damp here."
 
+A room called Loud Room is the room south from Damp Cave.
+A room called Dam is the room east from Damp Cave.
+Instead of going nowhere from Damp Cave while going west, say "It is too narrow for most insects."
+
 
 Section - Ancient Chasm
 
 There is a room called Ancient Chasm. "A chasm, evidently produced by an ancient river, runs through the cave here. Passages lead off in all directions."
+
+A room called Loud Room is the room south from Ancient Chasm.
+A room called Small Cave is the room east from Ancient Chasm.
+A room called Dead End 5 is the room north from Ancient Chasm.
+A room called Dead End 6 is the room west from Ancient Chasm.
 
 
 Section - Dead End 5
 
 There is a dead-end room called Dead End 5. "Dead End!"
 
+A room called Ancient Chasm is the room southwest from Dead End 5.
+
 
 Section - Dead End 6
 
 There is a dead-end room called Dead End 6. "Dead End!"
 
+A room called Ancient Chasm is the room east from Dead End 6.
+
 
 Section - Engravings Cave
 
 There is a room called Engravings Cave. "You have entered a cave with passages leading north and southeast."
+
+A room called Round Room is the room north from Engravings Cave.
+A room called Riddle Room is the room southeast from Engravings Cave.
 
 
 Section - Riddle Room
@@ -832,35 +875,54 @@ There is a room called Riddle Room. "This is a room which is bare on all sides. 
 
 (Reply via [']ANSWER 'answer'['])"
 
+A room called Engravings Cave is the room down from Riddle Room.
+
 
 Section - Pearl Room
 
 There is a room called Pearl Room. "This is a former broom closet. The exits are to the east and west."
+
+A room called Circular Room is the room east from Pearl Room.
+A room called Riddle Room is the room west from Pearl Room.
 
 
 Section - Entrance to Hades
 
 There is a room called Entrance to Hades. "LLD-ROOM..."
 
+A room called Cave is the room up from Entrance to Hades.
+
 
 Section - Land of the Living Dead
 
 There is a room called Land of the Living Dead. "LLD2-ROOM..."
+
+A room called Tomb of the Unknown Implementer is the room east from Land of the Living Dead.
+A room called Entrance to Hades is the room west from Land of the Living Dead.
 
 
 Section - Grail Room
 
 There is a room called Grail Room. "You are standing in a small circular room with a pedestal. A set of stairs leads up, and passages leave to the east and west."
 
+A room called Round Room is the room west from Grail Room.
+A room called Narrow Crawlway is the room east from Grail Room.
+A room called Temple is the room up from Grail Room.
+
 
 Section - Temple
 
 There is a room called Temple. "This is the west end of a large temple. On the south wall is an ancient inscription, probably a prayer in a long-forgotten language. The north wall is solid granite. The entrance at the west end of the room is through huge marble pillars."
 
+A room called Grail Room is the room west from Temple.
+A room called Altar is the room east from Temple.
+
 
 Section - Altar
 
 There is a room called Altar. "This is the east end of a large temple. In front of you is what appears to be an altar."
+
+A room called Temple is the room west from Altar.
 
 
 Chapter - Flood Control Dam #3
