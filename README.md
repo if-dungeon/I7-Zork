@@ -27,6 +27,6 @@ The specifics of this project are as follows.
 ## Release Plan
 ### Alpha
 1. full map, navigable without solving puzzles, no events, no NPCs, Inform library only
-2. add the points system and an Infocom-like presentation
+2. add the points system, the carrying capacity system and an Infocom-like presentation
 
 The content and number of further releases will be decided when necessary.
