@@ -931,17 +931,27 @@ Section - Dam
 
 There is a room called Dam. "DAM-ROOM..."
 
+A room called Deep Canyon is the room south from Dam.
+A room called Dam Base is the room down from Dam.
+A room called Damp Cave is the room east from Dam.
+A room called Dam Lobby is the room north from Dam.
+
 
 Section - Dam Lobby
 
-There is a room called Dam Lobby. "This room appears to have been the waiting room for groups touring
-the dam. There are exits here to the north and east marked [']Private['], though the doors are open, and an exit to the south."
+There is a room called Dam Lobby. "This room appears to have been the waiting room for groups touring the dam. There are exits here to the north and east marked [']Private['], though the doors are open, and an exit to the south."
+
+A room called Dam is the room south from Dam Lobby.
+A room called Maintenance Room is the room north from Dam Lobby.
+A room called Maintenance Room is the room east from Dam Lobby.
 
 
 Section - Maintenance Room
 
-There is a room called Maintenance Room. "This is what appears to have been the maintenance room for Flood
-Control Dam #3, judging by the assortment of tool chests around the room. Apparently, this room has been ransacked recently, for most of the valuable equipment is gone. On the wall in front of you is a group of buttons, which are labelled in EBCDIC. However, they are of different colors: Blue, Yellow, Brown, and Red. The doors to this room are in the west and south ends."
+There is a room called Maintenance Room. "This is what appears to have been the maintenance room for Flood Control Dam #3, judging by the assortment of tool chests around the room. Apparently, this room has been ransacked recently, for most of the valuable equipment is gone. On the wall in front of you is a group of buttons, which are labelled in EBCDIC. However, they are of different colors: Blue, Yellow, Brown, and Red. The doors to this room are in the west and south ends."
+
+A room called Dam Lobby is the room south from Maintenance Room.
+A room called Dam Lobby is the room west from Maintenance Room.
 
 
 Chapter - River Area
@@ -971,8 +981,7 @@ There is a frigid-river room called Frigid River 3. "The river descends here int
 
 Section - White Cliffs Beach 1
 
-There is a room called White Cliffs Beach 1. The printed name is "White Cliffs Beach". "You are on a narrow strip of beach which runs along the base of the White Cliffs. The only path here is a narrow one, heading south
-along the Cliffs."
+There is a room called White Cliffs Beach 1. The printed name is "White Cliffs Beach". "You are on a narrow strip of beach which runs along the base of the White Cliffs. The only path here is a narrow one, heading south along the Cliffs."
 
 
 Section - White Cliffs Beach 2
