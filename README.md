@@ -20,8 +20,7 @@ The specifics of this project are as follows.
 
 ### Resources
 * [Cygwin (latest)](https://www.cygwin.com/)
-* [64-bit Windows Inform IDE beta (latest)](https://github.com/DavidKinder/Windows-Inform7)
-* [Inform compiler version 10.2.0-beta 'Krypton' (latest)](https://github.com/ganelson/inform)
+* [Inform 10.1.1](https://github.com/ganelson/inform/releases/tag/v10.1.1)
 * [Mainframe Zork for Confusion (latest)](https://github.com/heasm66/mdlzork)
 
 ## Release Plan
