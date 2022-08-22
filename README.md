@@ -19,8 +19,8 @@ The specifics of this project are as follows.
 * Windows 10 / Cygwin
 
 ### Resources
-* [Cygwin (latest)](https://www.cygwin.com/)
 * [Inform 10.1.1](https://github.com/ganelson/inform/releases/tag/v10.1.1)
+* [Cygwin (latest)](https://www.cygwin.com/)
 * [Mainframe Zork for Confusion (latest)](https://github.com/heasm66/mdlzork)
 
 ## Release Plan
