@@ -1064,7 +1064,8 @@ Section - Aragain Falls
 There is a room called Aragain Falls. "FALLS-ROOM..."
 
 A room called Shore is the room north from Aragain Falls.
-Instead of going nowhere from Aragain Falls while going down, say "You cannot go upstream due to strong currents."
+Instead of going nowhere from Aragain Falls while going down, say "It's a long way..."
+
 
 Section - Rainbow Room
 
@@ -1112,6 +1113,8 @@ Section - Volcano Bottom
 
 There is a room called Volcano Bottom. "You are at the bottom of a large dormant volcano. High above you light may be seen entering from the cone of the volcano. The only exit here is to the north."
 
+A room called Lava Room is the room north from Volcano Bottom.
+
 
 Section - Volcano Core
 
@@ -1121,6 +1124,8 @@ There is a room called Volcano Core. "You are about one hundred feet above the b
 Section - Volcano near Small Ledge
 
 There is a room called Volcano near Small Ledge. "You are about two hundred feet above the volcano floor. Looming above is the rim of the volcano. There is a small ledge on the west side."
+
+A room called Narrow Ledge is the room west from Volcano near Small Ledge.
 
 
 Section - Volcano near Viewing Ledge
@@ -1132,36 +1137,55 @@ Section - Volcano near Wide Ledge
 
 There is a room called Volcano near Wide Ledge. "You are near the rim of the volcano which is only about 15 feet across. To the west, there is a place to land on a wide ledge."
 
+A room called Wide Ledge is the room east from Volcano near Wide Ledge.
+
 
 Section - Narrow Ledge
 
 There is a room called Narrow Ledge. "You are on a narrow ledge overlooking the inside of an old dormant
 volcano. This ledge appears to be about in the middle between the floor below and the rim above. There is an exit here to the south."
 
+A room called Library is the room south from Narrow Ledge.
+Instead of going nowhere from Narrow Ledge while going down, say "I wouldn't jump from here."
+
 
 Section - Library
 
 There is a room called Library. "This is a room which must have been a large library, probably for the royal family. All of the shelves appear to have been gnawedto pieces by unfriendly gnomes. To the north is an exit."
+
+A room called Narrow Ledge is the room north from Library.
+A room called Narrow Ledge is the room outside from Library.
 
 
 Section - Volcano View
 
 There is a room called Volcano View. "You are on a ledge in the middle of a large volcano. Below you the volcano bottom can be seen and above is the rim of the volcano. A couple of ledges can be seen on the other side of the volcano; it appears that this ledge is intermediate in elevation between those on the other side. The exit from this room is to the east."
 
+A room called Egyptian Room is the room east from Volcano View.
+Instead of going nowhere from Volcano View while going down, say "I wouldn't try that."
+
 
 Section - Wide Ledge
 
 There is a room called Wide Ledge. "LEDGE-FUNCTION..."
+
+A room called Dusty Room is the room south from Wide Ledge.
+Instead of going nowhere from Wide Ledge while going down, say "It's a long way down."
 
 
 Section - Dusty Room
 
 There is a room called Dusty Room. "SAFE-ROOM..."
 
+A room called Wide Ledge is the room north from Dusty Room.
+
 
 Section - Lava Room
 
 There is a room called Lava Room. "This is a small room, whose walls are formed by an old lava flow. There are exits here to the west and the south."
+
+A room called Volcano Bottom is the room south from Lava Room.
+A room called Ruby Room is the room west from Lava Room.
 
 
 Chapter - Alice in Wonderland
