@@ -663,7 +663,7 @@ Section - Lower Shaft
 
 There is a room called Lower Shaft. "This is a small square room which is at the bottom of a long shaft. To the east is a passageway and to the northeast a very narrow passage. In the shaft can be seen a heavy iron chain."
 
-A room called Machine Room is the room east from Lower Shaft.
+A room called Machine Room 1 is the room east from Lower Shaft.
 Instead of going nowhere from Lower Shaft when going up, say "The chain is not climbable."
 
 
@@ -963,20 +963,37 @@ Section - Dam Base
 
 There is a room called Dam Base."You are at the base of Flood Control Dam #3, which looms above you and to the north. The river Frigid is flowing by here. Across the river are the White Cliffs which seem to form a giant wall stretching from north to south along the east shore of the river as it winds its way downstream."
 
+A room called Dam is the room north from Dam Base.
+A room called Dam is the room up from Dam Base.
+
 
 Section - Frigid River 1
 
 There is a frigid-river room called Frigid River 1. "You are on the River Frigid in the vicinity of the Dam. The river flows quietly here. There is a landing on the west shore."
+
+A room called Dam Base is the room west from Frigid River 1.
+A room called Frigid River 2 is the room down from Frigid River 1.
+Instead of going nowhere from Frigid River 1 while going up, say "You cannot go upstream due to strong currents."
+Instead of going nowhere from Frigid River 1 while going east, say "The White Cliffs prevent your landing here."
 
 
 Section - Frigid River 2
 
 There is a frigid-river room called Frigid River 2. "The River turns a corner here making it impossible to see the Dam. The White Cliffs loom on the east bank and large rocks prevent landing on the west."
 
+A room called Frigid River 3 is the room down from Frigid River 2.
+Instead of going nowhere from Frigid River 2 while going up, say "You cannot go upstream due to strong currents."
+Instead of going nowhere from Frigid River 2 while going east, say "The White Cliffs prevent your landing here."
+
 
 Section - Frigid River 3
 
 There is a frigid-river room called Frigid River 3. "The river descends here into a valley. There is a narrow beach on the east below the cliffs and there is some shore on the west which may be suitable. In the distance a faint rumbling can be heard."
+
+A room called Frigid River 4 is the room down from Frigid River 3.
+A room called White Cliffs Beach 1 is the room east from Frigid River 3.
+A room called Rocky Shore is the room west from Frigid River 3.
+Instead of going nowhere from Frigid River 3 while going up, say "You cannot go upstream due to strong currents."
 
 
 Section - White Cliffs Beach 1
@@ -993,10 +1010,18 @@ Section - Frigid River 4
 
 There is a frigid-river room called Frigid River 4. "The river is running faster here and the sound ahead appears to be that of rushing water. On the west shore is a sandy beach. A small area of beach can also be seen below the Cliffs."
 
+A room called Frigid River 5 is the room down from Frigid River 4.
+A room called White Cliffs Beach 2 is the room east from Frigid River 4.
+A room called Sandy Beach is the room west from Frigid River 4.
+Instead of going nowhere from Frigid River 4 while going up, say "You cannot go upstream due to strong currents."
+
 
 Section - Frigid River 5
 
 There is a frigid-river room called Frigid River 5. "The sound of rushing water is nearly unbearable here. On the west shore is a large landing area."
+
+A room called Moby Lossage is the room down from Frigid River 5.
+Instead of going nowhere from Frigid River 5 while going up, say "You cannot go upstream due to strong currents."
 
 
 Section - Moby Lossage
@@ -1006,52 +1031,79 @@ There is a room called Moby Lossage. "OVER-FALLS..."
 
 Section - Shore
 
-There is a room called Shore. "You are on the shore of the River.  The river here seems somewhat treacherous. A path travels from north to south here, the south end quickly turning around a sharp corner."
+There is a room called Shore. "You are on the shore of the River. The river here seems somewhat treacherous. A path travels from north to south here, the south end quickly turning around a sharp corner."
+
+A room called Sandy Beach is the room north from Shore.
+A room called Aragain Falls is the room south from Shore.
 
 
 Section - Sandy Beach
 
 There is a room called Sandy Beach. "You are on a large sandy beach at the shore of the river, which is flowing quickly by. A path runs beside the river to the south here."
 
+A room called Shore is the room south from Sandy Beach.
+
 
 Section - Rocky Shore
 
 There is a room called Rocky Shore. "You are on the west shore of the river. An entrance to a cave is to the northwest. The shore is very rocky here."
+
+A room called Small Cave is the room northwest from Rocky Shore.
 
 
 Section - Small Cave
 
 There is a room called Small Cave. "This is a small cave whose exits are on the south and northwest."
 
+A room called Rocky Shore is the room south from Small Cave.
+A room called Ancient Chasm is the room northwest from Small Cave.
+
 
 Section - Aragain Falls
 
 There is a room called Aragain Falls. "FALLS-ROOM..."
 
+A room called Shore is the room north from Aragain Falls.
+Instead of going nowhere from Aragain Falls while going down, say "You cannot go upstream due to strong currents."
 
 Section - Rainbow Room
 
 There is a room called Rainbow Room. "You are on top of a rainbow (I bet you never thought you would walk on a rainbow), with a magnificent view of the Falls. The rainbow travels east-west here. There is an NBC Commissary here."
+
+A room called End of Rainbow is the room east from Rainbow Room.
+A room called Aragain Falls is the room west from Rainbow Room.
 
 
 Section - End of Rainbow
 
 There is a room called End of Rainbow. "You are on a small, rocky beach on the continuation of the Frigid River past the Falls. The beach is narrow due to the presence of the White Cliffs. The river canyon opens here and sunlight shines in from above. A rainbow crosses over the falls to the west and a narrow path continues to the southeast."
 
+A room called Canyon Bottom is the room southeast from End of Rainbow.
+
 
 Section - Canyon Bottom
 
 There is a room called Canyon Bottom. "You are beneath the walls of the river canyon which may be climbable here. There is a small stream here, which is the lesser part of the runoff of Aragain Falls. To the north is a narrow path."
+
+A room called Rocky Ledge is the room up from Canyon Bottom.
+A room called End of Rainbow is the room north from Canyon Bottom.
 
 
 Section - Rocky Ledge
 
 There is a room called Rocky Ledge. "You are on a ledge about halfway up the wall of the river canyon. You can see from here that the main flow from Aragain Falls twists along a passage which it is impossible to enter. Below you is the canyon bottom. Above you is more cliff, which still appears climbable."
 
+A room called Canyon View is the room up from Rocky Ledge.
+A room called Canyon Bottom is the room down from Rocky Ledge.
+
 
 Section - Canyon View
 
 There is a room called Canyon View. "You are at the top of the Great Canyon on its south wall. From here there is a marvelous view of the Canyon and parts of the Frigid River upstream. Across the canyon, the walls of the White Cliffs still appear to loom far above. Following the Canyon upstream (north and northwest), Aragain Falls may be seen, complete with rainbow. Fortunately, my vision is better than average and I can discern the top of the Flood Control Dam #3 far to the distant north. To the west and south can be seen an immense forest, stretching for miles around. It is possible to climb down into the canyon from here."
+
+A room called Rocky Ledge is the room down from Canyon View.
+A room called Forest 4 is the room south from Canyon View.
+A room called Forest 5 is the room west from Canyon View.
 
 
 Chapter - Volcano Area
