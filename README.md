@@ -21,7 +21,7 @@ The specifics of this project are as follows.
 ### Resources
 * [Mainframe Zork for Confusion (latest)](https://github.com/heasm66/mdlzork)
 * [Cygwin (latest)](https://www.cygwin.com/)
-* [My Windows Inform 7 (latest)](https://github.com/AlexProudfoot/My-Windows-Inform7)
+* [My Windows Inform 7 (latest)](https://github.com/zil-transformation/My-Windows-Inform7)
 
 ## Release Plan
 ### Alpha
