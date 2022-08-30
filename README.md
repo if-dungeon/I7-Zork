@@ -13,7 +13,7 @@ The specifics of this project are as follows.
 
 ### Languages
 * [MDL](https://en.wikipedia.org/wiki/MDL_(programming_language))
-* [Inform 7](https://en.wikipedia.org/wiki/Inform#Inform_7)
+* [Inform 7](https://ganelson.github.io/inform-website/)
 
 ### Platforms
 * Windows 10 / Cygwin
