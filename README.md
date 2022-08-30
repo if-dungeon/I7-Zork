@@ -12,7 +12,7 @@ This presents an opportunity to use Inform 7 as implemented by the very latest v
 The specifics of this project are as follows.
 
 ### Languages
-* [MDL](https://en.wikipedia.org/wiki/MDL_(programming_language))
+* [MDL](https://mdl-language.readthedocs.io/en/latest/)
 * [Inform 7](https://ganelson.github.io/inform-website/)
 
 ### Platforms
