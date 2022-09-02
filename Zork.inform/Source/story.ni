@@ -1199,6 +1199,9 @@ Section - Machine Room 2
 
 There is a room called Machine Room 2. The printed name is "Machine Room". "CMACH-ROOM..."
 
+A room called Low Room is the room west from Machine Room 2.
+A room called Dingy Closet is the room south from Machine Room 2.
+
 
 Section - Dingy Closet
 
@@ -1209,35 +1212,55 @@ There is a room called Dingy Closet. "This is a dingy closet adjacent to the mac
 	      (Hello, footpad!)
 "
 
+A room called Machine Room 2 is the room north from Dingy Closet.
+
 
 Section - Cage
 
 There is a room called Cage. "You are trapped inside a steel cage."
+
+Instead of going nowhere from Cage when going north, say "".
 
 
 Section - Top of Well
 
 There is a room called Top of Well. "You are at the top of the well.  Well done.  There are etchings on the side of the well. There is a small crack across the floor at the entrance to a room on the east, but it can be crossed easily."
 
+A room called Tea Room is the room east from Top of Well.
+Instead of going nowhere from Top of Well when going down, say "It's a long way down!"
+
 
 Section - Circular Room
 
 There is a room called Circular Room. "This is a damp circular room, whose walls are made of brick and mortar. The roof of this room is not visible, but there appear to be some etchings on the walls. There is a passageway to the west."
+
+A room called Pearl Room is the room west from Circular Room.
+Instead of going nowhere from Circular Room when going up, say "The walls cannot be climbed."
 
 
 Section - Tea Room
 
 There is a room called Tea Room. "This is a small square room, in the center of which is a large oblong table, no doubt set for afternoon tea. It is clear from the objects on the table that the users were indeed mad. In the eastern corner of the room is a small hole (no more than four inches high). There are passageways leading away to the west and the northwest."
 
+A room called Top of Well is the room west from Tea Room.
+A room called Low Room is the room northwest from Tea Room.
+Instead of going nowhere from Tea Room when going east, say "Only a mouse could get in there.".
+
 
 Section - Posts Room
 
 There is a room called Posts Room. "This is an enormous room, in the center of which are four wooden posts delineating a rectangular area, above which is what appears to be a wooden roof. In fact, all objects in this room appear to be abnormally large. To the east is a passageway. There is a large chasm on the west and the northwest."
 
+A room called Pool Room is the room east from Posts Room.
+Instead of going nowhere from Posts Room when going northwest or going west or going down, say "There is a chasm too large to jump across."
+
 
 Section - Pool Room
 
 There is a room called Pool Room. "This is a large room, one half of which is depressed. There is a large leak in the ceiling through which brown colored goop is falling. The only exit to this room is to the west."
+
+A room called Posts room is the room west from Pool Room.
+instead of exiting when the player is in the Pool Room, try going west.
 
 
 Chapter - Bank of Zork
