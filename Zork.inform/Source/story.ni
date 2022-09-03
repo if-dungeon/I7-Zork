@@ -1272,28 +1272,44 @@ There is a room called Bank Entrance. "This is the large entrance hall of the Ba
 	  <--  WEST VIEWING ROOM        EAST VIEWING ROOM  -->  
 "
 
+A room called West Teller's Room is the room northwest from Bank Entrance.
+A room called East Teller's Room is the room northeast from Bank Entrance.
+A room called Gallery is the room south from Bank Entrance.
+
 
 Section - West Teller's Room
 
 There is a room called West Teller's Room. "TELLER-ROOM..."
+
+A room called Viewing Room 1 is the room north from West Teller's Room.
+A room called Bank Entrance is the room south from West Teller's Room.
+A room called Safety Depository is the room west from West Teller's Room.
 
 
 Section - East Teller's Room
 
 There is a room called East Teller's Room. "TELLER-ROOM..."
 
+A room called Viewing Room 2 is the room north from East Teller's Room.
+A room called Bank Entrance is the room south from East Teller's Room.
+A room called Safety Depository is the room east from East Teller's Room.
+
 
 Section - Viewing Room 1
 
 There is a room called Viewing Room 1. The printed name is "Viewing Room". "VIEW-ROOM..."
+
+A room called Bank Entrance is the room south from Viewing Room 1.
 
 
 Section - Viewing Room 2
 
 There is a room called Viewing Room 2. The printed name is "Viewing Room". "VIEW-ROOM..."
 
+A room called Bank Entrance is the room south from Viewing Room 2.
 
-Section - Smsll Room 1
+
+Section - Small Room 1
 
 There is a room called Small Room 1. The printed name is "Small Room". "This is a small, bare room with no distinguishing features. There are no exits from this room."
 
@@ -1307,10 +1323,15 @@ Section - Safety Depository
 
 There is a room called Safety Depository. "This is a large rectangular room. The east and west walls here were used for storing safety deposit boxes.  As might be expected, all have been carefully removed by evil persons. To the east, west, and south of the room are large doorways. The northern [']wall['] of the room is a shimmering curtain of light. In the center of the room is a large stone cube, about 10 feet on a side. Engraved on the side of the cube is some lettering."
 
+A room called Chairman's Office is the room south from Safety Depository.
+Instead of going nowhere from Safety Depository when going north, say "There is a curtain of light there."
+
 
 Section - Chairman's Office
 
 There is a room called Chairman's Office. "This room was the office of the Chairman of the Bank of Zork. Like the other rooms here, it has been extensively vandalized. The lone exit is to the north."
+
+A room called Safety Depository is the room north from Chairman's Office.
 
 
 Chapter - Chinese Puzzle Room
