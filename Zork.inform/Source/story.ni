@@ -1338,10 +1338,15 @@ Chapter - Chinese Puzzle Room
 
 There is a room called Small Square Room. "This is a small square room, in the middle of which is a recently created hole through which you can barely discern the floor some ten feet below. It doesn't seem likely you could climb back up. There are exits to the west and south."
 
+A room called Side Room is the room south from Small Square Room.
+A room called Treasure Room is the room west from Small Square Room.
+
 
 Section - Side Room
 
 There is a room called Side Room. "CPOUT-ROOM..."
+
+A room called Small Square Room is the room north from Side Room.
 
 
 Section - Room in a Puzzle
