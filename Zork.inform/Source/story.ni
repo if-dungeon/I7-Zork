@@ -573,7 +573,7 @@ Section - Winding Passage
 There is a room called Winding Passage. "This is a winding passage. It seems that there is only an exit on the east end although the whirring from the round room can be heard faintly to the north."
 
 A room called Mirror Room 2 is the room east from Winding Passage.
-Instead of going nowhere from Winding Passage when going north, say "You hear the whir from the round room but can find no entrance."
+Check going nowhere from Winding Passage when going north: say "You hear the whir from the round room but can find no entrance." instead.
 
 
 Chapter - Coal Mine Area
@@ -601,7 +601,7 @@ There is a room called Shaft Room. "This is a large room, in the middle of which
 
 A room called Mine Entrance is the room west from Shaft Room.
 A room called Wooden Tunnel is the room north from Shaft Room.
-Instead of going nowhere from Shaft Room when going down, say "You wouldn't fit and would die if you could."
+Check going nowhere from Shaft Room when going down: say "You wouldn't fit and would die if you could." instead.
 
 
 Section - Wooden Tunnel
@@ -664,7 +664,7 @@ Section - Lower Shaft
 There is a room called Lower Shaft. "This is a small square room which is at the bottom of a long shaft. To the east is a passageway and to the northeast a very narrow passage. In the shaft can be seen a heavy iron chain."
 
 A room called Machine Room 1 is the room east from Lower Shaft.
-Instead of going nowhere from Lower Shaft when going up, say "The chain is not climbable."
+Check going nowhere from Lower Shaft when going up: say "The chain is not climbable." instead.
 
 
 Section - Machine Room 1
@@ -770,7 +770,7 @@ There is a room called Torch Room. "TORCH-ROOM..."
 
 A room called Tiny Room is the room west from Torch Room.
 A room called North-South Crawlway is the room down from Torch Room.
-Instead of going nowhere from Torch Room while going down, say "You cannot reach the rope."
+Check going nowhere from Torch Room while going down: say "You cannot reach the rope." instead.
 
 
 Section - North-South Crawlway
@@ -821,7 +821,7 @@ There is a room called Chasm. "A chasm runs southwest to northeast. You are on t
 
 A room called Deep Ravine is the room south from Chasm.
 A room called North-South Passage is the room east from Chasm.
-Instead of going nowhere from Chasm while going down, say "Are you out of your mind?"
+Check going nowhere from Chasm while going down: say "Are you out of your mind?" instead.
 
 
 Section - Damp Cave
@@ -830,7 +830,7 @@ There is a room called Damp Cave. "This is a cave. Passages exit to the south an
 
 A room called Loud Room is the room south from Damp Cave.
 A room called Dam is the room east from Damp Cave.
-Instead of going nowhere from Damp Cave while going west, say "It is too narrow for most insects."
+Check going nowhere from Damp Cave while going west: say "It is too narrow for most insects." instead.
 
 
 Section - Ancient Chasm
@@ -973,8 +973,8 @@ There is a frigid-river room called Frigid River 1. "You are on the River Frigid
 
 A room called Dam Base is the room west from Frigid River 1.
 A room called Frigid River 2 is the room down from Frigid River 1.
-Instead of going nowhere from Frigid River 1 while going up, say "You cannot go upstream due to strong currents."
-Instead of going nowhere from Frigid River 1 while going east, say "The White Cliffs prevent your landing here."
+Check going nowhere from Frigid River 1 while going up: say "You cannot go upstream due to strong currents." instead.
+Check going nowhere from Frigid River 1 while going east: say "The White Cliffs prevent your landing here." instead.
 
 
 Section - Frigid River 2
@@ -982,8 +982,8 @@ Section - Frigid River 2
 There is a frigid-river room called Frigid River 2. "The River turns a corner here making it impossible to see the Dam. The White Cliffs loom on the east bank and large rocks prevent landing on the west."
 
 A room called Frigid River 3 is the room down from Frigid River 2.
-Instead of going nowhere from Frigid River 2 while going up, say "You cannot go upstream due to strong currents."
-Instead of going nowhere from Frigid River 2 while going east, say "The White Cliffs prevent your landing here."
+Check going nowhere from Frigid River 2 while going up: say "You cannot go upstream due to strong currents." instead.
+Check going nowhere from Frigid River 2 while going east: say "The White Cliffs prevent your landing here." instead.
 
 
 Section - Frigid River 3
@@ -993,7 +993,7 @@ There is a frigid-river room called Frigid River 3. "The river descends here int
 A room called Frigid River 4 is the room down from Frigid River 3.
 A room called White Cliffs Beach 1 is the room east from Frigid River 3.
 A room called Rocky Shore is the room west from Frigid River 3.
-Instead of going nowhere from Frigid River 3 while going up, say "You cannot go upstream due to strong currents."
+Check going nowhere from Frigid River 3 while going up: say "You cannot go upstream due to strong currents." instead.
 
 
 Section - White Cliffs Beach 1
@@ -1013,7 +1013,7 @@ There is a frigid-river room called Frigid River 4. "The river is running faster
 A room called Frigid River 5 is the room down from Frigid River 4.
 A room called White Cliffs Beach 2 is the room east from Frigid River 4.
 A room called Sandy Beach is the room west from Frigid River 4.
-Instead of going nowhere from Frigid River 4 while going up, say "You cannot go upstream due to strong currents."
+Check going nowhere from Frigid River 4 while going up: say "You cannot go upstream due to strong currents." instead.
 
 
 Section - Frigid River 5
@@ -1021,7 +1021,7 @@ Section - Frigid River 5
 There is a frigid-river room called Frigid River 5. "The sound of rushing water is nearly unbearable here. On the west shore is a large landing area."
 
 A room called Moby Lossage is the room down from Frigid River 5.
-Instead of going nowhere from Frigid River 5 while going up, say "You cannot go upstream due to strong currents."
+Check going nowhere from Frigid River 5 while going up: say "You cannot go upstream due to strong currents." instead.
 
 
 Section - Moby Lossage
@@ -1064,7 +1064,7 @@ Section - Aragain Falls
 There is a room called Aragain Falls. "FALLS-ROOM..."
 
 A room called Shore is the room north from Aragain Falls.
-Instead of going nowhere from Aragain Falls while going down, say "It's a long way..."
+Check going nowhere from Aragain Falls while going down: say "It's a long way..." instead.
 
 
 Section - Rainbow Room
@@ -1146,7 +1146,7 @@ There is a room called Narrow Ledge. "You are on a narrow ledge overlooking the 
 volcano. This ledge appears to be about in the middle between the floor below and the rim above. There is an exit here to the south."
 
 A room called Library is the room south from Narrow Ledge.
-Instead of going nowhere from Narrow Ledge while going down, say "I wouldn't jump from here."
+Check going nowhere from Narrow Ledge while going down: say "I wouldn't jump from here." instead.
 
 
 Section - Library
@@ -1162,7 +1162,7 @@ Section - Volcano View
 There is a room called Volcano View. "You are on a ledge in the middle of a large volcano. Below you the volcano bottom can be seen and above is the rim of the volcano. A couple of ledges can be seen on the other side of the volcano; it appears that this ledge is intermediate in elevation between those on the other side. The exit from this room is to the east."
 
 A room called Egyptian Room is the room east from Volcano View.
-Instead of going nowhere from Volcano View while going down, say "I wouldn't try that."
+Check going nowhere from Volcano View while going down: say "I wouldn't try that." instead.
 
 
 Section - Wide Ledge
@@ -1170,7 +1170,7 @@ Section - Wide Ledge
 There is a room called Wide Ledge. "LEDGE-FUNCTION..."
 
 A room called Dusty Room is the room south from Wide Ledge.
-Instead of going nowhere from Wide Ledge while going down, say "It's a long way down."
+Check going nowhere from Wide Ledge while going down: say "It's a long way down." instead.
 
 
 Section - Dusty Room
@@ -1219,7 +1219,7 @@ Section - Cage
 
 There is a room called Cage. "You are trapped inside a steel cage."
 
-Instead of going nowhere from Cage when going north, say "".
+Check going nowhere from Cage when going north: say "" instead.
 
 
 Section - Top of Well
@@ -1227,7 +1227,7 @@ Section - Top of Well
 There is a room called Top of Well. "You are at the top of the well.  Well done.  There are etchings on the side of the well. There is a small crack across the floor at the entrance to a room on the east, but it can be crossed easily."
 
 A room called Tea Room is the room east from Top of Well.
-Instead of going nowhere from Top of Well when going down, say "It's a long way down!"
+Check going nowhere from Top of Well when going down: say "It's a long way down!" instead.
 
 
 Section - Circular Room
@@ -1235,7 +1235,7 @@ Section - Circular Room
 There is a room called Circular Room. "This is a damp circular room, whose walls are made of brick and mortar. The roof of this room is not visible, but there appear to be some etchings on the walls. There is a passageway to the west."
 
 A room called Pearl Room is the room west from Circular Room.
-Instead of going nowhere from Circular Room when going up, say "The walls cannot be climbed."
+Check going nowhere from Circular Room when going up: say "The walls cannot be climbed." instead.
 
 
 Section - Tea Room
@@ -1244,7 +1244,7 @@ There is a room called Tea Room. "This is a small square room, in the center of 
 
 A room called Top of Well is the room west from Tea Room.
 A room called Low Room is the room northwest from Tea Room.
-Instead of going nowhere from Tea Room when going east, say "Only a mouse could get in there.".
+Check going nowhere from Tea Room when going east: say "Only a mouse could get in there." instead.
 
 
 Section - Posts Room
@@ -1252,7 +1252,7 @@ Section - Posts Room
 There is a room called Posts Room. "This is an enormous room, in the center of which are four wooden posts delineating a rectangular area, above which is what appears to be a wooden roof. In fact, all objects in this room appear to be abnormally large. To the east is a passageway. There is a large chasm on the west and the northwest."
 
 A room called Pool Room is the room east from Posts Room.
-Instead of going nowhere from Posts Room when going northwest or going west or going down, say "There is a chasm too large to jump across."
+Check going nowhere from Posts Room when going northwest or going west or going down: say "There is a chasm too large to jump across." instead.
 
 
 Section - Pool Room
@@ -1260,7 +1260,7 @@ Section - Pool Room
 There is a room called Pool Room. "This is a large room, one half of which is depressed. There is a large leak in the ceiling through which brown colored goop is falling. The only exit to this room is to the west."
 
 A room called Posts room is the room west from Pool Room.
-instead of exiting when the player is in the Pool Room, try going west.
+Check exiting when the player is in the Pool Room: try going west instead.
 
 
 Chapter - Bank of Zork
@@ -1324,7 +1324,7 @@ Section - Safety Depository
 There is a room called Safety Depository. "This is a large rectangular room. The east and west walls here were used for storing safety deposit boxes.  As might be expected, all have been carefully removed by evil persons. To the east, west, and south of the room are large doorways. The northern [']wall['] of the room is a shimmering curtain of light. In the center of the room is a large stone cube, about 10 feet on a side. Engraved on the side of the cube is some lettering."
 
 A room called Chairman's Office is the room south from Safety Depository.
-Instead of going nowhere from Safety Depository when going north, say "There is a curtain of light there."
+Check going nowhere from Safety Depository when going north: say "There is a curtain of light there." instead.
 
 
 Section - Chairman's Office
@@ -1370,31 +1370,49 @@ Section - Slide Room
 
 There is a room called Slide Room. "SLIDE-ROOM..."
 
+A room called Cold Passage is the room east from Slide Room.
+A room called Mine Entrance is the room north from Slide Room.
+
 
 Section - Slide 1
 
 There is a room called Slide 1. The printed name is "Slide". "This is an uncomfortable spot within the coal chute. The rope to which you are clinging can be seen rising into the darkness above. There is more rope dangling below you."
+
+A room called Slide 2 is the room down from Slide 1.
+A room called Slide Room is the room up from Slide 1.
 
 
 Section - Slide 2
 
 There is a room called Slide 2. The printed name is "Slide". "This is another spot within the coal chute. Above you the rope climbs into darkness and the end of the rope is dangling five feet beneath you."
 
+A room called Slide 3 is the room down from Slide 2.
+A room called Slide 1 is the room up from Slide 2.
+
 
 Section - Slide 3
 
 There is a room called Slide 3. The printed name is "Slide". "You have reached the end of your rope. Below you is darkness as the chute makes a sharp turn. On the east here is a small ledge which you might be able to stand on."
+
+A room called Cellar is the room down from Slide 3.
+A room called Slide 2 is the room up from Slide 3.
+A room called Slide Ledge is the room east from Slide 3.
 
 
 Section - Slide Ledge
 
 There is a room called Slide Ledge. "This is a narrow ledge abutting the coal chute, in which a rope can be seen passing downward. Behind you, to the south, is a small room."
 
+A room called Cellar is the room down from Slide Ledge.
+A room called Slide 2 is the room up from Slide Ledge.
+A room called Sooty Room is the room south from Slide Ledge.
+
 
 Section - Sooty Room
 
-There is a room called Sooty Room. "This is a small room with rough walls, and a ceiling which is steeply sloping from north to south. There is coal dust covering almost everything, and little bits of coal are scattered around the only exit (which is a narrow passage to the north). In one corner of the room is
-an old coal stove which lights the room with a cheery red glow. There is a very narrow crack in the north wall."
+There is a room called Sooty Room. "This is a small room with rough walls, and a ceiling which is steeply sloping from north to south. There is coal dust covering almost everything, and little bits of coal are scattered around the only exit (which is a narrow passage to the north). In one corner of the room is an old coal stove which lights the room with a cheery red glow. There is a very narrow crack in the north wall."
+
+A room called SLide Ledge is the room north from Sooty Room.
 
 
 Chapter - End Game
@@ -1402,6 +1420,10 @@ Chapter - End Game
 Section - Hallway D
 
 There is a room called Hallway D. The printed name is "Hallway". "MRDF..."
+
+A room called Dungeon Entrance is the room north from Hallway D.
+A room called Dungeon Entrance is the room northeast from Hallway D.
+A room called Dungeon Entrance is the room northwest from Hallway D.
 
 
 Section - Hallway G
@@ -1422,6 +1444,8 @@ There is a room called Hallway B. The printed name is "Hallway". "MRBF..."
 Section - Hallway A
 
 There is a room called Hallway A. The printed name is "Hallway". "MRAF..."
+
+A room called Small Room 2 is the room south from Hallway A.
 
 
 Section - Narrow Room 1
@@ -1448,30 +1472,48 @@ Section - Narrow Room 5
 
 There is a room called Narrow Room 5. The printed name is "Narrow Room". "MRCEW..."
 
+A room called Hallway G is the room north from Narrow Room 5.
+A room called Hallway B is the room south from Narrow Room 5.
+
 
 Section - Narrow Room 6
 
 There is a room called Narrow Room 6. The printed name is "Narrow Room". "MRCEW..."
+
+A room called Hallway G is the room north from Narrow Room 6.
+A room called Hallway B is the room south from Narrow Room 6.
 
 
 Section - Narrow Room 7
 
 There is a room called Narrow Room 7. The printed name is "Narrow Room". "MRBEW..."
 
+A room called Hallway C is the room north from Narrow Room 7.
+A room called Hallway A is the room south from Narrow Room 7.
+
 
 Section - Narrow Room 8
 
 There is a room called Narrow Room 8. The printed name is "Narrow Room". "MRBEW..."
+
+A room called Hallway C is the room north from Narrow Room 8.
+A room called Hallway A is the room south from Narrow Room 8.
 
 
 Section - Narrow Room 9
 
 There is a room called Narrow Room 9. The printed name is "Narrow Room". "MRAEW..."
 
+A room called Hallway B is the room north from Narrow Room 9.
+A room called Small Room 2 is the room south from Narrow Room 9.
+
 
 Section - Narrow Room 10
 
 There is a room called Narrow Room 10. The printed name is "Narrow Room". "MRAEW..."
+
+A room called Hallway B is the room north from Narrow Room 10.
+A room called Small Room 2 is the room south from Narrow Room 10.
 
 
 Section - Inside Mirror
@@ -1483,15 +1525,23 @@ Section - Stone Room
 
 There is a room called Stone Room. "You are standing near one end of a long, dimly lit hall. At the south stone stairs ascend. To the north the corridor is illuminated by torches set high in the walls, out of reach. On one wall is a red button."
 
+A room called Top of Stairs is the room south from Stone Room.
+A room called Top of Stairs is the room up from Stone Room.
+A room called Small Room 2 is the room north from Stone Room.
+
 
 Section - Small Room 2
 
 There is a room called Small Room 2. The printed name is "Small Room". "MREYE-ROOM..."
 
+A room called Stone Room is the room south from Small Room 2.
+
 
 Section - Tomb of the Unknown Implementer
 
 There is a room called Tomb of the Unknown Implementer. "TOMB-FUNCTION..."
+
+A room called Land of the Living Dead is the room west from Tomb of the Unknown Implementer.
 
 
 Section - Crypt
@@ -1503,25 +1553,40 @@ Section - Top of Stairs
 
 There is a room called Top of Stairs. "You are standing at the top of a flight of stairs that lead down to a passage below. Dim light, as from torches, can be seen in the passage. Behind you the stairs lead into untouched rock."
 
+A room called Stone Room is the room north from Top of Stairs.
+A room called Stone Room is the room down from Top of Stairs.
+
 
 Section - East Corridor
 
 There is a room called East Corridor. "This is a corridor with polished marble walls. The corridor widens into larger areas as it turns west at its northern and southern ends."
+
+A room called North Corridor is the room north from East Corridor.
+A room called South Corridor is the room south from East Corridor.
 
 
 Section - West Corridor
 
 There is a room called West Corridor. "This is a corridor with polished marble walls. The corridor widens into larger areas as it turns east at its northern and southern ends."
 
+A room called North Corridor is the room north from West Corridor.
+A room called South Corridor is the room south from West Corridor.
+
 
 Section - South Corridor
 
 There is a room called South Corridor. "SCORR-ROOM..."
 
+A room called West Corridor is the room west from South Corridor.
+A room called East Corridor is the room east from South Corridor.
+A room called Narrow Corridor is the room south from South Corridor.
+
 
 Section - Narrow Corridor
 
 There is a room called Narrow Corridor. "BDOOR-FUNCTION..."
+
+A room called South Corridor is the room north from Narrow Corridor.
 
 
 Section - Dungeon Entrance
@@ -1533,10 +1598,17 @@ Section - North Corridor
 
 There is a room called North Corridor. "NCORR-ROOM..."
 
+A room called East Corridor is the room east from North Corridor.
+A room called West Corridor is the room west from North Corridor.
+A room called Parapet is the room north from North Corridor.
+
 
 Section - Parapet
 
 There is a room called Parapet. "PARAPET..."
+
+A room called North Corridor is the room south from Parapet.
+Check going nowhere from Parapet while going north: say "You would be burned to a crisp in no time." instead.
 
 
 Section - Prison Cell 1
