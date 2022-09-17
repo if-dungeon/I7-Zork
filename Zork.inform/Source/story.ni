@@ -4,68 +4,47 @@ Chapter - House and Vicinity
 
 Section - West of House
 
-There is a room called West of House. "This is an open field west of a white house, with a boarded front door."
-
-A room called North of House is the room north from West of House.
-A room called South of House is the room south from West of House.
-A room called Forest 1 is the room west from West of House.
-
-East from West of House is a locked scenery door.
-Check going nowhere from West of House when going east: say "The door is locked, and there is evidently no key." instead.
+There is a room called West of House. "This is an open field west of a white house, with a boarded front door." East from West of House is a locked scenery door. Check going nowhere from West of House when going east: say "The door is locked, and there is evidently no key." instead.
 
 
 Section - North of House
 
-There is a room called North of House. "You are facing the north side of a white house. There is no door here, and all the windows are barred."
-
-A room called West of House is the room west from North of House.
-A room called Behind House is the room east from North of House.
-A room called Forest 3 is the room north from North of House.
-Check going nowhere from North of House when going south: say "The windows are all barred." instead.
+There is a room called North of House. "You are facing the north side of a white house. There is no door here, and all the windows are barred." West from North of House is north from West of House. Check going nowhere from North of House when going south: say "The windows are all barred." instead.
 
 
 Section - South of House
 
-There is a room called South of House. "You are facing the south side of a white house. There is no door here, and all the windows are barred."
-
-A room called West of House is the room west from South of House.
-A room called Behind House is the room east from South of House.
-A room called Forest 2 is the room south from South of House.
-Check going nowhere from South of House when going north: say "The windows are all barred." instead.
+There is a room called South of House. "You are facing the south side of a white house. There is no door here, and all the windows are barred." West from South of House is south from West of House. Check going nowhere from South of House when going north: say "The windows are all barred." instead.
 
 
 Section - Behind House
 
-There is a room called Behind House. "EAST-HOUSE..."
+There is a room called Behind House. "You are behind the white house. A path leads into the forest to the east. In one corner of the house there is a small window which is [if the kitchen window is open]open[else]slightly ajar[end if]." A kitchen window is west from Behind House. North from Behind House is east from North of House. South from Behind House is east from South of House.
 
-A room called North of House is the room north from Behind House.
-A room called South of House is the room south from Behind House.
-A room called Clearing is the room east from Behind House.
+The kitchen window is a scenery door. It is open.
 
 
 Section - Kitchen
 
-There is a room called Kitchen. "KITCHEN..."
-
-A room called Living Room is the room west from Kitchen.
-A room called Attic is the room up from Kitchen.
-Check going nowhere from Kitchen when going down: say "Only Santa Claus climbs down chimneys." instead.
+There is a room called Kitchen. "You are in the kitchen of the white house. A table seems to have been used recently for the preparation of food. A passage leads to the west and a dark staircase can be seen leading upward. To the east is a small window which is [if the kitchen window is open]open[else]slightly ajar[end if]." The kitchen window is east from the Kitchen. Check going nowhere from Kitchen when going down: say "Only Santa Claus climbs down chimneys." instead.
 
 
 Section - Attic
 
-There is a room called Attic. "This is the attic. The only exit is stairs that lead down."
-
-A room called Kitchen is the room down from Attic.
+A room called Attic is above Kitchen. "This is the attic. The only exit is stairs that lead down."
 
 
 Section - Living Room
 
-There is a room called Living Room. "LIVING-ROOM..."
+A room called Living Room is west of Kitchen. "You are in the living room. There is a door to the east[if the wooden door is open]. To the west is a cyclops-shaped hole in an old wooden door, above which is some strange gothic lettering[else], a wooden door with strange gothic lettering to the west, which appears to be nailed shut,[end if] [if the rug is not moved]and a large oriental rug in the center of the room[else if the trap door is closed]and a closed trap-door at your feet[else]and a rug lying beside an open trap-door[end if]." An oriental rug is here. A wooden door is west of the Living Room. A trap door is below the Living Room.
 
-A room called Kitchen is the room east from Living Room.
+The oriental rug is scenery. The oriental rug can be moved. The oriental rug is moved.
 
-The wooden door is west from Living Room. It is a locked, scenery door. It is not openable.
+The trap door is a scenery door. It is open.
+
+The wooden door is a scenery door. It is open.
+
+Check going west through the closed wooden door: say "The door is nailed shut." instead.
 
 
 Chapter - Forest
@@ -75,7 +54,7 @@ A forest room is a kind of room. The printed name is always "Forest". The descri
 
 Section - Forest 1
 
-There is a forest room called Forest 1.
+A forest room called Forest 1 is the room west from West of House.
 
 A room called Forest 1 is the room north from Forest 1.
 A room called Forest 3 is the room east from Forest 1.
@@ -85,9 +64,9 @@ A room called Forest 1 is the room west from Forest 1.
 
 Section - Forest 2
 
-There is a forest room called Forest 2. "This is a dimly lit forest, with large trees all around. To the east, there appears to be sunlight."
+A forest room called Forest 2 is south of South of House. "This is a dimly lit forest, with large trees all around. To the east, there appears to be sunlight."
 
-A room called South of House is the room north from Forest 2.
+[A room called South of House is the room north from Forest 2.]
 A room called Clearing is the room east from Forest 2.
 A room called Forest 4 is the room south from Forest 2.
 A room called Forest 1 is the room west from Forest 2.
@@ -97,11 +76,13 @@ Section - Forest 3
 
 There is a forest room called Forest 3. "This is a dimly lit forest, with large trees all around. One particularly large tree with some low branches stands here."
 
+West from Forest 3 is north from North of House.
+
 A room called Up a Tree is the room up from Forest 3.
 A room called Forest 2 is the room north from Forest 3.
 A room called Clearing is the room east from Forest 3.
 A room called Clearing is the room south from Forest 3.
-A room called North of House is the room west from Forest 3.
+[A room called North of House is the room west from Forest 3.]
 
 
 Section - Up a Tree
@@ -135,7 +116,9 @@ Section - Clearing
 
 There is a room called Clearing. "CLEARING..."
 
-A room called Behind House is the room southwest from Clearing.
+Southwest from Clearing is east from Behind House.
+
+[A room called Behind House is the room southwest from Clearing.]
 A room called Forest 5 is the room southeast from Clearing.
 A room called Clearing is the room north from Clearing.
 A room called Clearing is the room east from Clearing.
@@ -147,7 +130,7 @@ Chapter - Cellar and Vicinity
 
 Section - Cellar
 
-There is a room called Cellar. "CELLAR..."
+There is a room called Cellar. "CELLAR..." The trap door is above.
 
 A room called The Troll Room is the room east from Cellar.
 A room called West of Chasm is the room south from Cellar.
@@ -378,10 +361,10 @@ A room called Maze 15 is the room west from Cyclops Room.
 
 Section - Strange Passage
 
-There is a room called Strange Passage. "This is a long passage. To the south is one entrance.  On the east there is an old wooden door, with a large hole in it (about cyclops sized)."
+There is a room called Strange Passage. "This is a long passage. To the south is one entrance.  On the east there is an old wooden door, with a large hole in it (about cyclops sized)." The wooden door is east.
 
 A room called Cyclops Room is the room south from Strange Passage.
-A room called Living Room is the room east from Strange Passage.
+[A room called Living Room is the room east from Strange Passage.]
 
 
 Section - Treasure Room
