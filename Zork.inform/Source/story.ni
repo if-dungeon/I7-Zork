@@ -1,10 +1,13 @@
 "Zork" by Alex Proudfoot
 
+The story headline is "The pre-Infocom classic, rewritten".
+
+
 Chapter - House and Vicinity
 
 Section - West of House
 
-There is a room called West of House. "This is an open field west of a white house, with a boarded front door." East from West of House is a locked scenery door. Check going nowhere from West of House when going east: say "The door is locked, and there is evidently no key." instead.
+There is a room called West of House. "This is an open field west of a white house, with a boarded front door."East from West of House is a locked scenery door. Check going nowhere from West of House when going east: say "The door is locked, and there is evidently no key." instead.
 
 
 Section - North of House
@@ -1627,3 +1630,74 @@ indicating the locations of several superior scenic views.
 certificates representing a controlling interest in FrobozzCo
 International, the multinational conglomerate and parent company of
 the Frobozz Magic Boat Co., etc."
+
+
+Chapter - Infocom-like Presentation
+
+Section - Font
+
+Include Glulx Text Effects by Emily Short.
+
+Table of User Styles (continued)
+style name	fixed width
+all-styles	true
+
+
+Section - Status Line
+
+Include Basic Screen Effects by Emily Short.
+
+Table of Fancy Status
+left	central	right 
+" [location]"	""	"Score: [score]       Moves: [move count]"
+
+To decide which number is the move count:
+	if the story has not ended:
+		decide on the turn count - 1;
+	otherwise:
+		decide on the turn count;
+
+Rule for constructing the status line:
+	fill the status bar with the Table of Fancy Status;
+	the rule succeeds.
+
+When play begins: now the right alignment depth is 30.
+
+
+Section - Room Description
+
+Printing the room-description of something is an activity.
+
+Rule for printing the room-description of a room (called the place):
+	if the description of the place is not "":
+		say the description of the place;
+	otherwise:
+		do nothing instead.
+
+The activity-based room description body text rule is listed instead of the room description body text rule in the carry out looking rules.
+
+This is the activity-based room description body text rule:
+	if the visibility level count is 0:
+		if set to abbreviated room descriptions, continue the action;
+		if set to sometimes abbreviated	room descriptions and
+			abbreviated form allowed is true and
+			darkness witnessed is true,
+			continue the action;
+		begin the printing the description of a dark room activity;
+		if handling the printing the description of a dark room activity:
+			now the prior named object is nothing;
+			say "[It] [are] pitch dark, and [we] [can't see] a thing." (A);
+		end the printing the description of a dark room activity;
+	otherwise if the visibility ceiling is the location:
+		if set to abbreviated room descriptions, continue the action;
+		if set to sometimes abbreviated	room descriptions and abbreviated form
+			allowed is true and the location is visited, continue the action;
+		carry out the printing the room-description activity with the location.
+
+
+Section - Item Description
+
+Rule for writing a paragraph about something [not handled] (called the item) when the initial appearance of the item is not "":
+	say the initial appearance of the item;
+
+After looking, say "".
