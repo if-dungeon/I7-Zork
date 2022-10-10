@@ -21,11 +21,13 @@ The specifics of this project are as follows.
 ### Resources
 * [Mainframe Zork for Confusion (latest)](https://github.com/heasm66/mdlzork)
 * [Cygwin (latest)](https://www.cygwin.com/)
+* [Inform compiler version 10.2.0-beta 'Krypton' (latest)](https://github.com/ganelson/inform)
 * [Windows Inform 7 (latest)](https://github.com/zil-transformation/Windows-Inform7)
 
 ## Release Plan
-### Alpha
-1. full map, navigable without solving puzzles, no events, no NPCs, Inform library only
-2. add the points system, the carrying capacity system and an Infocom-like presentation
+### Beta
+1. Add Chapter 1 (The White House in the Forest)
+2. Add Chapter 2 (Inside the White House)
+3. Add Chapter 3 (Beneath the White House)
 
 The content and number of further releases will be decided when necessary.
