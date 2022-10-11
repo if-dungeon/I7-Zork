@@ -3,71 +3,7 @@
 The story headline is "The pre-Infocom classic, rewritten".
 
 
-Part I - Mechanics
-
-Chapter A - Presentation
-
-Section A1 - Status Line
-
-Include Basic Screen Effects by Emily Short.
-
-Table of Fancy Status
-left	central	right 
-" [location]"	""	"Score: [score]       Moves: [move count]"
-
-To decide which number is the move count:
-	if the story has not ended:
-		decide on the turn count - 1;
-	otherwise:
-		decide on the turn count;
-
-Rule for constructing the status line:
-	fill the status bar with the Table of Fancy Status;
-	the rule succeeds.
-
-When play begins: now the right alignment depth is 30.
-
-
-Section A2 - Room Description
-
-Printing the room-description of something is an activity.
-
-Rule for printing the room-description of a room (called the place):
-	if the description of the place is not "":
-		say the description of the place;
-	otherwise:
-		do nothing instead.
-
-The activity-based room description body text rule is listed instead of the room description body text rule in the carry out looking rules.
-
-This is the activity-based room description body text rule:
-	if the visibility level count is 0:
-		if set to abbreviated room descriptions, continue the action;
-		if set to sometimes abbreviated	room descriptions and
-			abbreviated form allowed is true and
-			darkness witnessed is true,
-			continue the action;
-		begin the printing the description of a dark room activity;
-		if handling the printing the description of a dark room activity:
-			now the prior named object is nothing;
-			say "[It] [are] pitch dark, and [we] [can't see] a thing." (A);
-		end the printing the description of a dark room activity;
-	otherwise if the visibility ceiling is the location:
-		if set to abbreviated room descriptions, continue the action;
-		if set to sometimes abbreviated	room descriptions and abbreviated form
-			allowed is true and the location is visited, continue the action;
-		carry out the printing the room-description activity with the location.
-
-After looking, say "".
-
-
-Section A3 - Item Description
-
-Rule for writing a paragraph about something [not handled] (called the item) when the initial appearance of the item is not "":
-	say the initial appearance of the item;
-
-
-Part II - Game
+Part I - The Game
 
 Chapter 1 - The White House in the Forest
 
@@ -115,8 +51,6 @@ Section 1c - South of House
 
 There is a room called South of House. "You are facing the south side of a white house. There is no door here, and all the windows are barred." It is in Sides of House. West from South of House is south from West of House. Instead of going nowhere from South of House when going north: say "The windows are all barred."
 
-[Index map with South of House mapped southeast of West of House.]
-
 
 Section 1d - Behind House
 
@@ -129,40 +63,25 @@ Index map with Behind House mapped southeast of North of House.
 
 Section 1e - Forest 1
 
-A forest room called Forest 1 is the room west from West of House. It is in Dense Forest.
-
-A room called Forest 3 is the room east from Forest 1.
-[A room called Forest 2 is the room south from Forest 1.]
-
-A room called Forest 1 is the room north from Forest 1.
-A room called Forest 1 is the room west from Forest 1.
+There is a forest room called Forest 1. It is in Dense Forest. It is the room west from West of House. West from it is north from it.
 
 Index map with Forest 1 mapped west of West of House.
 
 
 Section 1f - Forest 2
 
-A forest room called Forest 2 is south of South of House. "This is a dimly lit forest, with large trees all around. To the east, there appears to be sunlight." It is in Dense Forest.
+There is a forest room called Forest 2. "This is a dimly lit forest, with large trees all around. To the east, there appears to be sunlight." It is in Dense Forest. It is south of South of House. West from it is south from Forest 1.
 
-West from Forest 2 is south from Forest 1.
-
-[A room called South of House is the room north from Forest 2.]
 A room called Clearing is the room east from Forest 2.
 A room called Forest 4 is the room south from Forest 2.
-[A room called Forest 1 is the room west from Forest 2.]
 
 
 Section 1g - Forest 3
 
-There is a forest room called Forest 3. "This is a dimly lit forest, with large trees all around. One particularly large tree with some low branches stands here." It is in Songbird's Territory.
+There is a forest room called Forest 3. "This is a dimly lit forest, with large trees all around. One particularly large tree with some low branches stands here." It is in Songbird's Territory. It is the room east from Forest 1. North from it is a room called Forest 2. West from Forest 3 is north from North of House.
 
-West from Forest 3 is north from North of House.
-
-[A room called Up a Tree is the room up from Forest 3.]
-A room called Forest 2 is the room north from Forest 3.
 A room called Clearing is the room east from Forest 3.
 A room called Clearing is the room south from Forest 3.
-[A room called North of House is the room west from Forest 3.]
 
 Index map with Forest 3 mapped north of North of House.
 
@@ -208,3 +127,67 @@ A room called Forest 3 is the room west from Clearing.
 A room called Forest 2 is the room south from Clearing.
 
 Index map with Clearing mapped northeast of Behind House.
+
+
+Part II - The Mechanics
+
+Chapter A - Presentation
+
+Section A1 - Status Line
+
+Include Basic Screen Effects by Emily Short.
+
+Table of Status
+left	central	right 
+" [location]"	""	"Score: [score]       Moves: [move count]"
+
+To decide which number is the move count:
+	if the story has not ended:
+		decide on the turn count - 1;
+	otherwise:
+		decide on the turn count;
+
+Rule for constructing the status line:
+	fill the status bar with the Table of Status;
+	the rule succeeds.
+
+When play begins: now the right alignment depth is 30.
+
+
+Section A2 - Room Description
+
+Printing the room-description of something is an activity.
+
+Rule for printing the room-description of a room (called the place):
+	if the description of the place is not "":
+		say the description of the place;
+	otherwise:
+		do nothing instead.
+
+The activity-based room description body text rule is listed instead of the room description body text rule in the carry out looking rules.
+
+This is the activity-based room description body text rule:
+	if the visibility level count is 0:
+		if set to abbreviated room descriptions, continue the action;
+		if set to sometimes abbreviated	room descriptions and
+			abbreviated form allowed is true and
+			darkness witnessed is true,
+			continue the action;
+		begin the printing the description of a dark room activity;
+		if handling the printing the description of a dark room activity:
+			now the prior named object is nothing;
+			say "[It] [are] pitch dark, and [we] [can't see] a thing." (A);
+		end the printing the description of a dark room activity;
+	otherwise if the visibility ceiling is the location:
+		if set to abbreviated room descriptions, continue the action;
+		if set to sometimes abbreviated	room descriptions and abbreviated form
+			allowed is true and the location is visited, continue the action;
+		carry out the printing the room-description activity with the location.
+
+After looking, say "".
+
+
+Section A3 - Item Description
+
+Rule for writing a paragraph about something [not handled] (called the item) when the initial appearance of the item is not "":
+	say the initial appearance of the item;
