@@ -7,20 +7,25 @@ Part I - The Game
 
 Chapter 1 - The White House in the Forest
 
-There is a region called Forest. In Forest is a region called Vicinity of House. The white house is a backdrop in Forest. "The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy." Instead of doing something with the white house when the location is not in Vicinity of House, say "You're not at the house."
-
-In Vicinity of House is a region called Sides of House. The windows are a backdrop in Sides of House with printed name "window". Understand "window" as the windows.
-
-In Forest is a region called Songbird's Territory. The songbird is a backdrop in Songbird's Territory.
-
-In Songbird's Territory is a region called Dense Forest. The tree is a backdrop in Dense Forest.
-
-A forest room is a kind of room. The printed name is always "Forest". The description is usually "This is a forest, with trees in all directions around you."
+There is a region called Forest. In Forest is a room called Clearing. The white house is a backdrop in Forest. "The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy."
 
 
-Section 1a - West of House
+Section 1a - At the House
 
-There is a room called West of House. "This is an open field west of a white house, with a boarded front door." It is in Vicinity of House. A small mailbox and a welcome mat are here. The front door is east. Instead of going nowhere from West of House when going east, say "The door is locked, and there is evidently no key."
+In Forest is a region called Vicinity of House. In Vicinity of House is a room called West of House. In Vicinity of House is a room called Behind House. Instead of doing something with the white house when the location is not in Vicinity of House, say "You're not at the house."
+
+In Vicinity of House is a region called Sides of House. The windows are a backdrop in Sides of House with printed name "window". Understand "window" as the windows. In Sides of House is a room called North of House. In Sides of House is a room called South of House.
+
+
+The description of West of House is "This is an open field west of a white house, with a boarded front door." The player is in West of House. A small mailbox and a welcome mat are in West of House.
+
+A room called North of House is the room north from West of House.
+A room called South of House is the room south from West of House.
+A room called Forest 1 is the room west from West of House.
+
+The front door is east from West of House.
+
+Instead of going nowhere from West of House when going east, say "The door is locked, and there is evidently no key."
 
 The small mailbox is a fixed in place container with printed name "mailbox". "There is a small mailbox here." Understand "box" as the small mailbox. It is closed and openable. There is a small leaflet in it. Understand "advert", "pamphlet", "booklet" or "mail" as the small leaflet.
 
@@ -35,97 +40,128 @@ Instead of examining the small leaflet:
 	center "(c) Copyright 1978,1979 Massachusetts Institute of Technology.";
 	center "All rights reserved.";
 
-The initial appearance of the welcome mat is "A rubber mat saying [']Welcome to Zork!['] lies by the door." The description of the welcome mat is "Welcome to Zork!" Understand "rubber" as the welcome mat.
+The welcome mat has the initial appearance "A rubber mat saying [']Welcome to Zork!['] lies by the door." It has the description "Welcome to Zork!" Understand "rubber" as the welcome mat.
 
 The front door is a locked scenery door with printed name "door".
 
 
-Section 1b - North of House
+The description of North of House is "You are facing the north side of a white house. There is no door here, and all the windows are barred."
 
-There is a room called North of House. "You are facing the north side of a white house. There is no door here, and all the windows are barred." It is in Sides of House. West from North of House is north from West of House. Instead of going nowhere from North of House when going south: say "The windows are all barred."
+A room called West of House is the room west from North of House.
+A room called Behind House is the room east from North of House.
+A room called Forest 3 is the room north from North of House.
 
-Index map with North of House mapped northeast of West of House.
-
-
-Section 1c - South of House
-
-There is a room called South of House. "You are facing the south side of a white house. There is no door here, and all the windows are barred." It is in Sides of House. West from South of House is south from West of House. Instead of going nowhere from South of House when going north: say "The windows are all barred."
+Instead of going nowhere from North of House when going south: say "The windows are all barred."
 
 
-Section 1d - Behind House
+The description of South of House is "You are facing the south side of a white house. There is no door here, and all the windows are barred."
 
-There is a room called Behind House. "You are behind the white house. A path leads into the forest to the east. In one corner of the house there is a small window which is [if the window is open]open[else]slightly ajar[end if]." It is in Vicinity of House. A window is west. North from Behind House is east from North of House. South from Behind House is east from South of House.
+A room called West of House is the room west from South of House.
+A room called Behind House is the room east from South of House.
+A room called Forest 2 is the room south from South of House.
+
+Instead of going nowhere from South of House when going north: say "The windows are all barred."
+
+
+The description of Behind House is "You are behind the white house. A path leads into the forest to the east. In one corner of the house there is a small window which is [if the window is open]open[else]slightly ajar[end if]."
+
+A window is west from Behind House.
+
+A room called North of House is the room north from Behind House.
+A room called South of House is the room south from Behind House.
+A room called Clearing is the room east from Behind House.
 
 The window is a scenery door.
 
-Index map with Behind House mapped southeast of North of House.
+
+Section 1b - Among the Trees
+
+A forest room is a kind of room. The printed name is always "Forest". The description is usually "This is a forest, with trees in all directions around you." Instead of going nowhere from a forest room when going up, say "There is no tree here suitable for climbing."
+
+In Forest is a region called Vicinity of Songbird.
+
+In Vicinity of Songbird is a forest room called Forest 3.
+In Vicinity of Songbird is a room called Treetop. The printed name is "Up a Tree".
+
+The song bird is a backdrop in Vicinity of Songbird. Understand "songbird" as the song bird.
+
+In Vicinity of Songbird is a region called Impenetrable Forest.
+
+In Impenetrable Forest is a room called Forest 1.
+In Impenetrable Forest is a room called Forest 2.
+In Impenetrable Forest is a room called Forest 4.
+In Impenetrable Forest is a room called Forest 5.
+
+The tree is a backdrop in Impenetrable Forest.
 
 
-Section 1e - Forest 1
+A forest room called Forest 1 is the room north from Forest 1.
+A forest room called Forest 3 is the room east from Forest 1.
+A forest room called Forest 2 is the room south from Forest 1.
+A forest room called Forest 1 is the room west from Forest 1.
 
-There is a forest room called Forest 1. It is in Dense Forest. It is the room west from West of House. West from it is north from it.
 
-Index map with Forest 1 mapped west of West of House.
+The description of Forest 2 is "This is a dimly lit forest, with large trees all around. To the east, there appears to be sunlight."
 
-
-Section 1f - Forest 2
-
-There is a forest room called Forest 2. "This is a dimly lit forest, with large trees all around. To the east, there appears to be sunlight." It is in Dense Forest. It is south of South of House. West from it is south from Forest 1.
-
+A room called South of House is the room north from Forest 2.
 A room called Clearing is the room east from Forest 2.
-A room called Forest 4 is the room south from Forest 2.
+A forest room called Forest 4 is the room south from Forest 2.
+A forest room called Forest 1 is the room west from Forest 2.
 
 
-Section 1g - Forest 3
+The description of Forest 3 is "This is a dimly lit forest, with large trees all around. One particularly large tree with some low branches stands here."
 
-There is a forest room called Forest 3. "This is a dimly lit forest, with large trees all around. One particularly large tree with some low branches stands here." It is in Songbird's Territory. It is the room east from Forest 1. North from it is a room called Forest 2. West from Forest 3 is north from North of House.
-
+A room called Treetop is the room up from Forest 3.
+A forest room called Forest 2 is the room north from Forest 3.
 A room called Clearing is the room east from Forest 3.
 A room called Clearing is the room south from Forest 3.
-
-Index map with Forest 3 mapped north of North of House.
-
-
-Section 1h - Up a Tree
-
-A room called Up a Tree is above Forest 3. "TREE-ROOM..." It is in Songbird's Territory.
+A room called North of House is the room west from Forest 3.
 
 
-Section 1i - Forest 4
+The description of Treetop is "TREE-ROOM..."
 
-There is a forest room called Forest 4. "This is a large forest, with trees obstructing all views except to the east, where a small clearing may be seen through the trees." It is in Dense Forest.
+A forest room called Forest 3 is the room down from Treetop.
 
+Instead of going nowhere from Treetop when going up, say "You cannot climb any higher."
+
+
+The description of Forest 4 is "This is a large forest, with trees obstructing all views except to the east, where a small clearing may be seen through the trees."
+
+A room called Canyon View is the room east from Forest 4.
 A room called Forest 5 is the room north from Forest 4.
 A room called Forest 4 is the room south from Forest 4.
 A room called Forest 2 is the room west from Forest 4.
 
-[A room called Canyon View is the room east from Forest 4.]
 
-
-Section 1j - Forest 5
-
-There is a forest room called Forest 5. It is in Dense Forest.
+[ Forest 5 Details ]
 
 A room called Forest 5 is the room north from Forest 5.
+A room called Canyon View is the room southeast from Forest 5.
 A room called Forest 4 is the room south from Forest 5.
 A room called Forest 2 is the room west from Forest 5.
 
-[A room called Canyon View is the room southeast from Forest 5.]
 
 
-Section 1k - Clearing
+Section 1c - In the Clearing
 
-There is a room called Clearing. "CLEARING..." It is in Forest.
+The description of Clearing is "CLEARING..."
 
 Southwest from Clearing is east from Behind House.
 
-[A room called Behind House is the room southwest from Clearing.]
+A room called Behind House is the room southwest from Clearing.
 A room called Forest 5 is the room southeast from Clearing.
 A room called Clearing is the room north from Clearing.
 A room called Clearing is the room east from Clearing.
 A room called Forest 3 is the room west from Clearing.
 A room called Forest 2 is the room south from Clearing.
 
+
+Section 1d - Map Improvements
+
+Index map with North of House mapped northeast of West of House.
+Index map with Behind House mapped southeast of North of House.
+Index map with Forest 1 mapped west of West of House.
+Index map with Forest 3 mapped north of North of House.
 Index map with Clearing mapped northeast of Behind House.
 
 
