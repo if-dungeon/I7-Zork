@@ -3,14 +3,110 @@
 The story headline is "The pre-Infocom classic, rewritten".
 
 
-Part I - The Game
+Part - The Mechanics
 
-Chapter 1 - The White House in the Forest
+Chapter - Non-Standard Commands and Responses
+
+Section - Reading is not just Examining
+
+Reading is an action applying to one visible thing and requiring light.
+Understand the command read as something new.
+Understand "read [something]" as reading.
+
+A thing can be readable. A thing is usually not readable.
+
+Carry out reading something not readable:
+	say "How can [we] read [a noun]."
+
+Carry out reading something readable:
+	if the noun is not fixed in place:
+		try silently taking the noun;
+		if the noun is carried:
+			say "Taken.[no line break]";
+	try examining the noun;
+
+
+Chapter - Presentation
+
+Section - Status Line
+
+Include Basic Screen Effects by Emily Short.
+
+Table of Status
+left	central	right 
+" [location]"	""	"Score: [score]       Moves: [move count]"
+
+To decide which number is the move count:
+	if the story has not ended:
+		decide on the turn count - 1;
+	otherwise:
+		decide on the turn count;
+
+Rule for constructing the status line:
+	fill the status bar with the Table of Status;
+	the rule succeeds.
+
+When play begins: now the right alignment depth is 30.
+
+
+Section - Room Description
+
+Printing the room-description of something is an activity.
+
+Rule for printing the room-description of a room (called the place):
+	if the description of the place is not "":
+		say the description of the place;
+	otherwise:
+		do nothing instead.
+
+The activity-based room description body text rule is listed instead of the room description body text rule in the carry out looking rules.
+
+This is the activity-based room description body text rule:
+	if the visibility level count is 0:
+		if set to abbreviated room descriptions, continue the action;
+		if set to sometimes abbreviated	room descriptions and
+			abbreviated form allowed is true and
+			darkness witnessed is true,
+			continue the action;
+		begin the printing the description of a dark room activity;
+		if handling the printing the description of a dark room activity:
+			now the prior named object is nothing;
+			say "[It] [are] pitch dark, and [we] [can't see] a thing." (A);
+		end the printing the description of a dark room activity;
+	otherwise if the visibility ceiling is the location:
+		if set to abbreviated room descriptions, continue the action;
+		if set to sometimes abbreviated	room descriptions and abbreviated form
+			allowed is true and the location is visited, continue the action;
+		carry out the printing the room-description activity with the location.
+
+After looking, say "".
+
+
+Section - Item Description
+
+Rule for writing a paragraph about something not handled (called the item):
+	if the item provides the property initial appearance and the initial appearance of the item is not "":
+		say the initial appearance of the item;
+	else:
+		say "There is [an item] here.[no line break]";
+
+A thing can have a text called handled appearance.
+
+Rule for writing a paragraph about something handled (called the item):
+	if the item provides the property handled appearance and the handled appearance of the item is not "":
+		say the handled appearance of the item;
+	else:
+		say "There is [an item] here.[no line break]";
+
+
+Part - The Game
+
+Chapter - The White House in the Forest
 
 There is a region called Forest. In Forest is a room called Clearing. The white house is a backdrop in Forest. "The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy."
 
 
-Section 1a - At the House
+Section - At the House
 
 In Forest is a region called Vicinity of House. In Vicinity of House is a room called West of House. In Vicinity of House is a room called Behind House. Instead of doing something with the white house when the location is not in Vicinity of House, say "You're not at the house."
 
@@ -27,7 +123,7 @@ The front door is east from West of House.
 
 Instead of going nowhere from West of House when going east, say "The door is locked, and there is evidently no key."
 
-The small mailbox is a fixed in place container with printed name "mailbox". "There is a small mailbox here." Understand "box" as the small mailbox. It is closed and openable. There is a small leaflet in it. Understand "advert", "pamphlet", "booklet" or "mail" as the small leaflet.
+The small mailbox is a fixed in place container with printed name "mailbox". "There is a small mailbox here." Understand "box" as the small mailbox. It is closed and openable. There is a small leaflet in it. It is readable. Understand "advert", "pamphlet", "booklet" or "mail" as the small leaflet.
 
 Instead of examining the small leaflet:
 	center "WELCOME TO ZORK[paragraph break]";
@@ -39,6 +135,7 @@ Instead of examining the small leaflet:
 	say "    Direct inquiries, comments, etc. by Net mail to ZORK@MIT-DMS.";
 	center "(c) Copyright 1978,1979 Massachusetts Institute of Technology.";
 	center "All rights reserved.";
+	say "[paragraph break]";
 
 The welcome mat has the initial appearance "A rubber mat saying [']Welcome to Zork!['] lies by the door." It has the description "Welcome to Zork!" Understand "rubber" as the welcome mat.
 
@@ -74,7 +171,7 @@ A room called Clearing is the room east from Behind House.
 The window is a scenery door.
 
 
-Section 1b - Among the Trees
+Section - Among the Trees
 
 A forest room is a kind of room. The printed name is always "Forest". The description is usually "This is a forest, with trees in all directions around you." Instead of going nowhere from a forest room when going up, say "There is no tree here suitable for climbing."
 
@@ -84,6 +181,9 @@ In Vicinity of Songbird is a forest room called Forest 3.
 In Vicinity of Songbird is a room called Treetop. The printed name is "Up a Tree".
 
 The song bird is a backdrop in Vicinity of Songbird. Understand "songbird" as the song bird.
+Instead of examining the song bird, say "I can't see any songbird here."
+
+[Instead of finding the song bird, say "The songbird is not here, but is probably nearby."]
 
 In Vicinity of Songbird is a region called Impenetrable Forest.
 
@@ -133,16 +233,13 @@ A room called Forest 4 is the room south from Forest 4.
 A room called Forest 2 is the room west from Forest 4.
 
 
-[ Forest 5 Details ]
-
 A room called Forest 5 is the room north from Forest 5.
 A room called Canyon View is the room southeast from Forest 5.
 A room called Forest 4 is the room south from Forest 5.
 A room called Forest 2 is the room west from Forest 5.
 
 
-
-Section 1c - In the Clearing
+Section - In the Clearing
 
 The description of Clearing is "CLEARING..."
 
@@ -156,74 +253,10 @@ A room called Forest 3 is the room west from Clearing.
 A room called Forest 2 is the room south from Clearing.
 
 
-Section 1d - Map Improvements
+Section - Map Improvements
 
 Index map with North of House mapped northeast of West of House.
 Index map with Behind House mapped southeast of North of House.
 Index map with Forest 1 mapped west of West of House.
-Index map with Forest 3 mapped north of North of House.
+Index map with Forest 3 mapped northeast of North of House.
 Index map with Clearing mapped northeast of Behind House.
-
-
-Part II - The Mechanics
-
-Chapter A - Presentation
-
-Section A1 - Status Line
-
-Include Basic Screen Effects by Emily Short.
-
-Table of Status
-left	central	right 
-" [location]"	""	"Score: [score]       Moves: [move count]"
-
-To decide which number is the move count:
-	if the story has not ended:
-		decide on the turn count - 1;
-	otherwise:
-		decide on the turn count;
-
-Rule for constructing the status line:
-	fill the status bar with the Table of Status;
-	the rule succeeds.
-
-When play begins: now the right alignment depth is 30.
-
-
-Section A2 - Room Description
-
-Printing the room-description of something is an activity.
-
-Rule for printing the room-description of a room (called the place):
-	if the description of the place is not "":
-		say the description of the place;
-	otherwise:
-		do nothing instead.
-
-The activity-based room description body text rule is listed instead of the room description body text rule in the carry out looking rules.
-
-This is the activity-based room description body text rule:
-	if the visibility level count is 0:
-		if set to abbreviated room descriptions, continue the action;
-		if set to sometimes abbreviated	room descriptions and
-			abbreviated form allowed is true and
-			darkness witnessed is true,
-			continue the action;
-		begin the printing the description of a dark room activity;
-		if handling the printing the description of a dark room activity:
-			now the prior named object is nothing;
-			say "[It] [are] pitch dark, and [we] [can't see] a thing." (A);
-		end the printing the description of a dark room activity;
-	otherwise if the visibility ceiling is the location:
-		if set to abbreviated room descriptions, continue the action;
-		if set to sometimes abbreviated	room descriptions and abbreviated form
-			allowed is true and the location is visited, continue the action;
-		carry out the printing the room-description activity with the location.
-
-After looking, say "".
-
-
-Section A3 - Item Description
-
-Rule for writing a paragraph about something [not handled] (called the item) when the initial appearance of the item is not "":
-	say the initial appearance of the item;
