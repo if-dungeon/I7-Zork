@@ -7,30 +7,54 @@ Part - The Mechanics
 
 Chapter - Non Standard Commands and Responses
 
-Section - Reading something is not the same as examining it
+Section - Reading something is usually taking and examining it but only if it is readable
 
 Reading is an action applying to one visible thing and requiring light.
 
 A thing can be readable. A thing is usually not readable.
 
-Carry out reading something not readable:
-	say "How can [we] read [a noun]."
+Check reading something (this is the can't read if not readable rule):
+	if the noun is not readable, say "How can [we] read [a noun]." instead.
 
-Carry out reading something readable:
-	try silently taking the noun;
-	if the noun is held, say "Taken.[no line break]";
+Carry out reading something:
+	if the noun is not held, try taking the noun;
 	try examining the noun;
 
 Understand the command read as something new.
 Understand "read [something]" as reading.
 
+[ The following statements were cancelled as a side effect of understanding the command read as something new. ]
 
-Section - Looking at something is not the same as examining it
+Understand "read about [text] in [something]" as consulting it about (with nouns reversed).
+Understand "read [text] in [something]" as consulting it about (with nouns reversed).
 
 
-Section - Finding
+Section - Looking at something is usually the same as examining it
+
+Looking at is an action applying to one visible thing and requiring light.
+
+Carry out looking at something:
+	try examining the noun;
+
+Understand the command look as something new.
+Understand "look at" as looking.
+Understand "look at [something]" as looking at.
+
+[ The following statements were cancelled as a side effect of understanding the command look as something new. ]
+
+Understand "look" as looking.
+Understand "look [something]" as looking at.
+Understand "look inside/in/into/through [something]" as searching.
+Understand "look under [something]" as looking under.
+Understand "look up [text] in [something]" as consulting it about (with nouns reversed).
+
+
+Section - Finding something is usually not possible
 
 Finding is an action applying to one thing and requiring light.
+
+Carry out finding something:
+	say "Nothing happens.";
 
 Understand "find [something]" as finding.
 
@@ -93,28 +117,40 @@ After looking, say "".
 
 Section - Item Description
 
+A thing has a text called subsequent appearance.
+
 Rule for writing a paragraph about something not handled (called the item):
 	if the initial appearance of the item is not "":
 		say the initial appearance of the item;
-	else if the appearance of the item is not "":
-		say the appearance of the item;
+	else if the subsequent appearance of the item is not "":
+		say the subsequent appearance of the item;
 	else:
 		say "There is [an item] here.[no line break]";
-
-A thing has a text called appearance.
 
 Rule for writing a paragraph about something handled (called the item):
-	if the appearance of the item is not "":
-		say the appearance of the item;
+	if the subsequent appearance of the item is not "":
+		say the subsequent appearance of the item;
 	else:
 		say "There is [an item] here.[no line break]";
+
+Rule for writing a paragraph about an open container (called the box) when the box contains something:
+	if the initial appearance of the box is not "":
+		say the initial appearance of the box;
+	else if the subsequent appearance of the box is not "":
+		say the subsequent appearance of the box;
+	else:
+		say "There is [a box] here.[no line break]";
+	say "[line break][The box] contains:";
+	repeat with item running through the list of things in the box:
+		say line break;
+		say "  [a item]";
 
 
 Part - The Game
 
 Chapter - The White House in the Forest
 
-There is a region called Forest. The white house is a backdrop in Forest. "The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy."
+There is a region called Forest. The white house is a backdrop in Forest. Instead of looking at the white house, say "The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy."
 
 
 Section - At the House
@@ -125,7 +161,7 @@ In Vicinity of House is a region called Sides of House. The windows are a backdr
 
 There is a room called West of House. "This is an open field west of a white house, with a boarded front door." It is in Vicinity of House. A small mailbox and a welcome mat are here. The front door is east. Instead of going nowhere from West of House when going east, say "The door is locked, and there is evidently no key."
 
-The small mailbox is a fixed in place container with printed name "mailbox". "There is a small mailbox here." Understand "box" as the small mailbox. It is closed and openable. There is a small leaflet in it. It is readable. Understand "advert", "pamphlet", "booklet" or "mail" as the small leaflet.
+The small mailbox is a fixed in place container with printed name "mailbox". "There is a small mailbox here." Understand "box" as the small mailbox. It is closed and openable. There is a small leaflet with printed name "leaflet" in it. It is readable. Understand "advert", "pamphlet", "booklet" or "mail" as the small leaflet.
 
 Instead of examining the small leaflet:
 	center "WELCOME TO ZORK";
@@ -140,7 +176,7 @@ Instead of examining the small leaflet:
 	center "All rights reserved.";
 	say paragraph break;
 
-The welcome mat has the initial appearance "A rubber mat saying [']Welcome to Zork!['] lies by the door." It has the description "Welcome to Zork!" Understand "rubber" as the welcome mat.
+The welcome mat is readable. It has the initial appearance "A rubber mat saying [']Welcome to Zork!['] lies by the door." It has the description "Welcome to Zork!" Understand "rubber" as the welcome mat.
 
 The front door is a locked scenery door with printed name "door".
 
