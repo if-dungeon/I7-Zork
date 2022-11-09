@@ -374,18 +374,20 @@ There is a room called West of House. "This is an open field west of a white hou
 
 The small mailbox is a fixed in place container with printed name "mailbox" and bulk capacity 10. "There is a small mailbox here." Understand "box" as the small mailbox. It is closed and openable. There is a small leaflet with printed name "leaflet" and bulk 2 in it. It is readable. Understand "advert", "pamphlet", "booklet" or "mail" as the small leaflet.
 
+Instead of reading the small leaflet:
+	if the small leaflet is not held:
+		try silently taking the small leaflet;
+		say "Taken.[no line break]";
+	try examining the small leaflet;
+
 Instead of examining the small leaflet:
 	center "WELCOME TO ZORK";
 	say paragraph break;
 	say "    ZORK is a game of adventure, danger, and low cunning. In it you will explore some of the most amazing territory ever seen by mortal man. Hardened adventurers have run screaming from the terrors contained within![paragraph break]";
 	say "    In ZORK the intrepid explorer delves into the forgotten secrets of a lost labyrinth deep in the bowels of the earth, searching for vast treasures long hidden from prying eyes, treasures guarded by fearsome monsters and diabolical traps![paragraph break]";
-	say "    No PDP-10 should be without one![paragraph break]";
-	say "    ZORK was created at the MIT Laboratory for Computer Science, by Tim Anderson, Marc Blank, Bruce Daniels, and Dave Lebling. It was inspired by the Adventure game of Crowther and Woods, and the long tradition of fantasy and science fiction adventure. ZORK is written in MDL (alias MUDDLE).[paragraph break]";
-	say "    On-line information may be available using the HELP and INFO commands (most systems).[paragraph break]";
-	say "    Direct inquiries, comments, etc. by Net mail to ZORK@MIT-DMS.";
-	center "(c) Copyright 1978,1979 Massachusetts Institute of Technology.";
-	center "All rights reserved.";
-	say paragraph break;
+	say "    No system should be without one![paragraph break]";
+	say "    ZORK was created at the MIT Laboratory for Computer Science, by Tim Anderson, Marc Blank, Bruce Daniels, and Dave Lebling. It was inspired by the Adventure game of Crowther and Woods, and the long tradition of fantasy and science fiction adventure.[paragraph break]";
+	say "    On-line information may be obtained using the HELP command (synonyms are HINT, HINTS, ABOUT and INFO).[paragraph break]";
 
 The welcome mat is readable with initial appearance "A rubber mat saying [']Welcome to Zork!['] lies by the door.", description "Welcome to Zork!" and bulk 12. Understand "rubber" as the welcome mat.
 
