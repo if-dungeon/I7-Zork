@@ -362,7 +362,7 @@ There is a region called the Forest. In the Forest is the Clearing. The white ho
 Instead of finding the white house when the location is the Clearing, say "It seems to be to the southwest." Instead of finding the white house when the location is not in Vicinity of House and the location is not the Clearing, say "It was just here a minute ago...." Instead of doing something other than finding with the white house when the location is not in Vicinity of House, say "You're not at the house.";
 
 
-Section - In Vicinity of House
+Section - Outside the White House
 
 In the Forest is a region called Vicinity of House. In Vicinity of House are West of House and Behind House.
 
@@ -402,7 +402,7 @@ There is a room called Behind House. "You are behind the white house. A path lea
 The window is a scenery door.
 
 
-Section - In Earshot of Songbird
+Section - Among the Trees
 
 A forest room is a kind of room. The printed name is always "Forest". The description is usually "This is a forest, with trees in all directions around you." Instead of going nowhere from a forest room when going up, say "There is no tree here suitable for climbing."
 
