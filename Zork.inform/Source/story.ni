@@ -387,7 +387,7 @@ Instead of examining the small leaflet:
 	say "    In ZORK the intrepid explorer delves into the forgotten secrets of a lost labyrinth deep in the bowels of the earth, searching for vast treasures long hidden from prying eyes, treasures guarded by fearsome monsters and diabolical traps![paragraph break]";
 	say "    No system should be without one![paragraph break]";
 	say "    ZORK was created at the MIT Laboratory for Computer Science, by Tim Anderson, Marc Blank, Bruce Daniels, and Dave Lebling. It was inspired by the Adventure game of Crowther and Woods, and the long tradition of fantasy and science fiction adventure.[paragraph break]";
-	say "    On-line information may be obtained using the HELP command (synonyms are HINT, HINTS, ABOUT and INFO).[paragraph break]";
+	say "    On-line information may be obtained by using the HELP command.[paragraph break]";
 
 The welcome mat is readable with initial appearance "A rubber mat saying [']Welcome to Zork!['] lies by the door.", description "Welcome to Zork!" and bulk 12. Understand "rubber" as the welcome mat.
 
