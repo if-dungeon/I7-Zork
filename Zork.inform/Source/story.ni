@@ -362,7 +362,7 @@ There is a region called the Forest. In the Forest is the Clearing. The white ho
 Instead of finding the white house when the location is the Clearing, say "It seems to be to the southwest." Instead of finding the white house when the location is not in Vicinity of House and the location is not the Clearing, say "It was just here a minute ago...." Instead of doing something other than finding with the white house when the location is not in Vicinity of House, say "You're not at the house.";
 
 
-Section - At the House
+Section - In Vicinity of House
 
 In the Forest is a region called Vicinity of House. In Vicinity of House are West of House and Behind House.
 
@@ -402,13 +402,13 @@ There is a room called Behind House. "You are behind the white house. A path lea
 The window is a scenery door.
 
 
-Section - Among the Trees
+Section - In Earshot of Songbird
 
 A forest room is a kind of room. The printed name is always "Forest". The description is usually "This is a forest, with trees in all directions around you." Instead of going nowhere from a forest room when going up, say "There is no tree here suitable for climbing."
 
 In the Forest is a region called Earshot of Songbird. In Earshot of Songbird are Forest 3 and Treetop. The song bird is a backdrop in Earshot of Songbird. Understand "songbird" as the song bird. Every turn while the location is in Earshot of Songbird: if a random chance of 1 in 10 succeeds, say "You hear in the distance the chirping of a song bird."
 
-In Earshot of Songbird is a region called Impenetrable Forest. In Impenetrable Forest are Forest 1, Forest 2, Forest 4 and Forest 5. The tree is a backdrop in Impenetrable Forest.
+In Earshot of Songbird is a region called Among the Trees. In Among the Trees are Forest 1, Forest 2, Forest 4 and Forest 5. The tree is a backdrop in Among the Trees.
 
 There is a forest room called Forest 1. It is west from West of House. West from Forest 1 is north from Forest 1.
 
