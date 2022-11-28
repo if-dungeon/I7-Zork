@@ -24,6 +24,9 @@ The specifics of this project are as follows.
 * [Inform compiler version 10.2.0-beta 'Krypton' (latest)](https://github.com/ganelson/inform)
 * [Windows Inform 7 (latest)](https://github.com/zil-transformation/Windows-Inform7)
 
+## Practical Issues
+Although one of the objectives of this project is to demonstrate fidelity of translation, the original source code has some problems which it would be undesirable to duplicate. Where this is the case, fixes will be incorporated in the translation.
+
 ## Release Plan
 ### Beta
 1. Add Chapter 1 (The White House in the Forest)
