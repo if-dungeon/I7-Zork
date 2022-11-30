@@ -25,7 +25,7 @@ The specifics of this project are as follows.
 * [Windows Inform 7 (latest)](https://github.com/zil-transformation/Windows-Inform7)
 
 ## Practical Issues
-Although one of the objectives of this project is to demonstrate fidelity of translation, the original source code has some problems which it would be undesirable to duplicate. Where this is the case, fixes will be incorporated in the translation.
+Although one of the objectives of this project is to demonstrate fidelity of translation, the original source code has some problems which it would be undesirable to duplicate. Where this is the case, [fixes](https://github.com/zil-transformation/Zork/blob/main/TO-BE-FIXED.md) will be incorporated in the translation.
 
 ## Release Plan
 ### Beta
