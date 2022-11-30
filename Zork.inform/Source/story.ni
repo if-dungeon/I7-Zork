@@ -21,7 +21,7 @@ Check reading something (this is the can't read if not readable rule):
 	if the noun is not readable, say "How can [we] read [a noun]." instead.
 
 Carry out reading something:
-	if the noun is not held, try taking the noun;
+	if the noun is not carried, try taking the noun;
 	try examining the noun;
 
 
@@ -359,25 +359,23 @@ Chapter - The White House in the Forest
 
 There is a region called the Forest. In the Forest is the Clearing. The white house is a backdrop in the Forest.
 
-Instead of finding the white house when the location is the Clearing, say "It seems to be to the southwest." Instead of finding the white house when the location is not in Vicinity of House and the location is not the Clearing, say "It was just here a minute ago...." Instead of doing something other than finding with the white house when the location is not in Vicinity of House, say "You're not at the house.";
+Instead of finding the white house when the location is in Outside of the House, say "It's right in front of you.  Are you blind or something?" Instead of looking at the white house when the location is in Outside of the House, say "The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy." Instead of burning the white house when the location is in Outside of the House, say "You must be joking."
+
+Instead of finding the white house when the location is the Clearing, say "It seems to be to the southwest." Instead of finding the white house when the location is not in Outside of House and the location is not the Clearing, say "It was just here a minute ago...." Instead of doing something other than finding with the white house when the location is not in Outside of House, say "You're not at the house.";
 
 
-Section - Outside the White House
+Section - Outside of the House
 
-In the Forest is a region called Vicinity of House. In Vicinity of House are West of House and Behind House.
-
-In Vicinity of House is a region called Sides of House. In Sides of House are North of House and South of House. The windows are a backdrop in Sides of House with printed name "window". Understand "window" as the windows.
-
-Instead of finding the white house when the location is in Vicinity of House, say "It's right in front of you.  Are you blind or something?" Instead of looking at the white house when the location is in Vicinity of House, say "The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy." Instead of burning the white house when the location is in Vicinity of House, say "You must be joking."
+In the Forest is a region called Outside of the House. In Outside of the House are West of House, North of House, South of House and Behind House. The windows are a backdrop in North of House. They are a backdrop in South of House. The printed name is "window". Understand "window" as the windows.
 
 There is a room called West of House. "This is an open field west of a white house, with a boarded front door." A small mailbox and a welcome mat are here. The front door is east. Instead of going nowhere from West of House when going east, say "The door is locked, and there is evidently no key."
 
-The small mailbox is a fixed in place container with printed name "mailbox" and bulk capacity 10. "There is a small mailbox here." Understand "box" as the small mailbox. It is closed and openable. There is a small leaflet with printed name "leaflet" and bulk 2 in it. It is readable. Understand "advert", "pamphlet", "booklet" or "mail" as the small leaflet.
+The small mailbox is a fixed in place closed openable container with printed name "mailbox" and bulk capacity 10. "There is a small mailbox here." Understand "box" as the small mailbox. There is a small leaflet with printed name "leaflet" and bulk 2 in it. It is readable. Understand "advert", "pamphlet", "booklet" or "mail" as the small leaflet.
 
 Instead of reading the small leaflet:
-	if the small leaflet is not held:
+	if the small leaflet is not carried:
 		try silently taking the small leaflet;
-		say "Taken.[no line break]";
+		if the small leaflet is carried, say "Taken.[no line break]";
 	try examining the small leaflet;
 
 Instead of examining the small leaflet:
@@ -404,22 +402,31 @@ The window is a scenery door.
 
 Section - Among the Trees
 
+In the Forest is a region called Among the Trees. In Among the Trees are Forest 3 and Treetop. Every turn while the location is in Among the Trees: if a random chance of 1 in 10 succeeds, say "You hear in the distance the chirping of a song bird."
+
+The song bird is a backdrop in Among the Trees. Understand "songbird" as the song bird. Instead of examining the song bird, say "You can't see any songbird here." Instead of looking at the song bird, say "You see nothing special about the bird." Instead of finding the song bird, say "The songbird is not here, but is probably nearby."
+
+The large tree is a backdrop in Forest 3. It is a backdrop in Treetop.
+Instead of just climbing when the large tree is in the location, try climbing the large tree.
+Instead of climbing the large tree, try going up.
+
+In Among the Trees is a region called Among Unclimbable Trees.
+In Among Unclimbable Trees are Forest 1, Forest 2, Forest 4 and Forest 5.
+
+The unclimbable tree is a privately-named backdrop in Among Unclimbable Trees.
+Understand "tree" as the unclimbable tree when the large tree is not in the location.
+
 A forest room is a kind of room. The printed name is always "Forest". The description is usually "This is a forest, with trees in all directions around you." Instead of going nowhere from a forest room when going up, say "There is no tree here suitable for climbing."
-
-In the Forest is a region called Earshot of Songbird. In Earshot of Songbird are Forest 3 and Treetop. The song bird is a backdrop in Earshot of Songbird. Understand "songbird" as the song bird. Every turn while the location is in Earshot of Songbird: if a random chance of 1 in 10 succeeds, say "You hear in the distance the chirping of a song bird."
-
-In Earshot of Songbird is a region called Among the Trees. In Among the Trees are Forest 1, Forest 2, Forest 4 and Forest 5. The tree is a backdrop in Among the Trees.
 
 There is a forest room called Forest 1. It is west from West of House. West from Forest 1 is north from Forest 1.
 
 There is a forest room called Forest 2. "This is a dimly lit forest, with large trees all around. To the east, there appears to be sunlight." It is south of South of House. West from Forest 2 is south from Forest 1.
 
-There is a forest room called Forest 3. "This is a dimly lit forest, with large trees all around. One particularly large tree with some low branches stands here." A large tree is here. Forest 3 is east from Forest 1. Forest 2 is north from Forest 3. West from Forest 3 is north from North of House.
+There is a forest room called Forest 3. "This is a dimly lit forest, with large trees all around. One particularly large tree with some low branches stands here." Forest 3 is east from Forest 1. Forest 2 is north from Forest 3. West from Forest 3 is north from North of House.
 
-The large tree is scenery. Instead of just climbing when the large tree is in the location, try climbing the large tree. Instead of climbing the large tree, try going up.
+There is a room called Treetop. It is above Forest 3. It has printed name "Up a Tree". "You are about 10 feet above the ground nestled among some large branches. The nearest branch above you is above your reach." A birds nest is here. Instead of going nowhere from Treetop when going up, say "You cannot climb any higher."
 
-
-There is a room called Treetop. "You are about 10 feet above the ground nestled among some large branches. The nearest branch above you is above your reach." It has printed name "Up a Tree". It is above Forest 3. Instead of going nowhere from Treetop when going up, say "You cannot climb any higher."
+The birds nest is an open container with description "There is a small birds nest here." and bulk capacity 20. "On the branch is a small birds nest." Understand "small" as the birds nest. There is an encrusted birds egg with printed name "jewel-encrusted egg" in it.
 
 [ printed name	=	birds nest
   nouns	=	nest
@@ -433,7 +440,6 @@ There is a room called Treetop. "You are about 10 feet above the ground nestled 
   flags	=	container
   behaviour	=	EGG-OBJECT
 ]
-[ large tree ]
 
 
 There is a forest room called Forest 4. "This is a large forest, with trees obstructing all views except to the east, where a small clearing may be seen through the trees." It is south from Forest 4. West from Forest 4 is south from Forest 2.
@@ -459,7 +465,7 @@ There is a room called Clearing. "You are in a clearing, with a forest surroundi
   behaviour	=	LEAF-PILE
 ]
 
-Section - Map Improvements
+Section - World Index Map Improvements
 
 Index map with North of House mapped northeast of West of House.
 Index map with Behind House mapped southeast of North of House.
