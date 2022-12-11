@@ -3,73 +3,9 @@
 The story headline is "The pre-Infocom classic, rewritten".
 
 
-Part - The Mechanics
+Part - Support Systems
 
-Chapter - Custom Commands and Responses
-
-Section - Reading
-
-Understand the command read as something new.
-Understand "read [something]" as reading.
-Understand "read about [text] in [something]" as consulting it about (with nouns reversed).
-Understand "read [text] in [something]" as consulting it about (with nouns reversed).
-
-Reading is an action applying to one visible thing and requiring light.
-
-A thing can be readable. A thing is usually not readable.
-Check reading something (this is the can't read if not readable rule):
-	if the noun is not readable, say "How can [we] read [a noun]." instead.
-
-Carry out reading something:
-	if the noun is not carried, try taking the noun;
-	try examining the noun;
-
-
-Section - Looking
-
-Understand the command look as something new.
-Understand "look" as looking. Understand "look at" as looking.
-Understand "look at [something]" as looking at.
-Understand "look [something]" as looking at.
-Understand "look inside/in/into/through [something]" as searching.
-Understand "look under [something]" as looking under.
-Understand "look up [text] in [something]" as consulting it about (with nouns reversed).
-
-Looking at is an action applying to one visible thing and requiring light.
-
-Carry out looking at something:
-	try examining the noun;
-
-
-Section - Finding
-
-Understand "find [something]" as finding.
-
-Finding is an action applying to one thing and requiring light.
-
-Carry out finding a backdrop:
-	say "Nothing happens.";
-
-Carry out finding something which is not a backdrop when the noun is in the location:
-	say "There is [a noun] here.";
-
-Carry out finding something when the noun is in a container (called the box) and the box is in the location:
-	say "It is in [the box], which is here.";
-
-Carry out finding something when the player is carrying the noun:
-	say "You're holding [the noun]!";
-
-
-Section - Climbing
-
-Understand the command climb as something new.
-Understand "climb" as just climbing.
-Understand "climb [something]" or "climb up/over [something]" as climbing.
-
-Just climbing is an action applying to nothing.
-
-
-Chapter - Carrying Capacity System
+Chapter - Carrying Capacity
 
 Include Bulk Limiter by Eric Eve.
 
@@ -87,7 +23,7 @@ The person bulk test rule response (A) is "[The noun] [are] too big for [if the 
 The person bulk test rule response (B) is "[If the player is the actor][We] [don't][otherwise][The actor] [don't][end if] have enough room left to carry [the noun]."
 
 
-Chapter - Help System
+Chapter - Help
 
 Include Basic Help Menu by Emily Short.
 
@@ -233,37 +169,7 @@ To say brochure hint 3: say "Try reading the matchbook.".
 To say brochure hint 4: say "Type 'SEND FOR FREE BROCHURE'".
 
 
-Chapter - Points System
-
-Use scoring.
-When play begins: try silently switching score notification off.
-
-
-Section - Room Discovery
-
-A room has a number called discovery points. The discovery points are usually 0.
-Check going when the discovery points of the room gone to are not 0 (this is the award points for room discovery rule):
-	if the room gone to is not visited, now the score is the score plus the discovery points of the room gone to.
-
-
-Section - Treasure Taking
-
-A thing has a number called taking points. The taking points are usually 0.
-Check taking when the taking points of the noun are not 0 (this is the award points for treasure taking rule):
-	if the noun is not handled, now the score is the score plus the taking points of the noun.
-
-
-Section - Treasure Hoarding
-
-A thing has a number called hoarding points. The hoarding points are usually 0.
-Check inserting into the trophy case when the hoarding points of the noun are not 0 (this is the award points for treasure hoarding rule):
-	now the score is the score plus the hoarding points of the noun.
-
-Check removing from the trophy case when the hoarding points of the noun are not 0 (this is the remove points for treasure unhoarding rule):
-	now the score is the score minus the hoarding points of the noun.
-
-
-Chapter - Presentation (Infocom Style)
+Chapter - Presentation
 
 Section - Status Line
 
@@ -350,50 +256,168 @@ Rule for writing a paragraph about an open container (called the box) when the b
 		say "  [a item]";
 
 
-Part - The Game
+Chapter - Scoring
 
-The player is in West of House.
+Use scoring.
+When play begins: try silently switching score notification off.
 
+
+Section - Room Discovery
+
+A room has a number called discovery points. The discovery points are usually 0.
+Check going when the discovery points of the room gone to are not 0 (this is the award points for room discovery rule):
+	if the room gone to is not visited, now the score is the score plus the discovery points of the room gone to.
+
+
+Section - Treasure Taking
+
+A thing has a number called taking points. The taking points are usually 0.
+Check taking when the taking points of the noun are not 0 (this is the award points for treasure taking rule):
+	if the noun is not handled, now the score is the score plus the taking points of the noun.
+
+
+Section - Treasure Hoarding
+
+A thing has a number called hoarding points. The hoarding points are usually 0.
+Check inserting into the trophy case when the hoarding points of the noun are not 0 (this is the award points for treasure hoarding rule):
+	now the score is the score plus the hoarding points of the noun.
+
+Check removing from the trophy case when the hoarding points of the noun are not 0 (this is the remove points for treasure unhoarding rule):
+	now the score is the score minus the hoarding points of the noun.
+
+
+Part - Commands and Responses
+
+Chapter - Concerning Possessions
+
+Section - Taking
+
+The can't take yourself rule response (A) is "How romantic!"
+
+Instead of taking something fixed in place:
+	say yuk.
+
+
+Section - Reading
+
+Understand the command read as something new.
+Understand "read [something]" as reading.
+Understand "read about [text] in [something]" as consulting it about (with nouns reversed).
+Understand "read [text] in [something]" as consulting it about (with nouns reversed).
+
+Reading is an action applying to one visible thing and requiring light.
+
+A thing can be readable. A thing is usually not readable.
+
+Check reading something (this is the can't read if not readable rule):
+	if the noun is not readable, say "How can [we] read [a noun]?" instead.
+
+Check reading yourself (this is the can't read yourself rule):
+	say "How can [we] read a cretin?" instead.
+
+Carry out reading something:
+	if the noun is not carried, try taking the noun;
+	try examining the noun;
+
+
+Chapter - Concerning Movement
+
+Section - Climbing
+
+Understand the command climb as something new.
+Understand "climb" as just climbing.
+Understand "climb [something]" or "climb up/over [something]" as climbing.
+
+Just climbing is an action applying to nothing.
+
+
+Chapter - Concerning Seeing
+
+Section - Examining
+
+Check examining yourself (this is the can't examine yourself rule):
+	say "[We] [see] nothing special about the cretin." instead.
+
+The examine containers rule does nothing.
+
+
+Section - Looking
+
+Understand the command look as something new.
+Understand "look" as looking. Understand "look at" as looking.
+Understand "look at [something]" as looking at.
+Understand "look [something]" as looking at.
+Understand "look inside/in/into/through [something]" as searching.
+Understand "look under [something]" as looking under.
+Understand "look up [text] in [something]" as consulting it about (with nouns reversed).
+
+Looking at is an action applying to one visible thing and requiring light.
+
+Carry out looking at something:
+	try examining the noun;
+
+
+Section - Finding
+
+Understand "find [something]" as finding.
+
+Finding is an action applying to one thing and requiring light.
+
+Check finding yourself (this is the can't find yourself rule):
+	say "Nothing happens." instead.
+
+Check finding a backdrop (this is the can't find a backdrop rule):
+	say "Nothing happens." instead.
+
+Carry out finding something which is not a backdrop when the noun is in the location:
+	say "There is [a noun] here.";
+
+Carry out finding something when the noun is in a container (called the box) and the box is in the location:
+	say "It is in [the box], which is here.";
+
+Carry out finding something when the player is carrying the noun:
+	say "You're holding [the noun]!"
+
+
+Chapter - Random Rejections
+
+Section - Yuk
+
+To say yuk:
+	say "[one of]A valiant attempt.[or]You can't be serious.[or]Not a prayer.[or]Not likely.[or]An interesting idea...[or]What a concept![purely at random]".
+
+
+Section - Ho Hum
+
+To say ho hum:
+	say " [one of]does not seem to do anything[or]is not notably useful[or]isn't very interesting[or]doesn't appear worthwhile[or]has no effect[or]doesn't do anything[purely at random]."
+
+The block attacking rule response (A) is "Trying to destroy [a noun][ho hum]".
+
+
+
+Part - Setting
 
 Chapter - The White House in the Forest
 
 There is a region called the Forest. In the Forest is the Clearing. The white house is a backdrop in the Forest.
-
-Instead of finding the white house when the location is in Outside of the House, say "It's right in front of you.  Are you blind or something?" Instead of looking at the white house when the location is in Outside of the House, say "The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy." Instead of burning the white house when the location is in Outside of the House, say "You must be joking."
-
-Instead of finding the white house when the location is the Clearing, say "It seems to be to the southwest." Instead of finding the white house when the location is not in Outside of House and the location is not the Clearing, say "It was just here a minute ago...." Instead of doing something other than finding with the white house when the location is not in Outside of House, say "You're not at the house.";
 
 
 Section - Outside of the House
 
 In the Forest is a region called Outside of the House. In Outside of the House are West of House, North of House, South of House and Behind House. The windows are a backdrop in North of House. They are a backdrop in South of House. The printed name is "window". Understand "window" as the windows.
 
-There is a room called West of House. "This is an open field west of a white house, with a boarded front door." A small mailbox and a welcome mat are here. The front door is east. Instead of going nowhere from West of House when going east, say "The door is locked, and there is evidently no key."
+There is a room called West of House. "This is an open field west of a white house, with a boarded front door." Yourself, a small mailbox and a welcome mat are here. The front door is east.
 
 The small mailbox is a fixed in place closed openable container with printed name "mailbox" and bulk capacity 10. "There is a small mailbox here." Understand "box" as the small mailbox. There is a small leaflet with printed name "leaflet" and bulk 2 in it. It is readable. Understand "advert", "pamphlet", "booklet" or "mail" as the small leaflet.
-
-Instead of reading the small leaflet:
-	if the small leaflet is not carried:
-		try silently taking the small leaflet;
-		if the small leaflet is carried, say "Taken.[no line break]";
-	try examining the small leaflet;
-
-Instead of examining the small leaflet:
-	center "WELCOME TO ZORK";
-	say paragraph break;
-	say "    ZORK is a game of adventure, danger, and low cunning. In it you will explore some of the most amazing territory ever seen by mortal man. Hardened adventurers have run screaming from the terrors contained within![paragraph break]";
-	say "    In ZORK the intrepid explorer delves into the forgotten secrets of a lost labyrinth deep in the bowels of the earth, searching for vast treasures long hidden from prying eyes, treasures guarded by fearsome monsters and diabolical traps![paragraph break]";
-	say "    No system should be without one![paragraph break]";
-	say "    ZORK was created at the MIT Laboratory for Computer Science, by Tim Anderson, Marc Blank, Bruce Daniels, and Dave Lebling. It was inspired by the Adventure game of Crowther and Woods, and the long tradition of fantasy and science fiction adventure.[paragraph break]";
-	say "    On-line information may be obtained by using the HELP command.[paragraph break]";
 
 The welcome mat is readable with initial appearance "A rubber mat saying [']Welcome to Zork!['] lies by the door.", description "Welcome to Zork!" and bulk 12. Understand "rubber" as the welcome mat.
 
 The front door is a locked scenery door with printed name "door".
 
-There is a room called North of House. "You are facing the north side of a white house. There is no door here, and all the windows are barred." West from North of House is north from West of House. Instead of going nowhere from North of House when going south: say "The windows are all barred."
+There is a room called North of House. "You are facing the north side of a white house. There is no door here, and all the windows are barred." West from North of House is north from West of House.
 
-There is a room called South of House. "You are facing the south side of a white house. There is no door here, and all the windows are barred." West from South of House is south from West of House. Instead of going nowhere from South of House when going north: say "The windows are all barred."
+There is a room called South of House. "You are facing the south side of a white house. There is no door here, and all the windows are barred." West from South of House is south from West of House.
 
 There is a room called Behind House. "You are behind the white house. A path leads into the forest to the east. In one corner of the house there is a small window which is [if the window is open]open[else]slightly ajar[end if]." A window is west. North from Behind House is east from North of House. South from Behind House is east from South of House.
 
@@ -402,9 +426,12 @@ The window is a scenery door.
 
 Section - Among the Trees
 
-In the Forest is a region called Among the Trees. In Among the Trees are Forest 3 and Treetop. Every turn while the location is in Among the Trees: if a random chance of 1 in 10 succeeds, say "You hear in the distance the chirping of a song bird."
+In the Forest is a region called Among the Trees. In Among the Trees are Forest 3 and Treetop.
 
-The song bird is a backdrop in Among the Trees. Understand "songbird" as the song bird. Instead of examining the song bird, say "You can't see any songbird here." Instead of looking at the song bird, say "You see nothing special about the bird." Instead of finding the song bird, say "The songbird is not here, but is probably nearby."
+The song bird is a backdrop in Among the Trees. Understand "songbird" as the song bird.
+
+Every turn while the song bird is in the location:
+	if a random chance of 1 in 10 succeeds, say "You hear in the distance the chirping of a song bird."
 
 The large tree is a backdrop in Forest 3. It is a backdrop in Treetop.
 Instead of just climbing when the large tree is in the location, try climbing the large tree.
@@ -480,3 +507,113 @@ The trophy case is a container.
 
 A room called Canyon View is the room east from Forest 4.
 A room called Canyon View is the room southeast from Forest 5.
+
+
+Part - Action
+
+Chapter - Exploring Outside of the House
+
+Section - The Mailbox
+
+[ No special rules required. ]
+
+
+Section - The Small Leaflet
+
+Instead of reading the small leaflet:
+	if the small leaflet is not carried:
+		try silently taking the small leaflet;
+		if the small leaflet is carried, say "Taken.[no line break]";
+	try examining the small leaflet;
+
+Instead of examining the small leaflet:
+	center "WELCOME TO ZORK";
+	say paragraph break;
+	say "    ZORK is a game of adventure, danger, and low cunning. In it you will explore some of the most amazing territory ever seen by mortal man. Hardened adventurers have run screaming from the terrors contained within![paragraph break]";
+	say "    In ZORK the intrepid explorer delves into the forgotten secrets of a lost labyrinth deep in the bowels of the earth, searching for vast treasures long hidden from prying eyes, treasures guarded by fearsome monsters and diabolical traps![paragraph break]";
+	say "    No system should be without one![paragraph break]";
+	say "    ZORK was created at the MIT Laboratory for Computer Science, by Tim Anderson, Marc Blank, Bruce Daniels, and Dave Lebling. It was inspired by the Adventure game of Crowther and Woods, and the long tradition of fantasy and science fiction adventure.[paragraph break]";
+	say "    On-line information may be obtained by using the HELP command.[paragraph break]";
+
+
+Section - The Welcome Mat
+
+[ No special rules required. ]
+
+
+Section - The White House
+
+Instead of looking at the white house when the location is in Outside of the House:
+	say "The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy."
+
+Instead of finding the white house when the location is in Outside of the House:
+	say "It's right in front of you.  Are you blind or something?"
+
+Check burning the white house when the location is in Outside of the House:
+	say "You must be joking." instead.
+
+
+Section - The Front Door
+
+Instead of going nowhere from West of House when going east:
+	say "The door is locked, and there is evidently no key."
+
+Instead of entering the front door:
+	say "You hit your head against the door as you attempt this feat."
+
+Instead of opening the front door:
+	say "The door cannot be opened."
+
+Before unlocking the front door with something:
+	say "It doesn't seem to work." instead.
+
+
+Section - The Barred Windows
+
+Instead of going nowhere from North of House when going south:
+	say "The windows are all barred."
+
+Instead of going nowhere from South of House when going north:
+	say "The windows are all barred."
+
+Instead of entering the window:
+	say "You hit your head against the window as you attempt this feat."
+
+
+Chapter - Exploring Among the Trees
+
+Section - The White House
+
+Instead of finding the white house when the location is in Among the Trees:
+	say "It was just here a minute ago...."
+
+Instead of doing something other than finding with the white house when the location is in Among the Trees:
+	say "You're not at the house.";
+
+
+Section - The Songbird
+
+[ The Appearance ]
+
+Instead of examining the song bird:
+	say "You can't see any songbird here."
+
+Instead of looking at the song bird:
+	say "You see nothing special about the bird."
+
+[ The Location ]
+
+Instead of finding the song bird:
+	say "The songbird is not here, but is probably nearby."
+
+
+Chapter - Exploring In the Clearing
+
+Section - The White House
+
+Instead of finding the white house when the location is the Clearing:
+	say "It seems to be to the southwest."
+
+Instead of doing something other than finding with the white house when the location is the Clearing:
+	say "You're not at the house.";
+
