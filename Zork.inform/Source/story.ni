@@ -256,27 +256,75 @@ Rule for writing a paragraph about an open container (called the box) when the b
 		say "  [a item]";
 
 
+Section - Level of Description
+
+Use BRIEF room descriptions.
+
+Report preferring unabbreviated room descriptions (this is the custom report preferring unabbreviated room descriptions rule):
+	say "Maximum verbosity." instead.
+
+Report preferring sometimes abbreviated room descriptions (this is the custom report preferring sometimes abbreviated room descriptions rule):
+	say "Brief descriptions." instead.
+
+Report preferring abbreviated room descriptions (this is the custom report preferring abbreviated room descriptions rule):
+	say "No long descriptions." instead.
+
+Understand "noobj" as a mistake ("Don't print objects. This command not implemented!").
+
+
 Chapter - Scoring
 
 Use scoring.
+The maximum score is 616.
 When play begins: try silently switching score notification off.
 
 
-Section - Room Discovery
+Section - Player Statistics
+
+To say player statistics:
+	say "Your score [if story has ended]is[else]would be[end if] [score] [bracket]total of [maximum score] points[close bracket], in [move count] moves.";
+	say "This score gives you the rank of [player ranking].";
+
+To say player ranking:
+	repeat through the table of rankings in reverse score order:
+		if the score is at least the score entry:
+			say the rank entry;
+			the rule succeeds;
+
+Table of Rankings
+Score	Rank
+-31	"Incompetent"
+0	"Beginner"
+31	"Amateur Adventurer"
+62	"Novice Adventurer"
+123	"Junior Adventurer"
+246	"Adventurer"
+370	"Hacker"
+493	"Winner"
+554	"Master"
+585	"Wizard"
+616	"Cheater"
+641	"Advanced Cheater"
+666	"Master Cheater"
+691	"Super Cheater"
+716	"Dungeon Master"
+
+
+Section - Points for Room Discovery
 
 A room has a number called discovery points. The discovery points are usually 0.
 Check going when the discovery points of the room gone to are not 0 (this is the award points for room discovery rule):
 	if the room gone to is not visited, now the score is the score plus the discovery points of the room gone to.
 
 
-Section - Treasure Taking
+Section - Points for Treasure Taking
 
 A thing has a number called taking points. The taking points are usually 0.
 Check taking when the taking points of the noun are not 0 (this is the award points for treasure taking rule):
 	if the noun is not handled, now the score is the score plus the taking points of the noun.
 
 
-Section - Treasure Hoarding
+Section - Points for Treasure Hoarding
 
 A thing has a number called hoarding points. The hoarding points are usually 0.
 Check inserting into the trophy case when the hoarding points of the noun are not 0 (this is the award points for treasure hoarding rule):
@@ -286,7 +334,56 @@ Check removing from the trophy case when the hoarding points of the noun are not
 	now the score is the score minus the hoarding points of the noun.
 
 
-Part - Commands and Responses
+Chapter - Testing
+
+Section - In Transcript Comments
+
+Understand "* [text]" as a mistake ("Noted.").
+
+
+Section - Issue Reporting
+
+Understand "bug" as a mistake ("Please visit https://github.com/zil-transformation/Zork/issues to report an issue."). Understand the commands "gritch" and "complaint" as "bug".
+
+Understand "feature" as a mistake ("Please visit https://github.com/zil-transformation/Zork/issues to report an issue."). Understand the commands "comment", "suggestion" and "idea" as "feature".
+
+
+Part - Custom Commands and Responses
+
+Chapter - Concerning Out of World Actions
+
+Section - Quit
+
+Carry out quitting the game (this is the say player statistics before quitting rule): say player statistics.
+The quit the game rule response (A) is "Do you wish to leave the game? (Y is affirmative):[line break] ".
+
+
+Section - Restart
+
+Carry out restarting the game (this is the say player statistics before restarting rule): say player statistics.
+The restart the game rule response (A) is "Do you wish to restart? (Y is affirmative):[line break] ".
+
+
+Section - Restore
+
+Section - Rname
+
+Section - Save
+
+Section - Score
+
+Section - Script
+
+Section - Super
+
+Section - Time
+
+Section - Unscript
+
+Section - Version
+
+Section - Verbose
+
 
 Chapter - Concerning Possessions
 
@@ -294,8 +391,7 @@ Section - Taking
 
 The can't take yourself rule response (A) is "How romantic!"
 
-Instead of taking something fixed in place:
-	say yuk.
+Instead of taking something fixed in place, say yuk.
 
 
 Section - Reading
@@ -379,7 +475,7 @@ Carry out finding something when the player is carrying the noun:
 	say "You're holding [the noun]!"
 
 
-Chapter - Random Rejections
+Chapter - Random Command Rejections
 
 Section - Yuk
 
@@ -390,10 +486,9 @@ To say yuk:
 Section - Ho Hum
 
 To say ho hum:
-	say " [one of]does not seem to do anything[or]is not notably useful[or]isn't very interesting[or]doesn't appear worthwhile[or]has no effect[or]doesn't do anything[purely at random]."
+	say "[one of]does not seem to do anything[or]is not notably useful[or]isn't very interesting[or]doesn't appear worthwhile[or]has no effect[or]doesn't do anything[purely at random]"
 
-The block attacking rule response (A) is "Trying to destroy [a noun][ho hum]".
-
+The block attacking rule response (A) is "Trying to destroy [a noun] [ho hum]."
 
 
 Part - Setting
