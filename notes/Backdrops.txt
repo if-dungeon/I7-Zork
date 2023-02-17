@@ -1,0 +1,218 @@
+The White House
+---------------
+
+<GOBJECT HOUSEBIT
+	 ["HOUSE"]
+	 ["WHITE"]
+	 "white house"
+	 <+ ,OVISON ,NDESCBIT>
+	 HOUSE-FUNCTION>
+
+<DEFINE HOUSE-FUNCTION ("AUX" (HERE ,HERE))
+    #DECL ((HERE) ROOM)
+    <COND (<N=? <REST <STRINGP <RID .HERE>>> "HOUS">
+	   <COND (<VERB? "FIND">
+		  <COND (<==? .HERE <SFIND-ROOM "CLEAR">>
+			 <TELL "It seems to be to the southwest.">)
+			(<TELL "It was just here a minute ago....">)>)
+		 (<TELL "You're not at the house.">)>)
+	  (<VERB? "FIND">
+	   <TELL "It's right in front of you.  Are you blind or something?">)
+	  (<VERB? "LKAT">
+	   <TELL
+"The house is a beautiful colonial house which is painted white.
+It is clear that the owners must have been extremely wealthy.">)
+	  (<VERB? "GTHRO">
+	   <COND (<==? .HERE <SFIND-ROOM "EHOUS">>
+		  <COND (<TRNN <SFIND-OBJ "WINDO"> ,OPENBIT>
+			 <GOTO <FIND-ROOM "KITCH">>
+			 <PERFORM ROOM-DESC <FIND-VERB "LOOK">>)
+			(<TELL "The window is closed.">)>)
+		 (<TELL "I can't see how to get in from here.">)>)
+	  (<VERB? "BURN">
+	   <TELL "You must be joking.">)>>
+
+Forest (region) "white house" (backdrop)
+	Outside of the House (region)
+		"West of House"
+		"North of House"
+		"South of House"
+		"Behind House"
+	Among the Trees (region)
+		"Forest" (1)
+		"Forest" (2)
+		"Forest" (3)
+		Up a Tree
+		"Forest" (4)
+		"Forest" (5)
+	"Clearing"
+
+Outside of the House
+	finding
+		"It's right in front of you.  Are you blind or something?"
+	looking at
+		"The house is a beautiful colonial house which is painted white.
+		It is clear that the owners must have been extremely wealthy."
+	entering when in Behind House
+		if the window is open
+			enter the window
+		else
+			"The window is closed."
+	entering when not in Behind House
+		"I can't see how to get in from here."
+	burning (something burnable with something burning)
+		"You must be joking." (Is this dead code?)
+Among the Trees
+	finding
+		"It was just here a minute ago...."
+	something other than finding
+		"You're not at the house."
+In the Clearing
+	finding
+		"It seems to be to the southwest."
+	something other than finding
+		"You're not at the house."
+
+<ADD-ACTION "BURN"
+	    "Burn"
+	    [(,BURNBIT AOBJS ROBJS REACH) "WITH" (,FLAMEBIT AOBJS ROBJS HAVE)
+			["BURN" BURNER]]>
+<VSYNONYM "BURN" "INCIN" "IGNIT">
+
+<DEFINE BURNER ()
+     <COND (<FLAMING? <PRSI>>
+	    <COND (<OBJECT-ACTION>)
+		  (<==? <OCAN <PRSO>> <SFIND-OBJ "RECEP">>
+		   <BALLOON-BURN>)
+		  (<AND <TRNN <PRSO> ,BURNBIT>
+			<COND (<MEMQ <PRSO> <AOBJS ,WINNER>>
+			       <TELL
+"The " 1 <ODESC2 <PRSO>> " catches fire.">
+			       <REMOVE-OBJECT <PRSO>>
+			       <JIGS-UP 
+"Unfortunately, you were holding it at the time.">)
+			      (<HACKABLE? <PRSO> ,HERE>
+			       <TELL
+"The " 1 <ODESC2 <PRSO>> " catches fire and is consumed.">
+			       <REMOVE-OBJECT <PRSO>>)
+			      (<TELL "You don't have that.">)>>)
+		  (<TELL 
+"I don't think you can burn a " 1 <ODESC2 <PRSO>> ".">)>)
+	   (<TELL
+"With a " 1 <ODESC2 <PRSI>> "??!?">)>>
+
+
+The Dummy Window
+----------------
+
+<GOBJECT DWINDOW
+	 ["DWIND" "WINDO"]
+	 []
+	 "window"
+	 ,OVISON
+	 <>>
+
+Forest (region) "white house" (backdrop)
+	Outside of the House (region)
+		"West of House"
+		"North of House" (room) "window" (backdrop)
+		"South of House" (room) "window" (backdrop)
+		"Behind House"
+	Among the Trees (region)
+		"Forest" (1)
+		"Forest" (2)
+		"Forest" (3)
+		Up a Tree
+		"Forest" (4)
+		"Forest" (5)
+	"Clearing"
+
+
+The Tree
+--------
+
+<GOBJECT TREEBIT
+	 ["TREE"]
+	 []
+	 "tree"
+	 <+ ,OVISON ,NDESCBIT>>
+
+Forest (region) "white house" (backdrop)
+	Outside of the House (region)
+		"West of House"
+		"North of House" (room) "window" (backdrop)
+		"South of House" (room) "window" (backdrop)
+		"Behind House"
+	Among the Trees (region)
+		"Forest" (3)
+		"Up a Tree"
+		Among Unclimbable Trees (region) "tree" (backdrop)
+			"Forest" (1)
+			"Forest" (2)
+			"Forest" (4)
+			"Forest" (5)
+	"Clearing"
+
+
+The Large Tree
+--------------
+
+<OBJECT ["FTREE" "TREE"]
+	["LARGE"]
+	"large tree"
+	<+ ,OVISON ,NDESCBIT ,CLIMBBIT>>
+
+<OBJECT ["TTREE" "TREE"]
+	["LARGE"]
+	"large tree"
+	<+ ,OVISON ,NDESCBIT ,CLIMBBIT>>
+
+Forest (region) "white house" (backdrop)
+	Outside of the House (region)
+		"West of House"
+		"North of House" (room) "window" (backdrop)
+		"South of House" (room) "window" (backdrop)
+		"Behind House"
+	Among the Trees (region)
+		"Forest" (3) (room) "large tree" (backdrop)
+		"Up a Tree" "large tree" (backdrop)
+		Among Unclimbable Trees (region) "tree" (backdrop)
+			"Forest" (1)
+			"Forest" (2)
+			"Forest" (4)
+			"Forest" (5)
+	"Clearing"
+
+
+The Songbird
+------------
+
+<GOBJECT BIRDBIT
+	 ["BIRD" "SONGB"]
+	 ["SONG"]
+	 "bird"
+	 <+ ,OVISON ,NDESCBIT>
+	 BIRD-OBJECT>
+
+<DEFINE BIRD-OBJECT ()
+	<COND (<VERB? "EXAMI">
+	       <TELL "I can't see any songbird here.">)
+	      (<VERB? "FIND">
+	       <TELL "The songbird is not here, but is probably nearby.">)>>
+
+
+Forest (region) "white house" (backdrop)
+	Outside of the House (region)
+		"West of House"
+		"North of House" (room) "window" (backdrop)
+		"South of House" (room) "window" (backdrop)
+		"Behind House"
+	Among the Trees (region) "bird" (backdrop)
+		"Forest" (3) (room) "large tree" (backdrop)
+		"Up a Tree" "large tree" (backdrop)
+		Among Unclimbable Trees (region) "tree" (backdrop)
+			"Forest" (1)
+			"Forest" (2)
+			"Forest" (4)
+			"Forest" (5)
+	"Clearing"

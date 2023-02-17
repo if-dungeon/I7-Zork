@@ -1,0 +1,39 @@
+Chapter - Rejection of Unknown Words and Out of Context Nouns
+
+Include Unknown Word Error by Mike Ciul.
+
+Rule for printing a parser error when the latest parser error is the noun did not make sense in that context error (this is the noun makes no sense here rule):
+	Let N be the position of non-dictionary word;
+	if N is zero:
+		make no decision;
+	say "I don't know the word ['][word at position N]['].";
+	restore oops from;
+
+To decide what number is the/-- position of non-dictionary verb: (- FindUnknownWordToken(1) -)
+
+Rule for printing a parser error when the latest parser error is the not a verb I recognise error (this is the don't know that verb rule):
+	Let N be the position of non-dictionary verb;
+	if N is zero:
+		say "I can't see that here.";
+		stop the action;
+	say "I don't know the word ['][word at position N]['].";
+	restore oops from;
+
+Understand "examine [anything]" as examining.
+Understand "find [anything]" as finding.
+Understand "look at [anything]" as looking at.
+Understand "look [anything]" as looking at.
+Understand "read [anything]" as reading.
+
+Instead of doing something with something when the noun is not in the location, say "[We] [can't] see any [noun] here."
+
+
+Chapter - Work in Progress (Temporary)
+
+Understand "[something]" as examining.
+
+The block attacking rule response (A) is "Trying to destroy [a noun] [ho hum]."
+
+[After reading a command:
+	change the text of the player's command to "[the player's command], [the player's command]";
+	say "([the player's command]) - ";]

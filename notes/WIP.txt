@@ -1,0 +1,404 @@
+Version 1 of Zork Commands by Alex Proudfoot begins here.
+
+"Reproduces the commands and default responses of the original game."
+
+When play begins: now the story viewpoint is first person singular; now the story tense is present tense. 
+
+
+Chapter - Commands leading to Out of World Actions - Zork Test Feedback Support
+
+Section - Bug
+
+Section - Feature
+
+
+Chapter - Commands leading to Out of World Actions - Zork Help Menu
+
+Section - Help
+
+Section - Info
+
+
+Chapter - Commands leading to Out of World Actions - Zork Presentation
+
+Section - Brief
+
+Section - Noobj
+
+Understand "noobj" as room locale description toggling.
+
+Room locale description toggling is an action out of world and applying to nothing.
+
+Room locale description enabled is a truth state that varies. Room locale description enabled is initially true.
+
+Check room locale description toggling when room locale description enabled is true:
+	now room locale description enabled is false;
+	say "Don't print objects.";
+	stop the action;
+
+Check room locale description toggling when room locale description enabled is false:
+	now room locale description enabled is true;
+	say "Print objects.";
+	stop the action;
+
+
+Section - Super
+
+Section - Verbose
+
+
+
+
+Chapter - Commands leading to Out of World Actions
+
+Section - Quit
+
+Carry out quitting the game (this is the say player statistics before quitting rule): say player statistics.
+The quit the game rule response (A) is "Do you wish to leave the game? (Y is affirmative):[line break] ".
+
+
+Section - Restart
+
+Carry out restarting the game (this is the say player statistics before restarting rule): say player statistics.
+The restart the game rule response (A) is "Do you wish to restart? (Y is affirmative):[line break] ".
+
+
+Section - Restore
+
+[ See Standard Rules by Graham Nelson. ]
+
+
+Section - Rname
+
+Section - Save
+
+Section - Score
+
+Section - Script
+
+Section - Time
+
+Section - Unscript
+
+Section - Version
+
+
+Chapter - Commands leading to In World Actions
+
+Section - Answer
+
+Section - Attack
+
+Section - Back
+
+Section - Blast
+
+Section - Board
+
+Section - Brush
+
+Section - Burn
+
+Section - Chomp
+
+Section - Climb
+
+Section - Close
+
+Section - Count
+
+Section - Curse
+
+Section - Deflate
+
+Section - Diagnose
+
+Section - Dig
+
+Section - Disembark
+
+Section - Doc
+
+Section - Drink
+
+Section - Drop
+
+Section - Eat
+
+Section - Enter
+
+Section - Examine
+
+Section - Exorcise
+
+Section - Extinguish
+
+Section - Fill
+
+Section - Find
+
+Understand "find [something]" as finding.
+
+Finding is an action applying to one thing and requiring light.
+
+Check finding yourself (this is the can't find yourself rule):
+	say "Nothing happens." instead.
+
+Check finding a backdrop (this is the can't find a backdrop rule):
+	say "Nothing happens." instead.
+
+Carry out finding something which is not a backdrop when the noun is in the location:
+	say "There is [a noun] here.";
+
+Carry out finding something when the noun is in a container (called the box) and the box is in the location:
+	say "It is in [the box], which is here.";
+
+Carry out finding something when the player is carrying the noun:
+	say "You're holding [the noun]!"
+
+
+Section - Follow
+
+Section - Frobozz
+
+Section - Geronimo
+
+Section - Give
+
+Section - Hello
+
+Section - Blow
+
+Section - Incant
+
+Section - Inflate
+
+Section - Inventory
+
+Section - Foo
+
+Section - Jump
+
+Section - Kick
+
+Section - Kill
+
+Section - Knock
+
+Section - Leave
+
+Section - Light
+
+Section - Lock
+
+Section - Look
+
+Understand the command look as something new.
+
+Understand "look" as looking. Understand "look at" as looking.
+Understand "look at [something]" as looking at.
+Understand "look [something]" as looking at.
+Understand "look inside/in/into/through [something]" as searching.
+Understand "look under [something]" as looking under.
+Understand "look up [text] in [something]" as consulting it about (with nouns reversed).
+
+Looking at is an action applying to one visible thing and requiring light.
+
+The looking at action has a truth state called looking at text printed.
+
+Carry out looking at (this is the standard looking at rule):
+	if the noun provides the property description and the description of the noun is not "":
+		say "[description of the noun][line break]";
+		now looking at text printed is true.
+
+Carry out looking at (this is the looking at undescribed things rule):
+	if looking at text printed is false:
+		say "[We] [see] nothing special about [the noun]." (A).
+
+
+Section - Lower
+
+Section - Make
+
+Section - Melt
+
+Section - Move
+
+Section - Name
+
+Section - Objects
+
+Section - Pull
+
+Section - Mumble
+
+Section - Destroy
+
+Section - Odysseus
+
+Section - Lubricate
+
+Section - Oops
+
+Section - Open
+
+Section - Pick
+
+Section - Play
+
+Section - Plug
+
+Section - Plugh
+
+Section - Poke
+
+Section - Pour
+
+Section - Pray
+
+Section - Pump
+
+Section - Push
+
+Section - Put
+
+Section - Raise
+
+Section - Read
+
+Understand the command read as something new.
+
+Understand "read [something]" as reading.
+Understand "read about [text] in [something]" as consulting it about (with nouns reversed).
+Understand "read [text] in [something]" as consulting it about (with nouns reversed).
+
+Reading is an action applying to one visible thing and requiring light.
+
+A thing can be readable. A thing is usually not readable.
+
+Check reading something (this is the can't read if not readable rule):
+	if the noun is not readable, say "How can [we] read [a noun]?" instead.
+
+Check reading yourself (this is the can't read yourself rule):
+	say "How can [we] read a cretin?" instead.
+
+Carry out reading something:
+	if the noun is not carried, try taking the noun;
+	try examining the noun;
+
+
+Section - Repent
+
+Section - Ring
+
+Section - Room
+
+Section - Rub
+
+Section - Send
+
+Section - Shake
+
+Section - Slide
+
+Section - Skip
+
+Section - Smell
+
+Section - Squeeze
+
+Section - Stay
+
+Section - Strike
+
+Section - Swim
+
+Section - Swing
+
+Section - Take
+
+Section - Go Through
+
+Section - Throw
+
+Section - Tie
+
+Section - Treasure
+
+Section - Turn
+
+Section - Spin
+
+Section - Unlock
+
+Section - Untie
+
+Section - Wait
+
+Section - Wait
+
+Section - Walk
+
+Section - Wave
+
+Section - Win
+
+Section - Wish
+
+Section - Wind
+
+Section - Yell
+
+Section - Zork
+
+
+Chapter - Generic Responses
+
+Section - Ho Hum
+
+To say ho hum:
+	say "[one of]does not seem to do anything[or]is not notably useful[or]isn't very interesting[or]doesn't appear worthwhile[or]has no effect[or]doesn't do anything[purely at random]"
+
+
+Section - Player Statistics
+
+To say player statistics:
+	say "Your score [if story has ended]is[else]would be[end if] [score] [bracket]total of [maximum score] points[close bracket], in [move count] moves.";
+	say "This score gives you the rank of [player ranking].";
+
+To say player ranking:
+	repeat through the table of rankings in reverse score order:
+		if the score is at least the score entry:
+			say the rank entry;
+			the rule succeeds;
+
+Table of Rankings
+Score	Rank
+-31	"Incompetent"
+0	"Beginner"
+31	"Amateur Adventurer"
+62	"Novice Adventurer"
+123	"Junior Adventurer"
+246	"Adventurer"
+370	"Hacker"
+493	"Winner"
+554	"Master"
+585	"Wizard"
+616	"Cheater"
+641	"Advanced Cheater"
+666	"Master Cheater"
+691	"Super Cheater"
+716	"Dungeon Master"
+
+
+Section - Yuk
+
+To say yuk:
+	say "[one of]A valiant attempt.[or]You can't be serious.[or]Not a prayer.[or]Not likely.[or]An interesting idea...[or]What a concept![purely at random]".
+
+
+Zork Commands ends here.
+
+---- DOCUMENTATION ----
+
+There will be documentation here when I have the time to write some.
