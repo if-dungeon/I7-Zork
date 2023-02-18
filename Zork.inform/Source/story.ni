@@ -384,32 +384,33 @@ Chapter - Locale Description
 
 A thing has a text called appearance.
 
-Rule for writing a paragraph about something not handled (called the item):
-	if the initial appearance of the item is not "":
+Rule for writing a paragraph about something (called the item): describe the item.
+
+To describe (item - a thing):
+	if the item is not handled and the initial appearance of the item is not "":
 		say the initial appearance of the item;
 	else if the appearance of the item is not "":
 		say the appearance of the item;
 	else:
 		say "There is [an item] here.[no line break]";
 
-Rule for writing a paragraph about something handled (called the item):
-	if the appearance of the item is not "":
-		say the appearance of the item;
+To describe (box - an open container):
+	describe the box;
+	if the box contains significant items:
+		repeat with item running through the list of things in the box:
+			say line break;
+			describe the item;
 	else:
-		say "There is [an item] here.[no line break]";
-
-Rule for writing a paragraph about an open container (called the box) when the box contains something:
-	if the initial appearance of the box is not "":
-		say the initial appearance of the box;
-	else if the appearance of the box is not "":
-		say the appearance of the box;
-	else:
-		say "There is [a box] here.";
-	say line break;
-	say "[The box] contains:";
-	repeat with item running through the list of things in the box:
 		say line break;
-		say "  [a item]";
+		say "[The box] contains:";
+		repeat with item running through the list of things in the box:
+			say line break;
+			say "  [a item]";
+
+To decide if (box - an open container) contains significant items:
+	repeat with item running through the list of things in the box:
+		if the item is not handled and the initial appearance of the item is not "", decide on true;
+	decide on false;
 
 
 [ Include Zork Scoring System by Alex Proudfoot. ]
@@ -419,7 +420,6 @@ Part - The Scoring
 [ Reproduces the scoring system of the original game. ]
 
 Use scoring. The maximum score is initially 616.
-[When play begins: try silently switching score notification off.]
 
 
 Chapter - Scoring Categories
@@ -506,7 +506,7 @@ In the Forest is the Clearing. Instead of finding the white house when the locat
 
 Section - In Front of the House
 
-There is a room called West of House. "This is an open field west of a white house, with a boarded front door." Yourself, a mailbox and a welcome mat are here. The front door is east. Instead of going nowhere from West of House when going east, say "The door is locked, and there is evidently no key."
+There is a room called West of House. "This is an open field west of a white house, with a boarded front door." Yourself, a mailbox and a welcome mat are here. Instead of going nowhere from West of House when going east, say "The door is locked, and there is evidently no key." The front door is east from West of House.
 
 The mailbox is a fixed in place, closed, openable container. Understand "small" and "box" as the mailbox. "There is a small mailbox here." The bulk capacity is 10. A leaflet is in it.
 
@@ -543,7 +543,7 @@ There is a room called South of House. "You are facing the south side of a white
 
 Section - Behind the House
 
-There is a room called Behind House. "You are behind the white house.  A path leads into the forest to the east.  In one corner of the house there is a small window which is [if the window is open]open[else]slightly ajar[end if]." A window is west. North from Behind House is east from North of House. South from Behind House is east from South of House. Instead of going west from Behind House when the window is closed, say "You can't go that way."
+There is a room called Behind House. "You are behind the white house.  A path leads into the forest to the east.  In one corner of the house there is a small window which is [if the window is open]open[else]slightly ajar[end if]." North from Behind House is east from North of House. South from Behind House is east from South of House. Instead of going west from Behind House when the window is closed, say "You can't go that way." A window is west from Behind the House.
 
 The window is a scenery door. Instead of entering the closed window, say "The window is closed." Before unlocking the window with something: say "It doesn't seem to work." instead.
 
@@ -586,23 +586,16 @@ The bird's nest is a container. Understand "small" as the bird's nest. "On the b
 
 The jewel-encrusted egg is a closed, openable container. Understand "bird's" and "encrusted" as the jewel-encrusted egg. "In the bird's nest is a large egg encrusted with precious jewels, apparently scavenged somewhere by a childless songbird.  The egg is covered with fine gold inlay, and ornamented in lapis lazuli and mother-of-pearl.  Unlike most eggs, this one is hinged and has a delicate looking clasp holding it closed.  The egg appears extremely fragile." The bulk capacity is 6. The taking points are 5. The hoarding points are 5.
 
-Rule for writing a paragraph about the bird's nest when the bird's nest contains something:
-	if the bird's nest is not handled:
-		say the initial appearance of the bird's nest;
-	else:
-		say the appearance of the bird's nest;
-	if the bird's nest contains the jewel-encrusted egg:
-		say line break;
-		say the initial appearance of the jewel-encrusted egg;
-
 
 Section - In the Clearing
 
 There is a room called Clearing. "You are in a clearing, with a forest surrounding you on the west and south."
 
-A pile of leaves is here. A grating is down from Clearing.
+A pile of leaves is here.
 
 Clearing is south from Forest 3. Forest 5 is southeast from Clearing. Southwest from Clearing is east from Behind House. East from Clearing is north from Clearing. West from Clearing is east from Forest 3. South from Clearing is east from Forest 2.
+
+A grating is down from Clearing.
 
 The pile of leaves is a thing.
 
