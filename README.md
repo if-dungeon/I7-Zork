@@ -21,8 +21,6 @@ The specifics of this project are as follows.
 ## Practical Issues
 Although one of the objectives of this project is to demonstrate fidelity of translation, the original source code has some problems which it would be undesirable to duplicate. Where this is the case, [fixes](https://github.com/zil-transformation/Zork/blob/main/TO-BE-FIXED.md) will be incorporated in the translation.
 
-## Project Roadmap
-
 ## Development
 
 *Zork* is currently being developed in Inform 7 6M62.
