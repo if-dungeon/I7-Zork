@@ -1,8 +1,13 @@
 "Zork" by Alex Proudfoot
 
-The story headline is "The pre-Infocom classic, rewritten". The story description is "This is an Inform 7 rewrite of the MIT version of Zork." The story genre is "Fantasy". The story creation year is 2023.
+The story headline is "The pre-Infocom classic, rewritten".
+The story description is "This is an Inform 7 rewrite of the MIT version of Zork."
+The story genre is "Fantasy".
+The story creation year is 2023.
 
-The release number is 0. Include (- Serial "000000"; -). Release along with a website, an interpreter, cover art and the source text.
+The release number is 0.
+Include (- Serial "000000"; -).
+Release along with a website, an interpreter, cover art and the source text.
 
 Include Zork Library by Alex Proudfoot.
 

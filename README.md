@@ -17,10 +17,14 @@ The specifics of this project are as follows.
 
 ### Resources
 * [Mainframe Zork for Confusion (latest)](https://github.com/heasm66/mdlzork)
-* [Windows Inform 7 (latest)](https://github.com/DavidKinder/Windows-Inform7/releases/tag/10_1_2)
 
 ## Practical Issues
 Although one of the objectives of this project is to demonstrate fidelity of translation, the original source code has some problems which it would be undesirable to duplicate. Where this is the case, [fixes](https://github.com/zil-transformation/Zork/blob/main/TO-BE-FIXED.md) will be incorporated in the translation.
 
 ## Project Roadmap
-The roadmap for this project is on [Jira](https://zil-transformation.atlassian.net/jira/software/projects/ZPIC/boards/4/roadmap).
+
+## Development
+
+*Zork* is currently being developed in Inform 7 6M62.
+
+The project roadmap is on [Jira](https://zil-transformation.atlassian.net/jira/software/projects/ZPIC/boards/4/roadmap).
