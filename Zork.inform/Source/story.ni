@@ -6,10 +6,33 @@ The story genre is "Fantasy".
 The story creation year is 2023.
 
 The release number is 0.
-Include (- Serial "000000"; -).
+[Include (- Serial "000000"; -).]
 Release along with a website, an interpreter, cover art and the source text.
 
 Include Zork Library by Alex Proudfoot.
+
+Chapter 0 - Prospective Library  Changes
+
+The block climbing rule is not listed in the check climbing rulebook.
+A thing can be climbable. A thing is usually not climbable.
+Does the player mean climbing something climbable: it is very likely.
+Carry out climbing: try going up.
+
+Just climbing up is an action applying to nothing.
+Understand "climb up" as just climbing up.
+Carry out just climbing up: try going up.
+
+Just climbing down is an action applying to nothing.
+Understand "climb down" as just climbing down.
+Carry out just climbing down: try going down.
+
+Climbing up is an action applying to one thing.
+Understand "climb up [something]" as climbing up.
+Carry out climbing up: try going up.
+
+Climbing down is an action applying to one thing.
+Understand "climb down [something]" as climbing down.
+Carry out climbing down: try going down.
 
 
 Chapter 1 - The White House in the Forest
@@ -85,7 +108,7 @@ The songbird is a backdrop in Among the Trees. The printed name is "bird". Under
 Every turn when the songbird is in the location:
 	if a random chance of 1 in 10 succeeds, say "You hear in the distance the chirping of a song bird."
 
-The large tree is a backdrop in Forest 3 and in Up a Tree.
+The large tree is a climbable backdrop in Forest 3 and in Up a Tree.
 
 There is a forest room called Forest 3. "This is a dimly lit forest, with large trees all around.  One particularly large tree with some low branches stands here." Forest 3 is east from Forest 1. Forest 2 is north from Forest 3. West from Forest 3 is north from North of House.
 
