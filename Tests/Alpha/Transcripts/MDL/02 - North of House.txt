@@ -1,0 +1,9 @@
+North of House
+You are facing the north side of a white house.  There is no door here, and all the windows are barred.
+> look at house
+The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy.
+> look at door
+I can't see any door here.
+> look at window
+I see nothing special about the window.
+>

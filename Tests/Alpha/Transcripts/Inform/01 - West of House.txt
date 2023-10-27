@@ -1,0 +1,69 @@
+West of House
+This is an open field west of a white house, with a boarded front door.
+There is a small mailbox here.
+A rubber mat saying 'Welcome to Zork!' lies by the door.
+
+>look at field
+I don't know the word 'field'.
+
+>look at house
+The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy.
+
+>look at door
+I see nothing special about the door.
+
+>look at window
+I can't see any window here.
+
+>look at mailbox
+I see nothing special about the mailbox.
+
+>open mailbox
+Opening the mailbox reveals a leaflet.
+
+>take leaflet
+Taken.
+
+>read mat
+Taken.
+Welcome to Zork!
+
+>i
+You are carrying:
+  a welcome mat
+  a leaflet
+
+>e
+The door is locked, and there is evidently no key.
+
+>open door
+The door cannot be opened.
+
+>enter door
+You hit your head against the door as you attempt this feat.
+
+>enter house
+I can't see how to get in from here.
+
+>find field
+I don't know the word 'field'.
+
+>find house
+It's right in front of you. Are you blind or something?
+
+>find door
+There is a door here.
+
+>find window
+I can't see any window here.
+
+>find mailbox
+There is a mailbox here.
+
+>find leaflet
+You are carrying a leaflet.
+
+>find mat
+You are carrying a welcome mat.
+
+>
