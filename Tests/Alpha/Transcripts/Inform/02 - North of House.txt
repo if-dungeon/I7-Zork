@@ -10,4 +10,16 @@ I can't see any door here.
 >look at window
 I see nothing special about the window.
 
+>s
+The windows are all barred.
+
+>open window
+It isn't something you can open.
+
+>enter window
+You hit your head against the window as you attempt this feat.
+
+>enter house
+I can't see how to get in from here.
+
 >

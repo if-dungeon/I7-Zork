@@ -7,4 +7,14 @@ The house is a beautiful colonial house which is painted white. It is clear that
 >look at window
 I see nothing special about the window.
 
+>w
+You can't go that way.
+
+>open window
+You open the window.
+
+>enter window
+Kitchen
+You are in the kitchen of the white house. A table seems to have been used recently for the preparation of food. A passage leads to the west and a dark staircase can be seen leading upward. To the east is a small window which is open.
+
 >
