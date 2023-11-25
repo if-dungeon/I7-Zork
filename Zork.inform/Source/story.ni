@@ -82,9 +82,6 @@ Section - East of the House
 
 A room called Behind House is in the Vicinity of the House. "You are behind the white house. In one corner of the house there is a small window which is [if the window is open]open[else]slightly ajar[end if]." North from Behind House is east from North of House. South from Behind House is east from South of House. Instead of going west from Behind House when the window is closed, say "You can't go that way."
 
-Index map with Behind House mapped southeast of North of House.
-Index map with Behind House mapped northeast of South of House.
-
 A window is west from Behind House. It is a scenery door.
 
 Instead of entering the closed window:
@@ -92,6 +89,9 @@ Instead of entering the closed window:
 
 Before entering the white house when the location is Behind House:
 	try entering the window instead.
+
+Index map with Behind House mapped southeast of North of House.
+Index map with Behind House mapped northeast of South of House.
 
 
 Chapter - The Inside of the House
@@ -105,17 +105,24 @@ A room called Kitchen is in the Inside of the House. "You are in the kitchen of 
 
 The window is east from the Kitchen.
 
+A brown sack is here. "On the table is an elongated brown sack, smelling of hot peppers." It is a container. Understand "elongated" and "bag" as the brown sack. The usual appearance is "A brown sack is here." The bulk capacity is 10. The bulk is 3.
+
+A glass bottle is here. "A bottle is sitting on the table." It is a container. Understand "clear" and "container" as the glass bottle. The usual appearance is "A clear glass bottle is here." The bulk capacity is 4.
+
 
 Section - The Attic
 
 A room called Attic is in the Inside of the House. "This is the attic. The only exit is stairs that lead down."
 The Attic is above the Kitchen.
 
+
 Section - The Living Room
 
 A room called Living Room is in the Inside of the House. ["You are in the living room. There is a door to the east[if the wooden door is open]. To the west is a cyclops-shaped hole in an old wooden door, above which is some strange gothic lettering[else], a wooden door with strange gothic lettering to the west, which appears to be nailed shut,[end if] [if the rug is not moved]and a large oriental rug in the center of the room[else if the trap door is closed]and a closed trap-door at your feet[else]and a rug lying beside an open trap-door[end if]."]
 
 The Living Room is west of the Kitchen.
+
+A trap door is below the Living Room. It is a scenery door.
 
 The trophy case is here.
 
@@ -229,9 +236,35 @@ To say grating description:
 
 Part - Cellar and Vicinity
 
-Chapter - Forward References (Temporary)
+Chapter - The Basement
 
-Below Living room is Cellar.
+Section - Cellar
+
+There is a room called Cellar. "CELLAR..."
+
+Instead of going nowhere from Cellar when going west, say "You try to ascend the ramp, but it is impossible, and you slide back down."
+
+The trap door is above the Cellar.
+
+
+Section - The Troll Room
+
+There is a room called The Troll Room. "This is a small room with passages off in all directions. Bloodstains and deep scratches (perhaps made by an axe) mar the walls."
+
+It is east of the Cellar.
+
+
+Section - Studio
+
+There is a room called Studio. "This is what appears to have been an artist's studio. The walls and floors are splattered with paints of 69 different colors. Strangely enough, nothing of value is hanging here.  At the north and northwest of the room are open doors (also covered with paint). An extremely dark and narrow chimney leads up from a fireplace; although you might be able to get up it, it seems unlikely you could get back down."
+
+
+Section - Gallery
+
+There is a room called Gallery. "This is an art gallery. Most of the paintings which were here have been stolen by vandals with exceptional taste.  The vandals left through either the north, south, or west exits."
+
+South from Gallery is northwest from Studio.
+
 
 Part - Maze
 
@@ -240,36 +273,71 @@ Chapter - Forward References (Temporary)
 The grating is above Grating Room.
 The skeleton key unlocks the grating.
 
+
 Part - Cyclops and Hideaway
+
 
 Part - Reservoir Area
 
+
 Part - Echo Room
+
 
 Part - Coal Mine Area
 
+
 Part - Coal Mine
+
 
 Part - Dome/Torch Area
 
+Chapter - Forward References (Temporary)
+
+Section - North-South Crawlway
+
+There is a room called North-South Crawlway. It is north of Studio.
+
+
+Section - West of Chasm
+
+There is a room called West of Chasm. It is north of Gallery.
+
+West from West of Chasm is south from Cellar.
+
+North from West of Chasm is north from North-South Crawlway.
+
+Index map with West of Chasm mapped southeast of Cellar.
+
+
 Part - Flood Control Dam #3
+
 
 Part - River Area
 
 Chapter - Forward References (Temporary)
 
-East from Forest 4 is south from Canyon View.
-Southeast from Forest 5 is west from Canyon View.
+South from Canyon View is east from Forest 4.
+West from Canyon View is southeast from Forest 5.
+
 
 Part - Volcano Area
 
+
 Part - Alice in Wonderland
+
 
 Part - Bank of Zork
 
+South from Bank Entrance is west from Gallery.
+
+Index map with Bank Entrance mapped northwest of Gallery.
+
+
 Part - Chinese Puzzle Rooms
 
+
 Part - Palantir Rooms
+
 
 Part - End Game
 

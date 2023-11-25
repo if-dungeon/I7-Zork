@@ -6,4 +6,12 @@ The house is a beautiful colonial house which is painted white. It is clear that
 I can't see any door here.
 > look at window
 I see nothing special about the window.
+> s
+The windows are all barred.
+> open window
+You must tell me how to do that to a window.
+> enter window
+You hit your head against the window as you attempt this feat.
+> enter house
+I can't see how to get in from here.
 >
