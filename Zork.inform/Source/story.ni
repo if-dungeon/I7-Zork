@@ -82,7 +82,9 @@ Section - East of the House
 
 A room called Behind House is in the Vicinity of the House. "You are behind the white house. In one corner of the house there is a small window which is [if the window is open]open[else]slightly ajar[end if]." North from Behind House is east from North of House. South from Behind House is east from South of House. Instead of going west from Behind House when the window is closed, say "You can't go that way."
 
-A window is west from Behind House. It is a scenery door.
+[ This compiles with Inform 10.1.2. ]
+[ Uncomment the word "kitchen" in order to compile with Inform 10.2.0-beta+6X82 'Krypton' (17 November 2024). ]
+A kitchen window is west from Behind House. It is a scenery door.
 
 Instead of entering the closed window:
 	say "The window is closed."
