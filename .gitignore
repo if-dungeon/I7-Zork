@@ -3,4 +3,5 @@
 *.blurb
 *.skein
 *.materials/Release
+*.materials/Extensions/Reserved
 Tests/Alpha/MDL Zork
